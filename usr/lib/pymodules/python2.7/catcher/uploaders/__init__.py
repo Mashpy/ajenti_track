@@ -1,0 +1,1 @@
+/usr/share/pyshared/catcher/uploaders/__init__.py

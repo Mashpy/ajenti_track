@@ -1,0 +1,159 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Origin: Ajenti
+Label: Ajenti
+Codename: main
+Version: 1.0
+Date: Mon, 15 Aug 2016 12:01:32 UTC
+Architectures: amd64 i386 armel powerpc armhf
+Components: main debian ubuntu
+MD5Sum:
+ 86332f6d794111700ea282c810129c7b 19324 main/binary-amd64/Packages
+ 1de88b65187e16e40089d50115724c51 6755 main/binary-amd64/Packages.gz
+ 5ed3a7efe0128ced1789200c695f4f61 78 main/binary-amd64/Release
+ c94fb9964acf3719054517fe6960a828 19319 main/binary-i386/Packages
+ 79525d0248d8a4a2d7566fb3d51fddfe 6757 main/binary-i386/Packages.gz
+ 564561d58bc6f9ce5a6905a7fe60646a 77 main/binary-i386/Release
+ f7878b8b89e720c0388e9aa3df1caabf 19255 main/binary-armel/Packages
+ 7499f3e51830f175ed68ad22be459516 6754 main/binary-armel/Packages.gz
+ 398562e228d428f664d40483af395d7b 78 main/binary-armel/Release
+ 79879f8dffaf7edf68c35864dfcd980f 14038 main/binary-powerpc/Packages
+ 0e5d0e72f932b37f8adb0dec8e54666b 4646 main/binary-powerpc/Packages.gz
+ cf79fbb87c227cd3dc56f140d6c137e5 80 main/binary-powerpc/Release
+ b8ea6b247364fa7f0d775d229e040963 19271 main/binary-armhf/Packages
+ 6c0f487650a9a87e727c7555f5d99ad0 6753 main/binary-armhf/Packages.gz
+ 62dc70bdcc287b8f76d4dad0445fbfd8 78 main/binary-armhf/Release
+ a0ee0361de125f03de894c6ef904c021 3787 debian/binary-amd64/Packages
+ 36b0310bd2265ebb78fdd57ed6b6809c 1879 debian/binary-amd64/Packages.gz
+ 9c1a3cfaa9cbf2ec80855c66be58bd67 80 debian/binary-amd64/Release
+ b5abfbc6cf8f43fb972dad5d70b54a40 3785 debian/binary-i386/Packages
+ db2d00f479cddb4c646a299712da9b37 1882 debian/binary-i386/Packages.gz
+ 0fdd5f931f45738689b5c5a3fbf85326 79 debian/binary-i386/Release
+ 5fbf0bdff0a58a70b713b103a42f9954 3787 debian/binary-armel/Packages
+ c9c702745eaf37c59e2e13f41172fa72 1881 debian/binary-armel/Packages.gz
+ dcc607b1a016a4e728ceb0e814548000 80 debian/binary-armel/Release
+ 728adb644e038e049a7429d994110b67 2868 debian/binary-powerpc/Packages
+ 16f5ea5ad638826de27ef55b97ae40a8 1468 debian/binary-powerpc/Packages.gz
+ 68e82017154c8d9c9e36a15f2575a1ba 82 debian/binary-powerpc/Release
+ 728adb644e038e049a7429d994110b67 2868 debian/binary-armhf/Packages
+ 16f5ea5ad638826de27ef55b97ae40a8 1468 debian/binary-armhf/Packages.gz
+ f0717424931f7248323205a55b69ba28 80 debian/binary-armhf/Release
+ 465c7191f33d4ba301c814b0ce6c618a 10109 ubuntu/binary-amd64/Packages
+ 38a66657d8f5d561f353d37bf7063205 4110 ubuntu/binary-amd64/Packages.gz
+ 8584e46986eb7fe46d11a6f356107723 80 ubuntu/binary-amd64/Release
+ 465c7191f33d4ba301c814b0ce6c618a 10109 ubuntu/binary-i386/Packages
+ 38a66657d8f5d561f353d37bf7063205 4110 ubuntu/binary-i386/Packages.gz
+ 22f08d9f2f6fd14c6dbe2ca40e465577 79 ubuntu/binary-i386/Release
+ 465c7191f33d4ba301c814b0ce6c618a 10109 ubuntu/binary-armel/Packages
+ 38a66657d8f5d561f353d37bf7063205 4110 ubuntu/binary-armel/Packages.gz
+ eae80a1b4ff47373b72205234d5cafae 80 ubuntu/binary-armel/Release
+ 465c7191f33d4ba301c814b0ce6c618a 10109 ubuntu/binary-powerpc/Packages
+ 38a66657d8f5d561f353d37bf7063205 4110 ubuntu/binary-powerpc/Packages.gz
+ e3df51c37c6fd285b46840e1c64c261b 82 ubuntu/binary-powerpc/Release
+ 465c7191f33d4ba301c814b0ce6c618a 10109 ubuntu/binary-armhf/Packages
+ 38a66657d8f5d561f353d37bf7063205 4110 ubuntu/binary-armhf/Packages.gz
+ 22fef309e48be42ee85d47e5c97a68a6 80 ubuntu/binary-armhf/Release
+SHA1:
+ d01a1a3056e78c3475fed276f4f5334ff98c2478 19324 main/binary-amd64/Packages
+ e91d1c04491000b37cb4005ac782ca0ed98bdaaf 6755 main/binary-amd64/Packages.gz
+ b934410052f11b6d009806a653ee4400296d5a9c 78 main/binary-amd64/Release
+ 680c32cc4d24c68b1b0e8a062bd760123107cbbb 19319 main/binary-i386/Packages
+ e38d04ca0e6ccf848dce54f93d5034e6f158b1ce 6757 main/binary-i386/Packages.gz
+ 5c80663af7ea7d14051838b2731b6026903bc9d7 77 main/binary-i386/Release
+ 91bf3822208826b3c4527798be9baceb3b8f5f19 19255 main/binary-armel/Packages
+ 5ba44a6f6089c9275af2f8d1ec9a10873dfc2237 6754 main/binary-armel/Packages.gz
+ 5689ab10e261bc1e35eaa56b48bad7338b9953a1 78 main/binary-armel/Release
+ 5fdb43271a2fc143ece8f167e2f6f5afe696bdeb 14038 main/binary-powerpc/Packages
+ 1a8eefddaa4ceca78cc359f5104920ab3e4d3722 4646 main/binary-powerpc/Packages.gz
+ 03e7a7a544b3a987c061126bfbbd7f98842d8c7c 80 main/binary-powerpc/Release
+ 289894e037c0585431d626f8fd7e309dc1925380 19271 main/binary-armhf/Packages
+ db04352eaf7c6c488159556030a7741668740400 6753 main/binary-armhf/Packages.gz
+ aa39c82954abfaa64577ae4b80b6ce3b8df4c09c 78 main/binary-armhf/Release
+ 5615f86af1fa1bdddd710699b739b1dd67d398d7 3787 debian/binary-amd64/Packages
+ 6a8e9a9855ffc6b5d81ce309c8e944e3bd86cfcb 1879 debian/binary-amd64/Packages.gz
+ 28af10e99ce961c29fe5a63b550a61609adb4b02 80 debian/binary-amd64/Release
+ 9b7938c1dfcb28eab3613a8455add39e0ece708c 3785 debian/binary-i386/Packages
+ 68fa079a2e4755e31f0c213a92d1a219a35806c5 1882 debian/binary-i386/Packages.gz
+ a0396ef0809e654e2f333442a0bb618eb6513194 79 debian/binary-i386/Release
+ d9fc5f4783d73efbe3696c20ee3e79286df5eb10 3787 debian/binary-armel/Packages
+ d6cad2c70f7958b567b4940a91c075b17d19e5d0 1881 debian/binary-armel/Packages.gz
+ 2194894042678b2bdc82b2012658f274f9372a0a 80 debian/binary-armel/Release
+ 6d9496eec5c0652d7601a9a02eb2bdcff472fe28 2868 debian/binary-powerpc/Packages
+ a075517556c3a6bdd4fbf934dfa3792f16c81c61 1468 debian/binary-powerpc/Packages.gz
+ d5716493460c6727f4756ea60123906adabae84d 82 debian/binary-powerpc/Release
+ 6d9496eec5c0652d7601a9a02eb2bdcff472fe28 2868 debian/binary-armhf/Packages
+ a075517556c3a6bdd4fbf934dfa3792f16c81c61 1468 debian/binary-armhf/Packages.gz
+ 4fd73e2b90f74bf92709de0b21c1de847406354a 80 debian/binary-armhf/Release
+ 59ba1df87b5a2e13b00ab483092f661425ffbef3 10109 ubuntu/binary-amd64/Packages
+ 9e27c188e079f11f0fe82bd9b3e90c7bad191b10 4110 ubuntu/binary-amd64/Packages.gz
+ e3bb568830a803268edd5423957e6173c4a9639e 80 ubuntu/binary-amd64/Release
+ 59ba1df87b5a2e13b00ab483092f661425ffbef3 10109 ubuntu/binary-i386/Packages
+ 9e27c188e079f11f0fe82bd9b3e90c7bad191b10 4110 ubuntu/binary-i386/Packages.gz
+ cf041200cf19dcc3f321eed3482b8cf9a7bc9681 79 ubuntu/binary-i386/Release
+ 59ba1df87b5a2e13b00ab483092f661425ffbef3 10109 ubuntu/binary-armel/Packages
+ 9e27c188e079f11f0fe82bd9b3e90c7bad191b10 4110 ubuntu/binary-armel/Packages.gz
+ 0d7f3dd3bd480909c5dc2b5c9793f04ec688f1bb 80 ubuntu/binary-armel/Release
+ 59ba1df87b5a2e13b00ab483092f661425ffbef3 10109 ubuntu/binary-powerpc/Packages
+ 9e27c188e079f11f0fe82bd9b3e90c7bad191b10 4110 ubuntu/binary-powerpc/Packages.gz
+ c3914092221d3a3d4ca76db8f03552cbabebc451 82 ubuntu/binary-powerpc/Release
+ 59ba1df87b5a2e13b00ab483092f661425ffbef3 10109 ubuntu/binary-armhf/Packages
+ 9e27c188e079f11f0fe82bd9b3e90c7bad191b10 4110 ubuntu/binary-armhf/Packages.gz
+ 0e8e57bc0eee91bb86251b5167f70302764c711c 80 ubuntu/binary-armhf/Release
+SHA256:
+ f168ea38c5e999fcd7d2d7d0f165361df4db114de340fef65fefd69bca86d825 19324 main/binary-amd64/Packages
+ 4de9e696c94e81b4d205e855f7d53b2590620fbb68eeaadb09b7c2d1a6451e46 6755 main/binary-amd64/Packages.gz
+ c3a59d82750af2724c5cf6fa1e4f7419d3fee9950f6994a8873c0b8c942f6d7c 78 main/binary-amd64/Release
+ 1a4e37452b9ce5e0ce618f82b690b4327d017835975a415da4ff885e9d61dc19 19319 main/binary-i386/Packages
+ 712ddc297069dfe3e5b0b84c510bb35005573804b6160ad08555ae907d51dd49 6757 main/binary-i386/Packages.gz
+ 70d7a4d604a3419c1bed362a1751fb28416a441a2fc771d19d8a6cb42b791341 77 main/binary-i386/Release
+ 26caf065498e2114c84dd1cae2f1e95ea70fb2d023c5471baaf8488ef73a3cb5 19255 main/binary-armel/Packages
+ 684dcf945ac32624f9aec6874370fb8c0b74f8be8934363796676c61634e2653 6754 main/binary-armel/Packages.gz
+ a348304a6604ae5779aeb162da07d97a7a5f2f7735337890ffc0a7922b5d6071 78 main/binary-armel/Release
+ ebcf664ab7c1c44bfa6d76b8a3eb208ac0178286f1a455e046508852d18acce6 14038 main/binary-powerpc/Packages
+ ae2c56b56c93da93117a04b395ac532a102d1276d01ea9f27dceb2aea1f3556b 4646 main/binary-powerpc/Packages.gz
+ b78e6864a61bd99ff4e11b764ece233d9226bb1a94d8b2b42e7879c6b1645af4 80 main/binary-powerpc/Release
+ 911c737a0dd3dbd5b9dd0d720cbfe37e06dda42b367ed11cedf8c1a694e32cc0 19271 main/binary-armhf/Packages
+ 6a856102c6013ae009f184a6a14026adf014ced382b6db3bd4fe8726d32df33a 6753 main/binary-armhf/Packages.gz
+ 1d03cda0325c429bc18e5a07b9c77439822597debf89b45cdc2024d9f2cbef55 78 main/binary-armhf/Release
+ 76f07c39dbfc8f7ec1b05182049276c7925e903e8ce0c729c7e5b88439967535 3787 debian/binary-amd64/Packages
+ db3d8595cf84279a17bdc7a4eab532d10e8af0c3225caae868e3a33f99809ceb 1879 debian/binary-amd64/Packages.gz
+ bd64e6416419bd3924a6d694fb768a254fe90ba70fc431a0a840332b7294d0d8 80 debian/binary-amd64/Release
+ ee1006403113909af0dff907715b5f9cdea160e8d6c2ecb454102683e0b943eb 3785 debian/binary-i386/Packages
+ 9dfb8839ebd00a417c43de9ddee298bd37cc18df2c1b2b789407228b8f02d70e 1882 debian/binary-i386/Packages.gz
+ 2e5b31935518b798f4a5e1fd744cd6a8c70ec0fbec15f0300df36204c117862a 79 debian/binary-i386/Release
+ bb39df79e4c46d88a8ac2340fefde8e09fbc717c01c0624e30344212eeb1e524 3787 debian/binary-armel/Packages
+ f458525d5abe950bfbf822f5e8d2b6fe24d0ac49415c0e39ec599c17ca237803 1881 debian/binary-armel/Packages.gz
+ e31055954ec93e21c9af05b9b6480fb9b5b994719bcb08b0714019db330601bb 80 debian/binary-armel/Release
+ ff074d1daa4ebe175d6c308cec0d329c1602d4919c220d38ecef52b929bf2b83 2868 debian/binary-powerpc/Packages
+ c5784ecb1adf9904c77c2bcbe535e08e31c7e62a64ccca7b2aab6c9f27ca3c8a 1468 debian/binary-powerpc/Packages.gz
+ 2fc3ce9cbc0185c825e68c1ecf13ea40d1e4e5f0c842c1f69d44d90ba12493c7 82 debian/binary-powerpc/Release
+ ff074d1daa4ebe175d6c308cec0d329c1602d4919c220d38ecef52b929bf2b83 2868 debian/binary-armhf/Packages
+ c5784ecb1adf9904c77c2bcbe535e08e31c7e62a64ccca7b2aab6c9f27ca3c8a 1468 debian/binary-armhf/Packages.gz
+ 1f04a18568d5cf226d7f9f95476494eaf3951312e86574b9435d8ceb0a7e25a8 80 debian/binary-armhf/Release
+ f8d4b4946c285e8926e908cf93a5f036624f0241807f4fefe034d7663ae1e8ab 10109 ubuntu/binary-amd64/Packages
+ a8de0a16353b4452431b69dad250d04edf54eb8653ad6c07370e230f4fab44a7 4110 ubuntu/binary-amd64/Packages.gz
+ 598aaf4ba85e410f139ac330bbb61506cdb8f2304e7688544a6ece9c9e2073be 80 ubuntu/binary-amd64/Release
+ f8d4b4946c285e8926e908cf93a5f036624f0241807f4fefe034d7663ae1e8ab 10109 ubuntu/binary-i386/Packages
+ a8de0a16353b4452431b69dad250d04edf54eb8653ad6c07370e230f4fab44a7 4110 ubuntu/binary-i386/Packages.gz
+ 243e6db477aacfad3a313bbbfd7d802bfa6b55a3561e2cee1f9f0cf7bab24434 79 ubuntu/binary-i386/Release
+ f8d4b4946c285e8926e908cf93a5f036624f0241807f4fefe034d7663ae1e8ab 10109 ubuntu/binary-armel/Packages
+ a8de0a16353b4452431b69dad250d04edf54eb8653ad6c07370e230f4fab44a7 4110 ubuntu/binary-armel/Packages.gz
+ cd32483be065c73f658a27bb0d0f718b6024ed77b0294924a0840c93dff3aa42 80 ubuntu/binary-armel/Release
+ f8d4b4946c285e8926e908cf93a5f036624f0241807f4fefe034d7663ae1e8ab 10109 ubuntu/binary-powerpc/Packages
+ a8de0a16353b4452431b69dad250d04edf54eb8653ad6c07370e230f4fab44a7 4110 ubuntu/binary-powerpc/Packages.gz
+ 345b588d9710c2ee8f8fbc59a5dba5b377da8e229137d45f935e8109a024bc70 82 ubuntu/binary-powerpc/Release
+ f8d4b4946c285e8926e908cf93a5f036624f0241807f4fefe034d7663ae1e8ab 10109 ubuntu/binary-armhf/Packages
+ a8de0a16353b4452431b69dad250d04edf54eb8653ad6c07370e230f4fab44a7 4110 ubuntu/binary-armhf/Packages.gz
+ d1b33290602f2cdaae3f9bfb9b3b0dfbb1e988d8181511d038e45dea9b81542b 80 ubuntu/binary-armhf/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXsa8cAAoJEL3D+6pTApdZYpgH+gLtsua7UFELV+OPI5E/jhyt
+BPGm7ySsE7AFyMZ4AZJLzvPapBNDnU0ZKQUEJDM7jx2+FMIzJJSolzPQM0HiYodw
+sE3ixB6x8Juyi2F0kmioT2ML/PdqaVyR3HElXrteN/imCLWdPldXynpqJ5SuW/tC
+grUBXrmcfChzRXdTgsKgXM+FnOeP+8qCT9jj5xq7wyD5RPyAV+abQBRkxAg6DK6X
+ymAQ5Al5fybJbyzqvZmKOtpoPPb1EoqfVZpCLAa0XoJpMp3zgVDLwZ+hSWnPLC3I
+9fEWPvDHZ2+DC2BeQW8ajsxl40PW9odhbksR+z9rv/cDDTNkdjEswDsMrA07Bd0=
+=FmGS
+-----END PGP SIGNATURE-----

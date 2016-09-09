@@ -1,0 +1,1 @@
+/usr/share/pyshared/exconsole/console.py

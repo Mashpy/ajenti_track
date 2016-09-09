@@ -1,0 +1,4 @@
+Sep  9 08:40:47 ip-172-31-23-55 pollinate[863]: system was previously seeded at [2016-09-09 08:40:46.502050000 +0000]
+Sep  9 08:40:47 ip-172-31-23-55 pollinate[865]: To re-seed this system again, use the -r|--reseed option
+Sep  9 08:40:48 ip-172-31-23-55 pollinate[1028]: system was previously seeded at [2016-09-09 08:40:46.502050000 +0000]
+Sep  9 08:40:48 ip-172-31-23-55 pollinate[1030]: To re-seed this system again, use the -r|--reseed option

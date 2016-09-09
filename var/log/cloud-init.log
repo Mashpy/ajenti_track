@@ -1,0 +1,1004 @@
+2016-09-09 08:40:39,049 - util.py[DEBUG]: Cloud-init v. 0.7.5 running 'init-local' at Fri, 09 Sep 2016 08:40:39 +0000. Up 9.69 seconds.
+2016-09-09 08:40:39,052 - util.py[DEBUG]: Writing to /var/log/cloud-init.log - ab: [420] 0 bytes
+2016-09-09 08:40:39,052 - util.py[DEBUG]: Changing the ownership of /var/log/cloud-init.log to 101:4
+2016-09-09 08:40:39,052 - util.py[DEBUG]: Attempting to remove /var/lib/cloud/instance/boot-finished
+2016-09-09 08:40:39,053 - util.py[DEBUG]: Attempting to remove /var/lib/cloud/instance
+2016-09-09 08:40:39,053 - util.py[DEBUG]: Attempting to remove /var/lib/cloud/data/no-net
+2016-09-09 08:40:39,053 - util.py[DEBUG]: Reading from /var/lib/cloud/instance/obj.pkl (quiet=False)
+2016-09-09 08:40:39,054 - importer.py[DEBUG]: Looking for modules ['ubuntu', 'cloudinit.distros.ubuntu'] that have attributes ['Distro']
+2016-09-09 08:40:39,054 - importer.py[DEBUG]: Failed at attempted import of 'ubuntu' due to: No module named ubuntu
+2016-09-09 08:40:39,056 - importer.py[DEBUG]: Found ubuntu with attributes ['Distro'] in ['cloudinit.distros.ubuntu']
+2016-09-09 08:40:39,056 - stages.py[DEBUG]: Using distro class <class 'cloudinit.distros.ubuntu.Distro'>
+2016-09-09 08:40:39,056 - __init__.py[DEBUG]: Looking for for data source in: ['NoCloud', 'ConfigDrive', 'OpenNebula', 'Azure', 'AltCloud', 'OVF', 'MAAS', 'GCE', 'OpenStack', 'CloudSigma', 'Ec2', 'CloudStack', 'SmartOS', 'None'], via packages ['', 'cloudinit.sources'] that matches dependencies ['FILESYSTEM']
+2016-09-09 08:40:39,056 - importer.py[DEBUG]: Looking for modules ['DataSourceNoCloud', 'cloudinit.sources.DataSourceNoCloud'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,056 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceNoCloud' due to: No module named DataSourceNoCloud
+2016-09-09 08:40:39,057 - importer.py[DEBUG]: Found DataSourceNoCloud with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceNoCloud']
+2016-09-09 08:40:39,057 - importer.py[DEBUG]: Looking for modules ['DataSourceConfigDrive', 'cloudinit.sources.DataSourceConfigDrive'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,057 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceConfigDrive' due to: No module named DataSourceConfigDrive
+2016-09-09 08:40:39,060 - importer.py[DEBUG]: Found DataSourceConfigDrive with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceConfigDrive']
+2016-09-09 08:40:39,061 - importer.py[DEBUG]: Looking for modules ['DataSourceOpenNebula', 'cloudinit.sources.DataSourceOpenNebula'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,061 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceOpenNebula' due to: No module named DataSourceOpenNebula
+2016-09-09 08:40:39,062 - importer.py[DEBUG]: Found DataSourceOpenNebula with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceOpenNebula']
+2016-09-09 08:40:39,062 - importer.py[DEBUG]: Looking for modules ['DataSourceAzure', 'cloudinit.sources.DataSourceAzure'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,062 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceAzure' due to: No module named DataSourceAzure
+2016-09-09 08:40:39,521 - importer.py[DEBUG]: Found DataSourceAzure with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceAzure']
+2016-09-09 08:40:39,521 - importer.py[DEBUG]: Looking for modules ['DataSourceAltCloud', 'cloudinit.sources.DataSourceAltCloud'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,521 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceAltCloud' due to: No module named DataSourceAltCloud
+2016-09-09 08:40:39,522 - importer.py[DEBUG]: Found DataSourceAltCloud with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceAltCloud']
+2016-09-09 08:40:39,522 - importer.py[DEBUG]: Looking for modules ['DataSourceOVF', 'cloudinit.sources.DataSourceOVF'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,522 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceOVF' due to: No module named DataSourceOVF
+2016-09-09 08:40:39,523 - importer.py[DEBUG]: Found DataSourceOVF with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceOVF']
+2016-09-09 08:40:39,523 - importer.py[DEBUG]: Looking for modules ['DataSourceMAAS', 'cloudinit.sources.DataSourceMAAS'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,523 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceMAAS' due to: No module named DataSourceMAAS
+2016-09-09 08:40:39,526 - importer.py[DEBUG]: Found DataSourceMAAS with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceMAAS']
+2016-09-09 08:40:39,526 - importer.py[DEBUG]: Looking for modules ['DataSourceGCE', 'cloudinit.sources.DataSourceGCE'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,527 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceGCE' due to: No module named DataSourceGCE
+2016-09-09 08:40:39,527 - importer.py[DEBUG]: Found DataSourceGCE with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceGCE']
+2016-09-09 08:40:39,527 - importer.py[DEBUG]: Looking for modules ['DataSourceOpenStack', 'cloudinit.sources.DataSourceOpenStack'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,527 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceOpenStack' due to: No module named DataSourceOpenStack
+2016-09-09 08:40:39,528 - importer.py[DEBUG]: Found DataSourceOpenStack with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceOpenStack']
+2016-09-09 08:40:39,528 - importer.py[DEBUG]: Looking for modules ['DataSourceCloudSigma', 'cloudinit.sources.DataSourceCloudSigma'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,528 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceCloudSigma' due to: No module named DataSourceCloudSigma
+2016-09-09 08:40:39,535 - importer.py[DEBUG]: Found DataSourceCloudSigma with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceCloudSigma']
+2016-09-09 08:40:39,535 - importer.py[DEBUG]: Looking for modules ['DataSourceEc2', 'cloudinit.sources.DataSourceEc2'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,535 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceEc2' due to: No module named DataSourceEc2
+2016-09-09 08:40:39,536 - importer.py[DEBUG]: Found DataSourceEc2 with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceEc2']
+2016-09-09 08:40:39,536 - importer.py[DEBUG]: Looking for modules ['DataSourceCloudStack', 'cloudinit.sources.DataSourceCloudStack'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,536 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceCloudStack' due to: No module named DataSourceCloudStack
+2016-09-09 08:40:39,537 - importer.py[DEBUG]: Found DataSourceCloudStack with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceCloudStack']
+2016-09-09 08:40:39,537 - importer.py[DEBUG]: Looking for modules ['DataSourceSmartOS', 'cloudinit.sources.DataSourceSmartOS'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,537 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceSmartOS' due to: No module named DataSourceSmartOS
+2016-09-09 08:40:39,539 - importer.py[DEBUG]: Found DataSourceSmartOS with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceSmartOS']
+2016-09-09 08:40:39,539 - importer.py[DEBUG]: Looking for modules ['DataSourceNone', 'cloudinit.sources.DataSourceNone'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:39,539 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceNone' due to: No module named DataSourceNone
+2016-09-09 08:40:39,540 - importer.py[DEBUG]: Found DataSourceNone with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceNone']
+2016-09-09 08:40:39,540 - __init__.py[DEBUG]: Searching for data source in: ['DataSourceNoCloud', 'DataSourceConfigDrive', 'DataSourceOpenNebula', 'DataSourceOVF']
+2016-09-09 08:40:39,540 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceNoCloud.DataSourceNoCloud'>
+2016-09-09 08:40:39,540 - util.py[DEBUG]: Reading from /proc/cmdline (quiet=False)
+2016-09-09 08:40:39,540 - util.py[DEBUG]: Read 120 bytes from /proc/cmdline
+2016-09-09 08:40:39,540 - util.py[DEBUG]: Reading from /var/lib/cloud/seed/nocloud/user-data (quiet=False)
+2016-09-09 08:40:39,540 - util.py[DEBUG]: Reading from /var/lib/cloud/seed/nocloud/meta-data (quiet=False)
+2016-09-09 08:40:39,540 - util.py[DEBUG]: Reading from /var/lib/cloud/seed/nocloud/vendor-data (quiet=False)
+2016-09-09 08:40:39,540 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr0'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,579 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr1'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,581 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=vfat', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,608 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=iso9660', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,611 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=cidata', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,613 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceConfigDrive.DataSourceConfigDrive'>
+2016-09-09 08:40:39,613 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr0'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,615 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr1'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,617 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=vfat', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,618 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=iso9660', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,620 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=config-2', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,622 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceOpenNebula.DataSourceOpenNebula'>
+2016-09-09 08:40:39,623 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=CONTEXT', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,624 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=CDROM', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,626 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=iso9660', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:39,628 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceOVF.DataSourceOVF'>
+2016-09-09 08:40:39,629 - util.py[DEBUG]: Reading from /proc/mounts (quiet=False)
+2016-09-09 08:40:39,629 - util.py[DEBUG]: Read 859 bytes from /proc/mounts
+2016-09-09 08:40:39,629 - util.py[DEBUG]: Fetched {'none': {'mountpoint': '/sys/fs/pstore', 'opts': 'rw,relatime', 'fstype': 'pstore'}, 'devpts': {'mountpoint': '/dev/pts', 'opts': 'rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000', 'fstype': 'devpts'}, 'sysfs': {'mountpoint': '/sys', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'sysfs'}, 'udev': {'mountpoint': '/dev', 'opts': 'rw,relatime,size=503204k,nr_inodes=125801,mode=755', 'fstype': 'devtmpfs'}, '/dev/xvda1': {'mountpoint': '/', 'opts': 'rw,relatime,discard,data=ordered', 'fstype': 'ext4'}, 'tmpfs': {'mountpoint': '/run', 'opts': 'rw,nosuid,noexec,relatime,size=101632k,mode=755', 'fstype': 'tmpfs'}, 'proc': {'mountpoint': '/proc', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'proc'}, 'rootfs': {'mountpoint': '/', 'opts': 'rw', 'fstype': 'rootfs'}} mounts from proc
+2016-09-09 08:40:39,629 - util.py[DEBUG]: Peeking at /dev/xvda (max_bytes=512)
+2016-09-09 08:40:39,630 - util.py[DEBUG]: Reading from /proc/mounts (quiet=False)
+2016-09-09 08:40:39,630 - util.py[DEBUG]: Read 859 bytes from /proc/mounts
+2016-09-09 08:40:39,630 - util.py[DEBUG]: Fetched {'none': {'mountpoint': '/sys/fs/pstore', 'opts': 'rw,relatime', 'fstype': 'pstore'}, 'devpts': {'mountpoint': '/dev/pts', 'opts': 'rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000', 'fstype': 'devpts'}, 'sysfs': {'mountpoint': '/sys', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'sysfs'}, 'udev': {'mountpoint': '/dev', 'opts': 'rw,relatime,size=503204k,nr_inodes=125801,mode=755', 'fstype': 'devtmpfs'}, '/dev/xvda1': {'mountpoint': '/', 'opts': 'rw,relatime,discard,data=ordered', 'fstype': 'ext4'}, 'tmpfs': {'mountpoint': '/run', 'opts': 'rw,nosuid,noexec,relatime,size=101632k,mode=755', 'fstype': 'tmpfs'}, 'proc': {'mountpoint': '/proc', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'proc'}, 'rootfs': {'mountpoint': '/', 'opts': 'rw', 'fstype': 'rootfs'}} mounts from proc
+2016-09-09 08:40:39,632 - util.py[DEBUG]: Running command ['mount', '-o', 'ro,sync', '-t', 'iso9660', '/dev/xvda', '/tmp/tmpTsgZOt'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:39,725 - util.py[DEBUG]: Recursively deleting /tmp/tmpTsgZOt
+2016-09-09 08:40:39,725 - DataSourceOVF.py[DEBUG]: /dev/xvda not mountable as iso9660
+2016-09-09 08:40:39,725 - cloud-init[DEBUG]: No local datasource found
+2016-09-09 08:40:39,726 - util.py[DEBUG]: Reading from /proc/uptime (quiet=False)
+2016-09-09 08:40:39,727 - util.py[DEBUG]: Read 11 bytes from /proc/uptime
+2016-09-09 08:40:39,727 - util.py[DEBUG]: cloud-init mode 'init' took 0.795 seconds (0.80)
+2016-09-09 08:40:42,650 - util.py[DEBUG]: Cloud-init v. 0.7.5 running 'init' at Fri, 09 Sep 2016 08:40:42 +0000. Up 13.29 seconds.
+2016-09-09 08:40:42,652 - util.py[DEBUG]: Writing to /var/log/cloud-init.log - ab: [420] 0 bytes
+2016-09-09 08:40:42,653 - util.py[DEBUG]: Changing the ownership of /var/log/cloud-init.log to 101:4
+2016-09-09 08:40:42,653 - util.py[DEBUG]: Running command ['ifconfig', '-a'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:42,661 - util.py[DEBUG]: Running command ['netstat', '-rn'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:42,665 - cloud-init[DEBUG]: Checking to see if files that we need already exist from a previous run that would allow us to stop early.
+2016-09-09 08:40:42,665 - util.py[DEBUG]: Reading from /var/lib/cloud/data/no-net (quiet=False)
+2016-09-09 08:40:42,665 - util.py[DEBUG]: Reading from /var/lib/cloud/instance/obj.pkl (quiet=False)
+2016-09-09 08:40:42,665 - util.py[DEBUG]: Reading from /var/lib/cloud/instance/obj.pkl (quiet=False)
+2016-09-09 08:40:42,671 - importer.py[DEBUG]: Looking for modules ['ubuntu', 'cloudinit.distros.ubuntu'] that have attributes ['Distro']
+2016-09-09 08:40:42,671 - importer.py[DEBUG]: Failed at attempted import of 'ubuntu' due to: No module named ubuntu
+2016-09-09 08:40:42,671 - importer.py[DEBUG]: Found ubuntu with attributes ['Distro'] in ['cloudinit.distros.ubuntu']
+2016-09-09 08:40:42,671 - stages.py[DEBUG]: Using distro class <class 'cloudinit.distros.ubuntu.Distro'>
+2016-09-09 08:40:42,672 - __init__.py[DEBUG]: Looking for for data source in: ['NoCloud', 'ConfigDrive', 'OpenNebula', 'Azure', 'AltCloud', 'OVF', 'MAAS', 'GCE', 'OpenStack', 'CloudSigma', 'Ec2', 'CloudStack', 'SmartOS', 'None'], via packages ['', 'cloudinit.sources'] that matches dependencies ['FILESYSTEM', 'NETWORK']
+2016-09-09 08:40:42,672 - importer.py[DEBUG]: Looking for modules ['DataSourceNoCloud', 'cloudinit.sources.DataSourceNoCloud'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,672 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceNoCloud' due to: No module named DataSourceNoCloud
+2016-09-09 08:40:42,672 - importer.py[DEBUG]: Found DataSourceNoCloud with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceNoCloud']
+2016-09-09 08:40:42,672 - importer.py[DEBUG]: Looking for modules ['DataSourceConfigDrive', 'cloudinit.sources.DataSourceConfigDrive'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,672 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceConfigDrive' due to: No module named DataSourceConfigDrive
+2016-09-09 08:40:42,673 - importer.py[DEBUG]: Found DataSourceConfigDrive with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceConfigDrive']
+2016-09-09 08:40:42,673 - importer.py[DEBUG]: Looking for modules ['DataSourceOpenNebula', 'cloudinit.sources.DataSourceOpenNebula'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,674 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceOpenNebula' due to: No module named DataSourceOpenNebula
+2016-09-09 08:40:42,682 - importer.py[DEBUG]: Found DataSourceOpenNebula with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceOpenNebula']
+2016-09-09 08:40:42,682 - importer.py[DEBUG]: Looking for modules ['DataSourceAzure', 'cloudinit.sources.DataSourceAzure'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,682 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceAzure' due to: No module named DataSourceAzure
+2016-09-09 08:40:42,691 - importer.py[DEBUG]: Found DataSourceAzure with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceAzure']
+2016-09-09 08:40:42,691 - importer.py[DEBUG]: Looking for modules ['DataSourceAltCloud', 'cloudinit.sources.DataSourceAltCloud'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,691 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceAltCloud' due to: No module named DataSourceAltCloud
+2016-09-09 08:40:42,692 - importer.py[DEBUG]: Found DataSourceAltCloud with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceAltCloud']
+2016-09-09 08:40:42,692 - importer.py[DEBUG]: Looking for modules ['DataSourceOVF', 'cloudinit.sources.DataSourceOVF'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,692 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceOVF' due to: No module named DataSourceOVF
+2016-09-09 08:40:42,692 - importer.py[DEBUG]: Found DataSourceOVF with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceOVF']
+2016-09-09 08:40:42,692 - importer.py[DEBUG]: Looking for modules ['DataSourceMAAS', 'cloudinit.sources.DataSourceMAAS'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,693 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceMAAS' due to: No module named DataSourceMAAS
+2016-09-09 08:40:42,694 - importer.py[DEBUG]: Found DataSourceMAAS with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceMAAS']
+2016-09-09 08:40:42,694 - importer.py[DEBUG]: Looking for modules ['DataSourceGCE', 'cloudinit.sources.DataSourceGCE'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,694 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceGCE' due to: No module named DataSourceGCE
+2016-09-09 08:40:42,694 - importer.py[DEBUG]: Found DataSourceGCE with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceGCE']
+2016-09-09 08:40:42,694 - importer.py[DEBUG]: Looking for modules ['DataSourceOpenStack', 'cloudinit.sources.DataSourceOpenStack'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,694 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceOpenStack' due to: No module named DataSourceOpenStack
+2016-09-09 08:40:42,694 - importer.py[DEBUG]: Found DataSourceOpenStack with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceOpenStack']
+2016-09-09 08:40:42,695 - importer.py[DEBUG]: Looking for modules ['DataSourceCloudSigma', 'cloudinit.sources.DataSourceCloudSigma'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,695 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceCloudSigma' due to: No module named DataSourceCloudSigma
+2016-09-09 08:40:42,703 - importer.py[DEBUG]: Found DataSourceCloudSigma with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceCloudSigma']
+2016-09-09 08:40:42,703 - importer.py[DEBUG]: Looking for modules ['DataSourceEc2', 'cloudinit.sources.DataSourceEc2'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,703 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceEc2' due to: No module named DataSourceEc2
+2016-09-09 08:40:42,703 - importer.py[DEBUG]: Found DataSourceEc2 with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceEc2']
+2016-09-09 08:40:42,703 - importer.py[DEBUG]: Looking for modules ['DataSourceCloudStack', 'cloudinit.sources.DataSourceCloudStack'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,703 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceCloudStack' due to: No module named DataSourceCloudStack
+2016-09-09 08:40:42,704 - importer.py[DEBUG]: Found DataSourceCloudStack with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceCloudStack']
+2016-09-09 08:40:42,704 - importer.py[DEBUG]: Looking for modules ['DataSourceSmartOS', 'cloudinit.sources.DataSourceSmartOS'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,704 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceSmartOS' due to: No module named DataSourceSmartOS
+2016-09-09 08:40:42,708 - importer.py[DEBUG]: Found DataSourceSmartOS with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceSmartOS']
+2016-09-09 08:40:42,708 - importer.py[DEBUG]: Looking for modules ['DataSourceNone', 'cloudinit.sources.DataSourceNone'] that have attributes ['get_datasource_list']
+2016-09-09 08:40:42,708 - importer.py[DEBUG]: Failed at attempted import of 'DataSourceNone' due to: No module named DataSourceNone
+2016-09-09 08:40:42,708 - importer.py[DEBUG]: Found DataSourceNone with attributes ['get_datasource_list'] in ['cloudinit.sources.DataSourceNone']
+2016-09-09 08:40:42,708 - __init__.py[DEBUG]: Searching for data source in: ['DataSourceNoCloudNet', 'DataSourceConfigDriveNet', 'DataSourceOpenNebulaNet', 'DataSourceAzureNet', 'DataSourceAltCloud', 'DataSourceOVFNet', 'DataSourceMAAS', 'DataSourceGCE', 'DataSourceOpenStack', 'DataSourceCloudSigmaNet', 'DataSourceEc2', 'DataSourceCloudStack', 'DataSourceSmartOS', 'DataSourceNone']
+2016-09-09 08:40:42,708 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceNoCloud.DataSourceNoCloudNet'>
+2016-09-09 08:40:42,709 - util.py[DEBUG]: Reading from /proc/cmdline (quiet=False)
+2016-09-09 08:40:42,709 - util.py[DEBUG]: Read 120 bytes from /proc/cmdline
+2016-09-09 08:40:42,709 - util.py[DEBUG]: Reading from /var/lib/cloud/seed/nocloud-net/user-data (quiet=False)
+2016-09-09 08:40:42,709 - util.py[DEBUG]: Reading from /var/lib/cloud/seed/nocloud-net/meta-data (quiet=False)
+2016-09-09 08:40:42,709 - util.py[DEBUG]: Reading from /var/lib/cloud/seed/nocloud-net/vendor-data (quiet=False)
+2016-09-09 08:40:42,709 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr0'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,716 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr1'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,718 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=vfat', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,720 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=iso9660', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,724 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=cidata', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,726 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceConfigDrive.DataSourceConfigDriveNet'>
+2016-09-09 08:40:42,730 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr0'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,731 - util.py[DEBUG]: Running command ['blkid', '-odevice', '/dev/sr1'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,736 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=vfat', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,738 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=iso9660', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,743 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=config-2', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,745 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceOpenNebula.DataSourceOpenNebulaNet'>
+2016-09-09 08:40:42,745 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=CONTEXT', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,751 - util.py[DEBUG]: Running command ['blkid', '-tLABEL=CDROM', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,753 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=iso9660', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,758 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceAzure.DataSourceAzureNet'>
+2016-09-09 08:40:42,758 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,758 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,758 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,759 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,759 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,759 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,759 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,759 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,759 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=iso9660', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,762 - util.py[DEBUG]: Running command ['blkid', '-tTYPE=udf', '-odevice'] with allowed return codes [0, 2] (shell=False, capture=True)
+2016-09-09 08:40:42,766 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceAltCloud.DataSourceAltCloud'>
+2016-09-09 08:40:42,766 - DataSourceAltCloud.py[DEBUG]: Invoked get_data()
+2016-09-09 08:40:42,766 - util.py[DEBUG]: Running command ['/usr/sbin/dmidecode', '--string', 'system-product-name'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:42,847 - DataSourceAltCloud.py[DEBUG]: cloud_type: UNKNOWN
+2016-09-09 08:40:42,847 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceOVF.DataSourceOVFNet'>
+2016-09-09 08:40:42,848 - util.py[DEBUG]: Reading from /proc/mounts (quiet=False)
+2016-09-09 08:40:42,848 - util.py[DEBUG]: Read 859 bytes from /proc/mounts
+2016-09-09 08:40:42,848 - util.py[DEBUG]: Fetched {'none': {'mountpoint': '/sys/fs/pstore', 'opts': 'rw,relatime', 'fstype': 'pstore'}, 'devpts': {'mountpoint': '/dev/pts', 'opts': 'rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000', 'fstype': 'devpts'}, 'sysfs': {'mountpoint': '/sys', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'sysfs'}, 'udev': {'mountpoint': '/dev', 'opts': 'rw,relatime,size=503204k,nr_inodes=125801,mode=755', 'fstype': 'devtmpfs'}, '/dev/xvda1': {'mountpoint': '/', 'opts': 'rw,relatime,discard,data=ordered', 'fstype': 'ext4'}, 'tmpfs': {'mountpoint': '/run', 'opts': 'rw,nosuid,noexec,relatime,size=101632k,mode=755', 'fstype': 'tmpfs'}, 'proc': {'mountpoint': '/proc', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'proc'}, 'rootfs': {'mountpoint': '/', 'opts': 'rw', 'fstype': 'rootfs'}} mounts from proc
+2016-09-09 08:40:42,848 - util.py[DEBUG]: Peeking at /dev/xvda (max_bytes=512)
+2016-09-09 08:40:42,848 - util.py[DEBUG]: Reading from /proc/mounts (quiet=False)
+2016-09-09 08:40:42,848 - util.py[DEBUG]: Read 859 bytes from /proc/mounts
+2016-09-09 08:40:42,848 - util.py[DEBUG]: Fetched {'none': {'mountpoint': '/sys/fs/pstore', 'opts': 'rw,relatime', 'fstype': 'pstore'}, 'devpts': {'mountpoint': '/dev/pts', 'opts': 'rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000', 'fstype': 'devpts'}, 'sysfs': {'mountpoint': '/sys', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'sysfs'}, 'udev': {'mountpoint': '/dev', 'opts': 'rw,relatime,size=503204k,nr_inodes=125801,mode=755', 'fstype': 'devtmpfs'}, '/dev/xvda1': {'mountpoint': '/', 'opts': 'rw,relatime,discard,data=ordered', 'fstype': 'ext4'}, 'tmpfs': {'mountpoint': '/run', 'opts': 'rw,nosuid,noexec,relatime,size=101632k,mode=755', 'fstype': 'tmpfs'}, 'proc': {'mountpoint': '/proc', 'opts': 'rw,nosuid,nodev,noexec,relatime', 'fstype': 'proc'}, 'rootfs': {'mountpoint': '/', 'opts': 'rw', 'fstype': 'rootfs'}} mounts from proc
+2016-09-09 08:40:42,849 - util.py[DEBUG]: Running command ['mount', '-o', 'ro,sync', '-t', 'iso9660', '/dev/xvda', '/tmp/tmptxC1oI'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:42,851 - util.py[DEBUG]: Recursively deleting /tmp/tmptxC1oI
+2016-09-09 08:40:42,852 - DataSourceOVF.py[DEBUG]: /dev/xvda not mountable as iso9660
+2016-09-09 08:40:42,852 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceMAAS.DataSourceMAAS'>
+2016-09-09 08:40:42,852 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceGCE.DataSourceGCE'>
+2016-09-09 08:40:42,852 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,852 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,852 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,852 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,852 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,852 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,852 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,852 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,903 - DataSourceGCE.py[DEBUG]: http://metadata.google.internal./computeMetadata/v1/ is not resolvable
+2016-09-09 08:40:42,903 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceOpenStack.DataSourceOpenStack'>
+2016-09-09 08:40:42,903 - url_helper.py[DEBUG]: [0/1] open 'http://169.254.169.254/openstack/2012-08-10/meta_data.json' with {'url': 'http://169.254.169.254/openstack/2012-08-10/meta_data.json', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 10.0} configuration
+2016-09-09 08:40:42,913 - url_helper.py[DEBUG]: Read from http://169.254.169.254/openstack/2012-08-10/meta_data.json (404, 345b) after 1 attempts
+2016-09-09 08:40:42,913 - url_helper.py[DEBUG]: Calling 'http://169.254.169.254/openstack/2012-08-10/meta_data.json' failed [0/-1s]: bad status code [404]
+2016-09-09 08:40:42,913 - url_helper.py[DEBUG]: [0/1] open 'http://169.254.169.254/openstack/2013-04-04/meta_data.json' with {'url': 'http://169.254.169.254/openstack/2013-04-04/meta_data.json', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 10.0} configuration
+2016-09-09 08:40:42,915 - url_helper.py[DEBUG]: Read from http://169.254.169.254/openstack/2013-04-04/meta_data.json (404, 345b) after 1 attempts
+2016-09-09 08:40:42,915 - url_helper.py[DEBUG]: Calling 'http://169.254.169.254/openstack/2013-04-04/meta_data.json' failed [0/-1s]: bad status code [404]
+2016-09-09 08:40:42,915 - url_helper.py[DEBUG]: [0/1] open 'http://169.254.169.254/openstack/2013-10-17/meta_data.json' with {'url': 'http://169.254.169.254/openstack/2013-10-17/meta_data.json', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 10.0} configuration
+2016-09-09 08:40:42,917 - url_helper.py[DEBUG]: Read from http://169.254.169.254/openstack/2013-10-17/meta_data.json (404, 345b) after 1 attempts
+2016-09-09 08:40:42,917 - url_helper.py[DEBUG]: Calling 'http://169.254.169.254/openstack/2013-10-17/meta_data.json' failed [0/-1s]: bad status code [404]
+2016-09-09 08:40:42,917 - url_helper.py[DEBUG]: [0/1] open 'http://169.254.169.254/openstack/latest/meta_data.json' with {'url': 'http://169.254.169.254/openstack/latest/meta_data.json', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 10.0} configuration
+2016-09-09 08:40:42,919 - url_helper.py[DEBUG]: Read from http://169.254.169.254/openstack/latest/meta_data.json (404, 345b) after 1 attempts
+2016-09-09 08:40:42,919 - url_helper.py[DEBUG]: Calling 'http://169.254.169.254/openstack/latest/meta_data.json' failed [0/-1s]: bad status code [404]
+2016-09-09 08:40:42,919 - DataSourceOpenStack.py[DEBUG]: Giving up on OpenStack md from ['http://169.254.169.254/openstack/2012-08-10/meta_data.json', 'http://169.254.169.254/openstack/2013-04-04/meta_data.json', 'http://169.254.169.254/openstack/2013-10-17/meta_data.json', 'http://169.254.169.254/openstack/latest/meta_data.json'] after 0 seconds
+2016-09-09 08:40:42,919 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceCloudSigma.DataSourceCloudSigmaNet'>
+2016-09-09 08:40:42,920 - DataSourceCloudSigma.py[DEBUG]: Determining hypervisor product name via dmidecode
+2016-09-09 08:40:42,920 - util.py[DEBUG]: Running command ['/usr/sbin/dmidecode', '--string', 'system-product-name'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:42,922 - __init__.py[DEBUG]: Seeing if we can get any data from <class 'cloudinit.sources.DataSourceEc2.DataSourceEc2'>
+2016-09-09 08:40:42,922 - util.py[DEBUG]: Reading from /var/lib/cloud/seed/ec2/meta-data (quiet=False)
+2016-09-09 08:40:42,924 - DataSourceEc2.py[DEBUG]: Removed the following from metadata urls: ['http://instance-data.:8773']
+2016-09-09 08:40:42,924 - url_helper.py[DEBUG]: [0/1] open 'http://169.254.169.254/2009-04-04/meta-data/instance-id' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/instance-id', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 50.0} configuration
+2016-09-09 08:40:42,926 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/instance-id (200, 19b) after 1 attempts
+2016-09-09 08:40:42,926 - DataSourceEc2.py[DEBUG]: Using metadata source: 'http://169.254.169.254'
+2016-09-09 08:40:42,926 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/user-data' with {'url': 'http://169.254.169.254/2009-04-04/user-data', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,928 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,930 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/ (200, 231b) after 1 attempts
+2016-09-09 08:40:42,930 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,933 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/ (200, 8b) after 1 attempts
+2016-09-09 08:40:42,934 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/ami' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/ami', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,935 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/ami (200, 9b) after 1 attempts
+2016-09-09 08:40:42,936 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/root' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/root', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,937 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/block-device-mapping/root (200, 9b) after 1 attempts
+2016-09-09 08:40:42,938 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/placement/' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/placement/', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,939 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/placement/ (200, 17b) after 1 attempts
+2016-09-09 08:40:42,940 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/placement/availability-zone' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/placement/availability-zone', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,941 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/placement/availability-zone (200, 10b) after 1 attempts
+2016-09-09 08:40:42,942 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/public-keys/' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/public-keys/', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,943 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/public-keys/ (200, 20b) after 1 attempts
+2016-09-09 08:40:42,944 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/public-keys/0/openssh-key' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/public-keys/0/openssh-key', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,945 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/public-keys/0/openssh-key (200, 400b) after 1 attempts
+2016-09-09 08:40:42,945 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/profile' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/profile', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,947 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/profile (200, 11b) after 1 attempts
+2016-09-09 08:40:42,947 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/local-ipv4' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/local-ipv4', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,949 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/local-ipv4 (200, 12b) after 1 attempts
+2016-09-09 08:40:42,949 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/reservation-id' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/reservation-id', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,951 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/reservation-id (200, 19b) after 1 attempts
+2016-09-09 08:40:42,951 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/local-hostname' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/local-hostname', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,953 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/local-hostname (200, 42b) after 1 attempts
+2016-09-09 08:40:42,953 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/security-groups' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/security-groups', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,955 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/security-groups (200, 12b) after 1 attempts
+2016-09-09 08:40:42,955 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/ami-launch-index' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/ami-launch-index', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,957 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/ami-launch-index (200, 1b) after 1 attempts
+2016-09-09 08:40:42,957 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/public-hostname' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/public-hostname', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,959 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/public-hostname (200, 49b) after 1 attempts
+2016-09-09 08:40:42,959 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/hostname' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/hostname', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,960 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/hostname (200, 42b) after 1 attempts
+2016-09-09 08:40:42,961 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/ami-id' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/ami-id', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,962 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/ami-id (200, 12b) after 1 attempts
+2016-09-09 08:40:42,962 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/instance-action' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/instance-action', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,964 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/instance-action (200, 4b) after 1 attempts
+2016-09-09 08:40:42,964 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/public-ipv4' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/public-ipv4', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,966 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/public-ipv4 (200, 13b) after 1 attempts
+2016-09-09 08:40:42,966 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/ami-manifest-path' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/ami-manifest-path', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,968 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/ami-manifest-path (200, 9b) after 1 attempts
+2016-09-09 08:40:42,968 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/instance-type' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/instance-type', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,970 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/instance-type (200, 8b) after 1 attempts
+2016-09-09 08:40:42,970 - url_helper.py[DEBUG]: [0/6] open 'http://169.254.169.254/2009-04-04/meta-data/instance-id' with {'url': 'http://169.254.169.254/2009-04-04/meta-data/instance-id', 'headers': {'User-Agent': 'Cloud-Init/0.7.5'}, 'allow_redirects': True, 'method': 'GET', 'timeout': 5.0} configuration
+2016-09-09 08:40:42,972 - url_helper.py[DEBUG]: Read from http://169.254.169.254/2009-04-04/meta-data/instance-id (200, 19b) after 1 attempts
+2016-09-09 08:40:42,972 - DataSourceEc2.py[DEBUG]: Crawl of metadata service took 0 seconds
+2016-09-09 08:40:42,972 - stages.py[INFO]: Loaded datasource DataSourceEc2 - DataSourceEc2
+2016-09-09 08:40:42,972 - util.py[DEBUG]: Reading from /proc/cmdline (quiet=False)
+2016-09-09 08:40:42,972 - util.py[DEBUG]: Read 120 bytes from /proc/cmdline
+2016-09-09 08:40:42,972 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg (quiet=False)
+2016-09-09 08:40:42,972 - util.py[DEBUG]: Read 2960 bytes from /etc/cloud/cloud.cfg
+2016-09-09 08:40:42,972 - util.py[DEBUG]: Attempting to load yaml from string of length 2960 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:42,984 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg.d/90_dpkg.cfg (quiet=False)
+2016-09-09 08:40:42,984 - util.py[DEBUG]: Read 197 bytes from /etc/cloud/cloud.cfg.d/90_dpkg.cfg
+2016-09-09 08:40:42,984 - util.py[DEBUG]: Attempting to load yaml from string of length 197 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:42,986 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg.d/05_logging.cfg (quiet=False)
+2016-09-09 08:40:42,986 - util.py[DEBUG]: Read 1910 bytes from /etc/cloud/cloud.cfg.d/05_logging.cfg
+2016-09-09 08:40:42,986 - util.py[DEBUG]: Attempting to load yaml from string of length 1910 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,990 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,990 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,990 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,991 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,991 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,991 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,991 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,991 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,992 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,992 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,992 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,992 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,992 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,993 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,993 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,993 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,993 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,993 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,993 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:42,993 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:42,994 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:42,994 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:42,994 - util.py[DEBUG]: Attempting to remove /var/lib/cloud/instance
+2016-09-09 08:40:42,994 - util.py[DEBUG]: Creating symbolic link from '/var/lib/cloud/instance' => '/var/lib/cloud/instances/i-016d168b98949600e'
+2016-09-09 08:40:42,995 - util.py[DEBUG]: Reading from /var/lib/cloud/instances/i-016d168b98949600e/datasource (quiet=False)
+2016-09-09 08:40:42,995 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/datasource - wb: [420] 29 bytes
+2016-09-09 08:40:42,995 - util.py[DEBUG]: Writing to /var/lib/cloud/data/previous-datasource - wb: [420] 29 bytes
+2016-09-09 08:40:42,995 - util.py[DEBUG]: Reading from /var/lib/cloud/data/instance-id (quiet=False)
+2016-09-09 08:40:42,995 - util.py[DEBUG]: Writing to /var/lib/cloud/data/instance-id - wb: [420] 20 bytes
+2016-09-09 08:40:42,995 - util.py[DEBUG]: Writing to /var/lib/cloud/data/previous-instance-id - wb: [420] 20 bytes
+2016-09-09 08:40:42,996 - cloud-init[DEBUG]: init will now be targeting instance id: i-016d168b98949600e
+2016-09-09 08:40:42,996 - util.py[DEBUG]: Reading from /proc/cmdline (quiet=False)
+2016-09-09 08:40:42,996 - util.py[DEBUG]: Read 120 bytes from /proc/cmdline
+2016-09-09 08:40:42,996 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg (quiet=False)
+2016-09-09 08:40:42,996 - util.py[DEBUG]: Read 2960 bytes from /etc/cloud/cloud.cfg
+2016-09-09 08:40:42,996 - util.py[DEBUG]: Attempting to load yaml from string of length 2960 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,007 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg.d/90_dpkg.cfg (quiet=False)
+2016-09-09 08:40:43,008 - util.py[DEBUG]: Read 197 bytes from /etc/cloud/cloud.cfg.d/90_dpkg.cfg
+2016-09-09 08:40:43,008 - util.py[DEBUG]: Attempting to load yaml from string of length 197 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,009 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg.d/05_logging.cfg (quiet=False)
+2016-09-09 08:40:43,009 - util.py[DEBUG]: Read 1910 bytes from /etc/cloud/cloud.cfg.d/05_logging.cfg
+2016-09-09 08:40:43,009 - util.py[DEBUG]: Attempting to load yaml from string of length 1910 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,013 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,013 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,013 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,014 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,014 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,014 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,014 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,014 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,015 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,015 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,015 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,015 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,015 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,016 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,016 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,016 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,016 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,016 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,016 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,016 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,017 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,017 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,017 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,017 - util.py[DEBUG]: Writing to /var/lib/cloud/instance/obj.pkl - wb: [256] 6800 bytes
+2016-09-09 08:40:43,018 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/user-data.txt - wb: [384] 0 bytes
+2016-09-09 08:40:43,021 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/user-data.txt.i - wb: [384] 345 bytes
+2016-09-09 08:40:43,021 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/vendor-data.txt - wb: [384] 4 bytes
+2016-09-09 08:40:43,023 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/vendor-data.txt.i - wb: [384] 345 bytes
+2016-09-09 08:40:43,023 - importer.py[DEBUG]: Looking for modules ['ubuntu', 'cloudinit.distros.ubuntu'] that have attributes ['Distro']
+2016-09-09 08:40:43,023 - importer.py[DEBUG]: Failed at attempted import of 'ubuntu' due to: No module named ubuntu
+2016-09-09 08:40:43,023 - importer.py[DEBUG]: Found ubuntu with attributes ['Distro'] in ['cloudinit.distros.ubuntu']
+2016-09-09 08:40:43,023 - stages.py[DEBUG]: Using distro class <class 'cloudinit.distros.ubuntu.Distro'>
+2016-09-09 08:40:43,024 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/consume_data - wb: [420] 19 bytes
+2016-09-09 08:40:43,024 - helpers.py[DEBUG]: Running consume_data using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/consume_data'>)
+2016-09-09 08:40:43,024 - launch_index.py[DEBUG]: Discarding 0 multipart messages which do not match launch index 0
+2016-09-09 08:40:43,024 - stages.py[DEBUG]: Added default handler for set(['text/cloud-config-jsonp', 'text/cloud-config']) from CloudConfigPartHandler: [['text/cloud-config', 'text/cloud-config-jsonp']]
+2016-09-09 08:40:43,024 - stages.py[DEBUG]: Added default handler for set(['text/x-shellscript']) from ShellScriptPartHandler: [['text/x-shellscript']]
+2016-09-09 08:40:43,024 - stages.py[DEBUG]: Added default handler for set(['text/cloud-boothook']) from BootHookPartHandler: [['text/cloud-boothook']]
+2016-09-09 08:40:43,025 - stages.py[DEBUG]: Added default handler for set(['text/upstart-job']) from UpstartJobPartHandler: [['text/upstart-job']]
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Calling handler BootHookPartHandler: [['text/cloud-boothook']] (__begin__, None, 2) with frequency once-per-instance
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Calling handler UpstartJobPartHandler: [['text/upstart-job']] (__begin__, None, 2) with frequency once-per-instance
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Calling handler CloudConfigPartHandler: [['text/cloud-config', 'text/cloud-config-jsonp']] (__begin__, None, 3) with frequency once-per-instance
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Calling handler ShellScriptPartHandler: [['text/x-shellscript']] (__begin__, None, 2) with frequency once-per-instance
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: {'Content-Type': 'text/x-not-multipart', 'Content-Disposition': 'attachment; filename="part-001"', 'MIME-Version': '1.0'}
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Empty payload of type text/x-not-multipart
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Calling handler BootHookPartHandler: [['text/cloud-boothook']] (__end__, None, 2) with frequency once-per-instance
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Calling handler UpstartJobPartHandler: [['text/upstart-job']] (__end__, None, 2) with frequency once-per-instance
+2016-09-09 08:40:43,025 - __init__.py[DEBUG]: Calling handler CloudConfigPartHandler: [['text/cloud-config', 'text/cloud-config-jsonp']] (__end__, None, 3) with frequency once-per-instance
+2016-09-09 08:40:43,026 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/cloud-config.txt - wb: [384] 0 bytes
+2016-09-09 08:40:43,026 - __init__.py[DEBUG]: Calling handler ShellScriptPartHandler: [['text/x-shellscript']] (__end__, None, 2) with frequency once-per-instance
+2016-09-09 08:40:43,026 - stages.py[DEBUG]: no vendordata from datasource
+2016-09-09 08:40:43,027 - util.py[DEBUG]: Reading from /proc/cmdline (quiet=False)
+2016-09-09 08:40:43,027 - util.py[DEBUG]: Read 120 bytes from /proc/cmdline
+2016-09-09 08:40:43,027 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg (quiet=False)
+2016-09-09 08:40:43,027 - util.py[DEBUG]: Read 2960 bytes from /etc/cloud/cloud.cfg
+2016-09-09 08:40:43,027 - util.py[DEBUG]: Attempting to load yaml from string of length 2960 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,039 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg.d/90_dpkg.cfg (quiet=False)
+2016-09-09 08:40:43,039 - util.py[DEBUG]: Read 197 bytes from /etc/cloud/cloud.cfg.d/90_dpkg.cfg
+2016-09-09 08:40:43,039 - util.py[DEBUG]: Attempting to load yaml from string of length 197 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,040 - util.py[DEBUG]: Reading from /etc/cloud/cloud.cfg.d/05_logging.cfg (quiet=False)
+2016-09-09 08:40:43,040 - util.py[DEBUG]: Read 1910 bytes from /etc/cloud/cloud.cfg.d/05_logging.cfg
+2016-09-09 08:40:43,041 - util.py[DEBUG]: Attempting to load yaml from string of length 1910 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,044 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,044 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,044 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,044 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,044 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,044 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,045 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,045 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,045 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,045 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,045 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,046 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,046 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,046 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,046 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,046 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,047 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,047 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,047 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,047 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,047 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,047 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,047 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,047 - util.py[DEBUG]: Reading from /var/lib/cloud/instance/cloud-config.txt (quiet=False)
+2016-09-09 08:40:43,048 - util.py[DEBUG]: Read 0 bytes from /var/lib/cloud/instance/cloud-config.txt
+2016-09-09 08:40:43,048 - util.py[DEBUG]: Attempting to load yaml from string of length 0 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,048 - util.py[DEBUG]: load_yaml given empty string, returning default
+2016-09-09 08:40:43,048 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,048 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,048 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,048 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,048 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,048 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,048 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,048 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,049 - util.py[DEBUG]: Reading from /var/lib/cloud/instance/cloud-config.txt (quiet=False)
+2016-09-09 08:40:43,049 - util.py[DEBUG]: Read 0 bytes from /var/lib/cloud/instance/cloud-config.txt
+2016-09-09 08:40:43,049 - util.py[DEBUG]: Attempting to load yaml from string of length 0 with allowed root types (<type 'dict'>,)
+2016-09-09 08:40:43,049 - util.py[DEBUG]: load_yaml given empty string, returning default
+2016-09-09 08:40:43,049 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:43,049 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:43,049 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:43,049 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:43,049 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:43,050 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:43,050 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:43,050 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:43,052 - importer.py[DEBUG]: Looking for modules ['cc_migrator', 'cloudinit.config.cc_migrator'] that have attributes ['handle']
+2016-09-09 08:40:43,053 - importer.py[DEBUG]: Failed at attempted import of 'cc_migrator' due to: No module named cc_migrator
+2016-09-09 08:40:43,053 - importer.py[DEBUG]: Found cc_migrator with attributes ['handle'] in ['cloudinit.config.cc_migrator']
+2016-09-09 08:40:43,053 - importer.py[DEBUG]: Looking for modules ['cc_seed_random', 'cloudinit.config.cc_seed_random'] that have attributes ['handle']
+2016-09-09 08:40:43,053 - importer.py[DEBUG]: Failed at attempted import of 'cc_seed_random' due to: No module named cc_seed_random
+2016-09-09 08:40:43,054 - importer.py[DEBUG]: Found cc_seed_random with attributes ['handle'] in ['cloudinit.config.cc_seed_random']
+2016-09-09 08:40:43,054 - importer.py[DEBUG]: Looking for modules ['cc_bootcmd', 'cloudinit.config.cc_bootcmd'] that have attributes ['handle']
+2016-09-09 08:40:43,054 - importer.py[DEBUG]: Failed at attempted import of 'cc_bootcmd' due to: No module named cc_bootcmd
+2016-09-09 08:40:43,055 - importer.py[DEBUG]: Found cc_bootcmd with attributes ['handle'] in ['cloudinit.config.cc_bootcmd']
+2016-09-09 08:40:43,055 - importer.py[DEBUG]: Looking for modules ['cc_write_files', 'cloudinit.config.cc_write_files'] that have attributes ['handle']
+2016-09-09 08:40:43,055 - importer.py[DEBUG]: Failed at attempted import of 'cc_write_files' due to: No module named cc_write_files
+2016-09-09 08:40:43,055 - importer.py[DEBUG]: Found cc_write_files with attributes ['handle'] in ['cloudinit.config.cc_write_files']
+2016-09-09 08:40:43,056 - importer.py[DEBUG]: Looking for modules ['cc_growpart', 'cloudinit.config.cc_growpart'] that have attributes ['handle']
+2016-09-09 08:40:43,056 - importer.py[DEBUG]: Failed at attempted import of 'cc_growpart' due to: No module named cc_growpart
+2016-09-09 08:40:43,056 - importer.py[DEBUG]: Found cc_growpart with attributes ['handle'] in ['cloudinit.config.cc_growpart']
+2016-09-09 08:40:43,057 - importer.py[DEBUG]: Looking for modules ['cc_resizefs', 'cloudinit.config.cc_resizefs'] that have attributes ['handle']
+2016-09-09 08:40:43,057 - importer.py[DEBUG]: Failed at attempted import of 'cc_resizefs' due to: No module named cc_resizefs
+2016-09-09 08:40:43,057 - importer.py[DEBUG]: Found cc_resizefs with attributes ['handle'] in ['cloudinit.config.cc_resizefs']
+2016-09-09 08:40:43,057 - importer.py[DEBUG]: Looking for modules ['cc_set_hostname', 'cloudinit.config.cc_set_hostname'] that have attributes ['handle']
+2016-09-09 08:40:43,058 - importer.py[DEBUG]: Failed at attempted import of 'cc_set_hostname' due to: No module named cc_set_hostname
+2016-09-09 08:40:43,058 - importer.py[DEBUG]: Found cc_set_hostname with attributes ['handle'] in ['cloudinit.config.cc_set_hostname']
+2016-09-09 08:40:43,058 - importer.py[DEBUG]: Looking for modules ['cc_update_hostname', 'cloudinit.config.cc_update_hostname'] that have attributes ['handle']
+2016-09-09 08:40:43,058 - importer.py[DEBUG]: Failed at attempted import of 'cc_update_hostname' due to: No module named cc_update_hostname
+2016-09-09 08:40:43,059 - importer.py[DEBUG]: Found cc_update_hostname with attributes ['handle'] in ['cloudinit.config.cc_update_hostname']
+2016-09-09 08:40:43,059 - importer.py[DEBUG]: Looking for modules ['cc_update_etc_hosts', 'cloudinit.config.cc_update_etc_hosts'] that have attributes ['handle']
+2016-09-09 08:40:43,059 - importer.py[DEBUG]: Failed at attempted import of 'cc_update_etc_hosts' due to: No module named cc_update_etc_hosts
+2016-09-09 08:40:43,059 - importer.py[DEBUG]: Found cc_update_etc_hosts with attributes ['handle'] in ['cloudinit.config.cc_update_etc_hosts']
+2016-09-09 08:40:43,059 - importer.py[DEBUG]: Looking for modules ['cc_ca_certs', 'cloudinit.config.cc_ca_certs'] that have attributes ['handle']
+2016-09-09 08:40:43,060 - importer.py[DEBUG]: Failed at attempted import of 'cc_ca_certs' due to: No module named cc_ca_certs
+2016-09-09 08:40:43,060 - importer.py[DEBUG]: Found cc_ca_certs with attributes ['handle'] in ['cloudinit.config.cc_ca_certs']
+2016-09-09 08:40:43,060 - importer.py[DEBUG]: Looking for modules ['cc_rsyslog', 'cloudinit.config.cc_rsyslog'] that have attributes ['handle']
+2016-09-09 08:40:43,060 - importer.py[DEBUG]: Failed at attempted import of 'cc_rsyslog' due to: No module named cc_rsyslog
+2016-09-09 08:40:43,061 - importer.py[DEBUG]: Found cc_rsyslog with attributes ['handle'] in ['cloudinit.config.cc_rsyslog']
+2016-09-09 08:40:43,061 - importer.py[DEBUG]: Looking for modules ['cc_users_groups', 'cloudinit.config.cc_users_groups'] that have attributes ['handle']
+2016-09-09 08:40:43,061 - importer.py[DEBUG]: Failed at attempted import of 'cc_users_groups' due to: No module named cc_users_groups
+2016-09-09 08:40:43,062 - importer.py[DEBUG]: Found cc_users_groups with attributes ['handle'] in ['cloudinit.config.cc_users_groups']
+2016-09-09 08:40:43,062 - importer.py[DEBUG]: Looking for modules ['cc_ssh', 'cloudinit.config.cc_ssh'] that have attributes ['handle']
+2016-09-09 08:40:43,062 - importer.py[DEBUG]: Failed at attempted import of 'cc_ssh' due to: No module named cc_ssh
+2016-09-09 08:40:43,062 - importer.py[DEBUG]: Found cc_ssh with attributes ['handle'] in ['cloudinit.config.cc_ssh']
+2016-09-09 08:40:43,063 - importer.py[DEBUG]: Looking for modules ['ubuntu', 'cloudinit.distros.ubuntu'] that have attributes ['Distro']
+2016-09-09 08:40:43,063 - importer.py[DEBUG]: Failed at attempted import of 'ubuntu' due to: No module named ubuntu
+2016-09-09 08:40:43,063 - importer.py[DEBUG]: Found ubuntu with attributes ['Distro'] in ['cloudinit.distros.ubuntu']
+2016-09-09 08:40:43,063 - stages.py[DEBUG]: Using distro class <class 'cloudinit.distros.ubuntu.Distro'>
+2016-09-09 08:40:43,064 - helpers.py[DEBUG]: Running config-migrator using lock (<cloudinit.helpers.DummyLock object at 0x7f313734abd0>)
+2016-09-09 08:40:43,064 - cc_migrator.py[DEBUG]: Migrated 0 semaphore files to there canonicalized names
+2016-09-09 08:40:43,064 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_seed_random - wb: [420] 19 bytes
+2016-09-09 08:40:43,064 - helpers.py[DEBUG]: Running config-seed_random using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_seed_random'>)
+2016-09-09 08:40:43,064 - util.py[DEBUG]: Running command ['pollinate', '-q'] with allowed return codes [0] (shell=False, capture=False)
+2016-09-09 08:40:46,506 - helpers.py[DEBUG]: Running config-bootcmd using lock (<cloudinit.helpers.DummyLock object at 0x7f31372ef4d0>)
+2016-09-09 08:40:46,506 - cc_bootcmd.py[DEBUG]: Skipping module named bootcmd, no 'bootcmd' key in configuration
+2016-09-09 08:40:46,507 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_write_files - wb: [420] 19 bytes
+2016-09-09 08:40:46,507 - helpers.py[DEBUG]: Running config-write-files using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_write_files'>)
+2016-09-09 08:40:46,507 - cc_write_files.py[DEBUG]: Skipping module named write-files, no/empty 'write_files' key in configuration
+2016-09-09 08:40:46,507 - helpers.py[DEBUG]: Running config-growpart using lock (<cloudinit.helpers.DummyLock object at 0x7f31372ef3d0>)
+2016-09-09 08:40:46,507 - cc_growpart.py[DEBUG]: No 'growpart' entry in cfg.  Using default: {'ignore_growroot_disabled': False, 'mode': 'auto', 'devices': ['/']}
+2016-09-09 08:40:46,508 - util.py[DEBUG]: Running command ['growpart', '--help'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:46,514 - util.py[DEBUG]: Reading from /proc/629/mountinfo (quiet=False)
+2016-09-09 08:40:46,514 - util.py[DEBUG]: Read 1029 bytes from /proc/629/mountinfo
+2016-09-09 08:40:46,515 - util.py[DEBUG]: Reading from /sys/class/block/xvda1/partition (quiet=False)
+2016-09-09 08:40:46,515 - util.py[DEBUG]: Read 2 bytes from /sys/class/block/xvda1/partition
+2016-09-09 08:40:46,515 - util.py[DEBUG]: Reading from /sys/devices/vbd-768/block/xvda/dev (quiet=False)
+2016-09-09 08:40:46,515 - util.py[DEBUG]: Read 6 bytes from /sys/devices/vbd-768/block/xvda/dev
+2016-09-09 08:40:46,515 - util.py[DEBUG]: Running command ['growpart', '--dry-run', '/dev/xvda', '1'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:46,647 - util.py[DEBUG]: resize_devices took 0.133 seconds
+2016-09-09 08:40:46,647 - cc_growpart.py[DEBUG]: '/' NOCHANGE: no change necessary (/dev/xvda, 1)
+2016-09-09 08:40:46,647 - helpers.py[DEBUG]: Running config-resizefs using lock (<cloudinit.helpers.DummyLock object at 0x7f31372ef3d0>)
+2016-09-09 08:40:46,648 - util.py[DEBUG]: Reading from /proc/629/mountinfo (quiet=False)
+2016-09-09 08:40:46,648 - util.py[DEBUG]: Read 1029 bytes from /proc/629/mountinfo
+2016-09-09 08:40:46,648 - cc_resizefs.py[DEBUG]: resize_info: dev=/dev/xvda1 mnt_point=/ path=/
+2016-09-09 08:40:46,648 - util.py[DEBUG]: Running command ['running-in-container'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:46,713 - util.py[DEBUG]: Running command ['lxc-is-container'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:46,718 - util.py[DEBUG]: Reading from /proc/1/environ (quiet=False)
+2016-09-09 08:40:46,718 - util.py[DEBUG]: Read 142 bytes from /proc/1/environ
+2016-09-09 08:40:46,718 - util.py[DEBUG]: Reading from /proc/self/status (quiet=False)
+2016-09-09 08:40:46,718 - util.py[DEBUG]: Read 781 bytes from /proc/self/status
+2016-09-09 08:40:46,719 - cc_resizefs.py[DEBUG]: Resizing / (ext4) using resize2fs /dev/xvda1
+2016-09-09 08:40:46,719 - util.py[DEBUG]: Running command ('resize2fs', '/dev/xvda1') with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:46,766 - util.py[DEBUG]: Resizing took 0.047 seconds
+2016-09-09 08:40:46,766 - cc_resizefs.py[DEBUG]: Resized root filesystem (type=ext4, val=True)
+2016-09-09 08:40:46,766 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_set_hostname - wb: [420] 19 bytes
+2016-09-09 08:40:46,767 - helpers.py[DEBUG]: Running config-set_hostname using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_set_hostname'>)
+2016-09-09 08:40:46,767 - cc_set_hostname.py[DEBUG]: Setting the hostname to ip-172-31-23-55.us-west-2.compute.internal (ip-172-31-23-55)
+2016-09-09 08:40:46,767 - util.py[DEBUG]: Reading from /etc/hostname (quiet=False)
+2016-09-09 08:40:46,767 - util.py[DEBUG]: Read 7 bytes from /etc/hostname
+2016-09-09 08:40:46,767 - util.py[DEBUG]: Writing to /etc/hostname - wb: [420] 16 bytes
+2016-09-09 08:40:46,768 - __init__.py[DEBUG]: Non-persistently setting the system hostname to ip-172-31-23-55
+2016-09-09 08:40:46,768 - util.py[DEBUG]: Running command ['hostname', 'ip-172-31-23-55'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:46,770 - helpers.py[DEBUG]: Running config-update_hostname using lock (<cloudinit.helpers.DummyLock object at 0x7f31372efc10>)
+2016-09-09 08:40:46,770 - cc_update_hostname.py[DEBUG]: Updating hostname to ip-172-31-23-55.us-west-2.compute.internal (ip-172-31-23-55)
+2016-09-09 08:40:46,770 - util.py[DEBUG]: Reading from /etc/hostname (quiet=False)
+2016-09-09 08:40:46,770 - util.py[DEBUG]: Read 16 bytes from /etc/hostname
+2016-09-09 08:40:46,770 - __init__.py[DEBUG]: Attempting to update hostname to ip-172-31-23-55 in 1 files
+2016-09-09 08:40:46,770 - util.py[DEBUG]: Reading from /var/lib/cloud/data/previous-hostname (quiet=False)
+2016-09-09 08:40:46,770 - util.py[DEBUG]: Writing to /var/lib/cloud/data/previous-hostname - wb: [420] 16 bytes
+2016-09-09 08:40:46,771 - helpers.py[DEBUG]: Running config-update_etc_hosts using lock (<cloudinit.helpers.DummyLock object at 0x7f31372efe10>)
+2016-09-09 08:40:46,771 - cc_update_etc_hosts.py[DEBUG]: Configuration option 'manage_etc_hosts' is not set, not managing /etc/hosts in module update_etc_hosts
+2016-09-09 08:40:46,771 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_ca_certs - wb: [420] 19 bytes
+2016-09-09 08:40:46,772 - helpers.py[DEBUG]: Running config-ca-certs using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_ca_certs'>)
+2016-09-09 08:40:46,772 - cc_ca_certs.py[DEBUG]: Skipping module named ca-certs, no 'ca-certs' key in configuration
+2016-09-09 08:40:46,772 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_rsyslog - wb: [420] 19 bytes
+2016-09-09 08:40:46,772 - helpers.py[DEBUG]: Running config-rsyslog using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_rsyslog'>)
+2016-09-09 08:40:46,772 - cc_rsyslog.py[DEBUG]: Skipping module named rsyslog, no 'rsyslog' key in configuration
+2016-09-09 08:40:46,772 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_users_groups - wb: [420] 19 bytes
+2016-09-09 08:40:46,773 - helpers.py[DEBUG]: Running config-users-groups using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_users_groups'>)
+2016-09-09 08:40:46,773 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:46,773 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:46,773 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:46,773 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:46,773 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:46,773 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:46,773 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:46,773 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:46,774 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:46,774 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:46,774 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:46,774 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:46,775 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:46,775 - __init__.py[DEBUG]: Adding user ubuntu
+2016-09-09 08:40:46,775 - util.py[DEBUG]: Running hidden command to protect sensitive input/output logstring: ['useradd', 'ubuntu', '--shell', '/bin/bash', '--comment', 'Ubuntu', '--groups', 'adm,audio,cdrom,dialout,dip,floppy,netdev,plugdev,sudo,video', '-m']
+2016-09-09 08:40:47,013 - util.py[DEBUG]: Running command ['passwd', '-l', 'ubuntu'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:47,026 - util.py[DEBUG]: Reading from /etc/sudoers (quiet=False)
+2016-09-09 08:40:47,027 - util.py[DEBUG]: Read 745 bytes from /etc/sudoers
+2016-09-09 08:40:47,028 - util.py[DEBUG]: Writing to /etc/sudoers.d/90-cloud-init-users - wb: [288] 123 bytes
+2016-09-09 08:40:47,029 - util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_ssh - wb: [420] 19 bytes
+2016-09-09 08:40:47,029 - helpers.py[DEBUG]: Running config-ssh using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_ssh'>)
+2016-09-09 08:40:47,030 - util.py[DEBUG]: Running command ['ssh-keygen', '-t', 'rsa', '-N', '', '-f', '/etc/ssh/ssh_host_rsa_key'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:47,194 - util.py[DEBUG]: Running command ['ssh-keygen', '-t', 'dsa', '-N', '', '-f', '/etc/ssh/ssh_host_dsa_key'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:47,272 - util.py[DEBUG]: Running command ['ssh-keygen', '-t', 'ecdsa', '-N', '', '-f', '/etc/ssh/ssh_host_ecdsa_key'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:47,275 - util.py[DEBUG]: Running command ['ssh-keygen', '-t', 'ed25519', '-N', '', '-f', '/etc/ssh/ssh_host_ed25519_key'] with allowed return codes [0] (shell=False, capture=True)
+2016-09-09 08:40:47,280 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:47,280 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:47,280 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:47,280 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:47,280 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:47,280 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:47,280 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:47,280 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:47,281 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:47,281 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+2016-09-09 08:40:47,281 - importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+2016-09-09 08:40:47,281 - __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+2016-09-09 08:40:47,281 - __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+2016-09-09 08:40:47,282 - util.py[DEBUG]: Changing the ownership of /home/ubuntu/.ssh to 1000:1000
+2016-09-09 08:40:47,282 - util.py[DEBUG]: Reading from /etc/ssh/sshd_config (quiet=False)
+2016-09-09 08:40:47,283 - util.py[DEBUG]: Read 2539 bytes from /etc/ssh/sshd_config
+2016-09-09 08:40:47,283 - util.py[DEBUG]: Writing to /home/ubuntu/.ssh/authorized_keys - wb: [384] 400 bytes
+2016-09-09 08:40:47,284 - util.py[DEBUG]: Changing the ownership of /home/ubuntu/.ssh/authorized_keys to 1000:1000
+2016-09-09 08:40:47,284 - util.py[DEBUG]: Changing the ownership of /root/.ssh to 0:0
+2016-09-09 08:40:47,284 - util.py[DEBUG]: Reading from /etc/ssh/sshd_config (quiet=False)
+2016-09-09 08:40:47,284 - util.py[DEBUG]: Read 2539 bytes from /etc/ssh/sshd_config
+2016-09-09 08:40:47,285 - util.py[DEBUG]: Writing to /root/.ssh/authorized_keys - wb: [384] 555 bytes
+2016-09-09 08:40:47,285 - util.py[DEBUG]: Changing the ownership of /root/.ssh/authorized_keys to 0:0
+2016-09-09 08:40:47,285 - cloud-init[DEBUG]: Ran 13 modules with 0 failures
+2016-09-09 08:40:47,285 - util.py[DEBUG]: Reading from /proc/uptime (quiet=False)
+2016-09-09 08:40:47,285 - util.py[DEBUG]: Read 11 bytes from /proc/uptime
+2016-09-09 08:40:47,286 - util.py[DEBUG]: cloud-init mode 'init' took 4.669 seconds (4.67)
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Cloud-init v. 0.7.5 running 'modules:config' at Fri, 09 Sep 2016 08:40:48 +0000. Up 18.80 seconds.
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_emit_upstart', 'cloudinit.config.cc_emit_upstart'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_emit_upstart' due to: No module named cc_emit_upstart
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_emit_upstart with attributes ['handle'] in ['cloudinit.config.cc_emit_upstart']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_disk_setup', 'cloudinit.config.cc_disk_setup'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_disk_setup' due to: No module named cc_disk_setup
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_disk_setup with attributes ['handle'] in ['cloudinit.config.cc_disk_setup']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_mounts', 'cloudinit.config.cc_mounts'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_mounts' due to: No module named cc_mounts
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_mounts with attributes ['handle'] in ['cloudinit.config.cc_mounts']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_ssh_import_id', 'cloudinit.config.cc_ssh_import_id'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_ssh_import_id' due to: No module named cc_ssh_import_id
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_ssh_import_id with attributes ['handle'] in ['cloudinit.config.cc_ssh_import_id']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_locale', 'cloudinit.config.cc_locale'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_locale' due to: No module named cc_locale
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_locale with attributes ['handle'] in ['cloudinit.config.cc_locale']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_set_passwords', 'cloudinit.config.cc_set_passwords'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_set_passwords' due to: No module named cc_set_passwords
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_set_passwords with attributes ['handle'] in ['cloudinit.config.cc_set_passwords']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_grub_dpkg', 'cloudinit.config.cc_grub_dpkg'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_grub_dpkg' due to: No module named cc_grub_dpkg
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_grub_dpkg with attributes ['handle'] in ['cloudinit.config.cc_grub_dpkg']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_apt_pipelining', 'cloudinit.config.cc_apt_pipelining'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_apt_pipelining' due to: No module named cc_apt_pipelining
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_apt_pipelining with attributes ['handle'] in ['cloudinit.config.cc_apt_pipelining']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_apt_configure', 'cloudinit.config.cc_apt_configure'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_apt_configure' due to: No module named cc_apt_configure
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_apt_configure with attributes ['handle'] in ['cloudinit.config.cc_apt_configure']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_package_update_upgrade_install', 'cloudinit.config.cc_package_update_upgrade_install'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_package_update_upgrade_install' due to: No module named cc_package_update_upgrade_install
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_package_update_upgrade_install with attributes ['handle'] in ['cloudinit.config.cc_package_update_upgrade_install']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_landscape', 'cloudinit.config.cc_landscape'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_landscape' due to: No module named cc_landscape
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_landscape with attributes ['handle'] in ['cloudinit.config.cc_landscape']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_timezone', 'cloudinit.config.cc_timezone'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_timezone' due to: No module named cc_timezone
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_timezone with attributes ['handle'] in ['cloudinit.config.cc_timezone']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_puppet', 'cloudinit.config.cc_puppet'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_puppet' due to: No module named cc_puppet
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_puppet with attributes ['handle'] in ['cloudinit.config.cc_puppet']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_chef', 'cloudinit.config.cc_chef'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_chef' due to: No module named cc_chef
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_chef with attributes ['handle'] in ['cloudinit.config.cc_chef']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_salt_minion', 'cloudinit.config.cc_salt_minion'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_salt_minion' due to: No module named cc_salt_minion
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_salt_minion with attributes ['handle'] in ['cloudinit.config.cc_salt_minion']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_mcollective', 'cloudinit.config.cc_mcollective'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_mcollective' due to: No module named cc_mcollective
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_mcollective with attributes ['handle'] in ['cloudinit.config.cc_mcollective']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_disable_ec2_metadata', 'cloudinit.config.cc_disable_ec2_metadata'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_disable_ec2_metadata' due to: No module named cc_disable_ec2_metadata
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_disable_ec2_metadata with attributes ['handle'] in ['cloudinit.config.cc_disable_ec2_metadata']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_runcmd', 'cloudinit.config.cc_runcmd'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_runcmd' due to: No module named cc_runcmd
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_runcmd with attributes ['handle'] in ['cloudinit.config.cc_runcmd']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_byobu', 'cloudinit.config.cc_byobu'] that have attributes ['handle']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_byobu' due to: No module named cc_byobu
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_byobu with attributes ['handle'] in ['cloudinit.config.cc_byobu']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['ubuntu', 'cloudinit.distros.ubuntu'] that have attributes ['Distro']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'ubuntu' due to: No module named ubuntu
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found ubuntu with attributes ['Distro'] in ['cloudinit.distros.ubuntu']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] stages.py[DEBUG]: Using distro class <class 'cloudinit.distros.ubuntu.Distro'>
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-emit_upstart using lock (<cloudinit.helpers.DummyLock object at 0x7fa94ba467d0>)
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Running command ['initctl', 'emit', 'cloud-config', 'CLOUD_CFG=/var/lib/cloud/instance/cloud-config.txt'] with allowed return codes [0] (shell=False, capture=True)
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_disk_setup - wb: [420] 19 bytes
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-disk_setup using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_disk_setup'>)
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_mounts - wb: [420] 19 bytes
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-mounts using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_mounts'>)
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] cc_mounts.py[DEBUG]: Attempting to determine the real name of ephemeral0
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] DataSourceEc2.py[DEBUG]: Unable to convert ephemeral0 to a device
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] cc_mounts.py[DEBUG]: Ignoring nonexistant default named mount ephemeral0
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] cc_mounts.py[DEBUG]: Attempting to determine the real name of swap
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] DataSourceEc2.py[DEBUG]: Unable to convert swap to a device
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] cc_mounts.py[DEBUG]: Ignoring nonexistant default named mount swap
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] cc_mounts.py[DEBUG]: No modifications to fstab needed.
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_ssh_import_id - wb: [420] 19 bytes
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-ssh-import-id using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_ssh_import_id'>)
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_locale - wb: [420] 19 bytes
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-locale using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_locale'>)
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] cc_locale.py[DEBUG]: Setting locale to en_US.UTF-8
+Sep  9 08:40:48 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Running command ['locale-gen', 'en_US.UTF-8'] with allowed return codes [0] (shell=False, capture=False)
+Sep  9 08:40:49 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Running command ['update-locale', 'en_US.UTF-8'] with allowed return codes [0] (shell=False, capture=False)
+Sep  9 08:40:50 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /etc/default/locale - wb: [420] 87 bytes
+Sep  9 08:40:50 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_set_passwords - wb: [420] 19 bytes
+Sep  9 08:40:50 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-set-passwords using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_set_passwords'>)
+Sep  9 08:40:50 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_grub_dpkg - wb: [420] 19 bytes
+Sep  9 08:40:50 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-grub-dpkg using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_grub_dpkg'>)
+Sep  9 08:40:50 ip-172-31-23-55 [CLOUDINIT] cc_grub_dpkg.py[DEBUG]: Setting grub debconf-set-selections with '/dev/xvda','false'
+Sep  9 08:40:50 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Running command ['debconf-set-selections'] with allowed return codes [0] (shell=False, capture=True)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_apt_pipelining - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-apt-pipelining using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_apt_pipelining'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /etc/apt/apt.conf.d/90cloud-init-pipelining - wb: [420] 80 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_apt_pipelining.py[DEBUG]: Wrote /etc/apt/apt.conf.d/90cloud-init-pipelining with apt pipeline depth setting 0
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_apt_configure - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-apt-configure using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_apt_configure'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Running command ['lsb_release', '-cs'] with allowed return codes [0] (shell=False, capture=True)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Running command ['dpkg', '--print-architecture'] with allowed return codes [0] (shell=False, capture=True)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: filtered distro mirror info: {'security': 'http://security.ubuntu.com/ubuntu', 'primary': 'http://us-west-2.ec2.archive.ubuntu.com/ubuntu/'}
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_apt_configure.py[DEBUG]: Mirror info: {'security': 'http://security.ubuntu.com/ubuntu', 'primary': 'http://us-west-2.ec2.archive.ubuntu.com/ubuntu/', 'mirror': 'http://us-west-2.ec2.archive.ubuntu.com/ubuntu/'}
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Reading from /etc/cloud/templates/sources.list.ubuntu.tmpl (quiet=False)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Read 2800 bytes from /etc/cloud/templates/sources.list.ubuntu.tmpl
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /etc/apt/sources.list - wb: [420] 3407 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_main_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_main_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_restricted_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_restricted_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_multiverse_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_multiverse_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_universe_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_universe_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_universe_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_universe_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_universe_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_universe_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_main_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_main_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_InRelease to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_InRelease
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_restricted_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_restricted_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_restricted_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_restricted_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_universe_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_universe_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_main_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_main_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_main_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_main_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_main_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_main_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_Release.gpg to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_Release.gpg
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_multiverse_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_multiverse_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_main_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_main_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_multiverse_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_multiverse_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-backports_InRelease to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-backports_InRelease
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_multiverse_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_multiverse_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_Release to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_Release
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_restricted_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_restricted_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_universe_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_universe_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_restricted_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_restricted_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_multiverse_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_multiverse_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_restricted_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_restricted_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_universe_i18n_Translation-en to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty-updates_universe_i18n_Translation-en
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Renaming /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty_multiverse_binary-amd64_Packages to /var/lib/apt/lists/us-west-2.ec2.archive.ubuntu.com_ubuntu_dists_trusty_multiverse_binary-amd64_Packages
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_package_update_upgrade_install - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-package-update-upgrade-install using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_package_update_upgrade_install'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_landscape - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-landscape using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_landscape'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_timezone - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-timezone using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_timezone'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_timezone.py[DEBUG]: Skipping module named timezone, no 'timezone' specified
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_puppet - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-puppet using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_puppet'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_puppet.py[DEBUG]: Skipping module named puppet, no 'puppet' configuration found
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_chef - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-chef using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_chef'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_chef.py[DEBUG]: Skipping module named chef, no 'chef' key in configuration
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_salt_minion - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-salt-minion using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_salt_minion'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_salt_minion.py[DEBUG]: Skipping module named salt-minion, no 'salt_minion' key in configuration
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_mcollective - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-mcollective using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_mcollective'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_mcollective.py[DEBUG]: Skipping module named mcollective, no 'mcollective' key in configuration
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-disable-ec2-metadata using lock (<cloudinit.helpers.DummyLock object at 0x7fa94ba58bd0>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_disable_ec2_metadata.py[DEBUG]: Skipping module named disable-ec2-metadata, disabling the ec2 route not enabled
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_runcmd - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-runcmd using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_runcmd'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_runcmd.py[DEBUG]: Skipping module named runcmd, no 'runcmd' key in configuration
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_byobu - wb: [420] 19 bytes
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-byobu using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_byobu'>)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cc_byobu.py[DEBUG]: Skipping module named byobu, no 'byobu' values found
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] cloud-init[DEBUG]: Ran 19 modules with 0 failures
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Reading from /proc/uptime (quiet=False)
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Read 11 bytes from /proc/uptime
+Sep  9 08:40:51 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: cloud-init mode 'modules' took 3.759 seconds (3.76)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Cloud-init v. 0.7.5 running 'modules:final' at Fri, 09 Sep 2016 08:40:52 +0000. Up 22.71 seconds.
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_rightscale_userdata', 'cloudinit.config.cc_rightscale_userdata'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_rightscale_userdata' due to: No module named cc_rightscale_userdata
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_rightscale_userdata with attributes ['handle'] in ['cloudinit.config.cc_rightscale_userdata']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_scripts_vendor', 'cloudinit.config.cc_scripts_vendor'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_scripts_vendor' due to: No module named cc_scripts_vendor
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_scripts_vendor with attributes ['handle'] in ['cloudinit.config.cc_scripts_vendor']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_scripts_per_once', 'cloudinit.config.cc_scripts_per_once'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_scripts_per_once' due to: No module named cc_scripts_per_once
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_scripts_per_once with attributes ['handle'] in ['cloudinit.config.cc_scripts_per_once']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_scripts_per_boot', 'cloudinit.config.cc_scripts_per_boot'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_scripts_per_boot' due to: No module named cc_scripts_per_boot
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_scripts_per_boot with attributes ['handle'] in ['cloudinit.config.cc_scripts_per_boot']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_scripts_per_instance', 'cloudinit.config.cc_scripts_per_instance'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_scripts_per_instance' due to: No module named cc_scripts_per_instance
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_scripts_per_instance with attributes ['handle'] in ['cloudinit.config.cc_scripts_per_instance']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_scripts_user', 'cloudinit.config.cc_scripts_user'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_scripts_user' due to: No module named cc_scripts_user
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_scripts_user with attributes ['handle'] in ['cloudinit.config.cc_scripts_user']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_ssh_authkey_fingerprints', 'cloudinit.config.cc_ssh_authkey_fingerprints'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_ssh_authkey_fingerprints' due to: No module named cc_ssh_authkey_fingerprints
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_ssh_authkey_fingerprints with attributes ['handle'] in ['cloudinit.config.cc_ssh_authkey_fingerprints']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_keys_to_console', 'cloudinit.config.cc_keys_to_console'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_keys_to_console' due to: No module named cc_keys_to_console
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_keys_to_console with attributes ['handle'] in ['cloudinit.config.cc_keys_to_console']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_phone_home', 'cloudinit.config.cc_phone_home'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_phone_home' due to: No module named cc_phone_home
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_phone_home with attributes ['handle'] in ['cloudinit.config.cc_phone_home']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_final_message', 'cloudinit.config.cc_final_message'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_final_message' due to: No module named cc_final_message
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_final_message with attributes ['handle'] in ['cloudinit.config.cc_final_message']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cc_power_state_change', 'cloudinit.config.cc_power_state_change'] that have attributes ['handle']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'cc_power_state_change' due to: No module named cc_power_state_change
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found cc_power_state_change with attributes ['handle'] in ['cloudinit.config.cc_power_state_change']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['ubuntu', 'cloudinit.distros.ubuntu'] that have attributes ['Distro']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Failed at attempted import of 'ubuntu' due to: No module named ubuntu
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found ubuntu with attributes ['Distro'] in ['cloudinit.distros.ubuntu']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] stages.py[DEBUG]: Using distro class <class 'cloudinit.distros.ubuntu.Distro'>
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_rightscale_userdata - wb: [420] 19 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-rightscale_userdata using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_rightscale_userdata'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] cc_rightscale_userdata.py[DEBUG]: Failed to get raw userdata in module rightscale_userdata
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_scripts_vendor - wb: [420] 19 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-scripts-vendor using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_scripts_vendor'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/sem/config_scripts_per_once.once - wb: [420] 19 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-scripts-per-once using lock (<FileLock using file '/var/lib/cloud/sem/config_scripts_per_once.once'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-scripts-per-boot using lock (<cloudinit.helpers.DummyLock object at 0x7fba731d8110>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_scripts_per_instance - wb: [420] 19 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-scripts-per-instance using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_scripts_per_instance'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_scripts_user - wb: [420] 19 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-scripts-user using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_scripts_user'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_ssh_authkey_fingerprints - wb: [420] 19 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-ssh-authkey-fingerprints using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_ssh_authkey_fingerprints'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_list'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_list with attributes ['Merger'] in ['cloudinit.mergers.m_list']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_dict'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_dict with attributes ['Merger'] in ['cloudinit.mergers.m_dict']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Looking for modules ['cloudinit.mergers.m_str'] that have attributes ['Merger']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] importer.py[DEBUG]: Found m_str with attributes ['Merger'] in ['cloudinit.mergers.m_str']
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging 'dict' into 'dict' using method '_handle_unknown' of 'LookupMerger: (3)'
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] __init__.py[DEBUG]: Merging using located merger 'DictMerger: (method=no_replace,recurse_str=False,recurse_dict=True,recurse_array=False,allow_delete=False)' since it had method '_on_dict'
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Reading from /etc/ssh/sshd_config (quiet=False)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Read 2539 bytes from /etc/ssh/sshd_config
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Reading from /home/ubuntu/.ssh/authorized_keys (quiet=False)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Read 400 bytes from /home/ubuntu/.ssh/authorized_keys
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_keys_to_console - wb: [420] 20 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-keys-to-console using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_keys_to_console'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Running command ['/usr/lib/cloud-init/write-ssh-key-fingerprints', '', 'ssh-dss'] with allowed return codes [0] (shell=False, capture=True)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_phone_home - wb: [420] 20 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-phone-home using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_phone_home'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] cc_phone_home.py[DEBUG]: Skipping module named phone-home, no 'phone_home' configuration found
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-final-message using lock (<cloudinit.helpers.DummyLock object at 0x7fba731d8a90>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Reading from /proc/uptime (quiet=False)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Read 11 bytes from /proc/uptime
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Cloud-init v. 0.7.5 finished at Fri, 09 Sep 2016 08:40:52 +0000. Datasource DataSourceEc2.  Up 22.86 seconds
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instance/boot-finished - wb: [420] 51 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Writing to /var/lib/cloud/instances/i-016d168b98949600e/sem/config_power_state_change - wb: [420] 19 bytes
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] helpers.py[DEBUG]: Running config-power-state-change using lock (<FileLock using file '/var/lib/cloud/instances/i-016d168b98949600e/sem/config_power_state_change'>)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] cc_power_state_change.py[DEBUG]: no power_state provided. doing nothing
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] cloud-init[DEBUG]: Ran 11 modules with 0 failures
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Creating symbolic link from '/run/cloud-init/result.json' => '../../var/lib/cloud/data/result.json'
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Reading from /proc/uptime (quiet=False)
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: Read 11 bytes from /proc/uptime
+Sep  9 08:40:52 ip-172-31-23-55 [CLOUDINIT] util.py[DEBUG]: cloud-init mode 'modules' took 0.167 seconds (0.16)

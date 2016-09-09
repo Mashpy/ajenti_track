@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/terminal/content/js/term.coffee.c.js

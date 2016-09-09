@@ -1,0 +1,1 @@
+/usr/share/pyshared/catcher/collector.py

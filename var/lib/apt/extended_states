@@ -1,0 +1,180 @@
+Package: grub-gfxpayload-lists
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: os-prober
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-image-3.13.0-92-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libfreetype6
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-3.13.0-92-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-virtual
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub2-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-3.13.0-92
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub-pc-bin
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub-pc
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liberror-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: git-man
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-dbus
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-support
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liblcms2-2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjpeg-turbo8
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwebpmux1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-passlib
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-pil
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-greenlet
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwebp5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libtiff5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-ldap
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-imaging
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-dbus-dev
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-psutil
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gi
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gevent-websocket
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-lxml
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gevent-socketio
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-catcher
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apt-show-versions
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libapt-pkg-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libxslt1.1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-markupsafe
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-lockfile
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjbig0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gevent
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-exconsole
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-daemon
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-mako
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-reconfigure
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjpeg8
+Architecture: amd64
+Auto-Installed: 1
+

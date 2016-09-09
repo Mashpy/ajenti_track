@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/locales/vi_VN/LC_MESSAGES/ajenti.mo

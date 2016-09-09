@@ -1,0 +1,11 @@
+/etc/vmware-tools/scripts/vmware/network
+/etc/vmware-tools/resume-vm-default
+/etc/vmware-tools/vm-support
+/etc/vmware-tools/poweron-vm-default
+/etc/vmware-tools/tools.conf
+/etc/vmware-tools/suspend-vm-default
+/etc/vmware-tools/poweroff-vm-default
+/etc/vmware-tools/statechange.subr
+/etc/init.d/open-vm-tools
+/etc/xdg/autostart/vmware-user.desktop
+/etc/pam.d/vmtoolsd

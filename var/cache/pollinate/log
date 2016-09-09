@@ -1,0 +1,4 @@
+Sep  9 08:40:43 ubuntu pollinate[679]: client sent challenge to [https://entropy.ubuntu.com/]
+Sep  9 08:40:46 ubuntu pollinate[719]: client verified challenge/response with [https://entropy.ubuntu.com/]
+Sep  9 08:40:46 ubuntu pollinate[729]: client hashed response from [https://entropy.ubuntu.com/]
+Sep  9 08:40:46 ubuntu pollinate[731]: client successfully seeded [/dev/urandom]

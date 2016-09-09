@@ -1,0 +1,1 @@
+/usr/share/pyshared/catcher/formatters/__init__.py

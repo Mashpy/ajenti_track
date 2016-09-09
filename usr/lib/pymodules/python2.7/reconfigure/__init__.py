@@ -1,0 +1,1 @@
+/usr/share/pyshared/reconfigure/__init__.py

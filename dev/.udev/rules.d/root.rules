@@ -1,0 +1,1 @@
+SUBSYSTEM=="block", ENV{MAJOR}=="202", ENV{MINOR}=="1", SYMLINK+="root"

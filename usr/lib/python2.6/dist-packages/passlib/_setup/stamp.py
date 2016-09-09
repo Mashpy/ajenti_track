@@ -1,0 +1,1 @@
+../../../../../share/pyshared/passlib/_setup/stamp.py

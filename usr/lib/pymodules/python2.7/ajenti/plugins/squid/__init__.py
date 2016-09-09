@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/squid/__init__.py

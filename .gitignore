@@ -1,0 +1,5 @@
+initrd.img
+proc/
+sys/
+tmp/
+vmlinuz

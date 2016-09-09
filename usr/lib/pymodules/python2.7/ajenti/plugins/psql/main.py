@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/psql/main.py

@@ -1,0 +1,1 @@
+../../../../share/pyshared/passlib-1.5.3.egg-info/dependency_links.txt

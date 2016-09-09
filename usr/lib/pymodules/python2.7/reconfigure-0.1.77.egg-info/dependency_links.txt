@@ -1,0 +1,1 @@
+/usr/share/pyshared/reconfigure-0.1.77.egg-info/dependency_links.txt

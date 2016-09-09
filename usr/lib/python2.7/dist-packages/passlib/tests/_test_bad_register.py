@@ -1,0 +1,1 @@
+../../../../../share/pyshared/passlib/tests/_test_bad_register.py

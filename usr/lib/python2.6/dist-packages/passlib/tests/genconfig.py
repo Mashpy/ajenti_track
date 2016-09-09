@@ -1,0 +1,1 @@
+../../../../../share/pyshared/passlib/tests/genconfig.py

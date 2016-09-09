@@ -1,0 +1,1 @@
+../../../../../share/pyshared/passlib/tests/__main__.py

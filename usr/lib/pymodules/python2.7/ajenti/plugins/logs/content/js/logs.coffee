@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/logs/content/js/logs.coffee

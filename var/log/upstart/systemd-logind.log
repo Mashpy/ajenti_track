@@ -1,0 +1,7 @@
+/proc/self/fd/9: 4: ulimit: error setting limit (Invalid argument)
+Watching system buttons on /dev/input/event0 (Power Button)
+Watching system buttons on /dev/input/event1 (Sleep Button)
+New seat seat0.
+New session 1 of user ubuntu.
+Removed session 1.
+New session 2 of user ubuntu.

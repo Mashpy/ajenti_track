@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/power/__init__.py

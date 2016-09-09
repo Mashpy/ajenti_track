@@ -1,0 +1,116 @@
+Sep  9 08:40:48 ip-172-31-23-55 sshd[1072]: Server listening on 0.0.0.0 port 22.
+Sep  9 08:40:48 ip-172-31-23-55 sshd[1072]: Server listening on :: port 22.
+Sep  9 09:17:01 ip-172-31-23-55 CRON[1290]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 09:17:01 ip-172-31-23-55 CRON[1290]: pam_unix(cron:session): session closed for user root
+Sep  9 10:17:01 ip-172-31-23-55 CRON[1315]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 10:17:01 ip-172-31-23-55 CRON[1315]: pam_unix(cron:session): session closed for user root
+Sep  9 10:21:23 ip-172-31-23-55 sshd[1329]: Did not receive identification string from 65.98.59.26
+Sep  9 11:17:01 ip-172-31-23-55 CRON[1352]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 11:17:01 ip-172-31-23-55 CRON[1352]: pam_unix(cron:session): session closed for user root
+Sep  9 11:23:30 ip-172-31-23-55 sshd[1355]: reverse mapping checking getaddrinfo for 203-202-242-130.aamranetworks.com [203.202.242.130] failed - POSSIBLE BREAK-IN ATTEMPT!
+Sep  9 11:23:31 ip-172-31-23-55 sshd[1355]: Accepted publickey for ubuntu from 203.202.242.130 port 36682 ssh2: RSA 73:e7:e7:84:a9:41:9a:55:01:7b:fe:88:8b:1d:77:e4
+Sep  9 11:23:31 ip-172-31-23-55 sshd[1355]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Sep  9 11:28:27 ip-172-31-23-55 sshd[1457]: Received disconnect from 97.79.236.69: 11: disconnected by user [preauth]
+Sep  9 12:17:01 ip-172-31-23-55 CRON[1481]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 12:17:01 ip-172-31-23-55 CRON[1481]: pam_unix(cron:session): session closed for user root
+Sep  9 12:31:24 ip-172-31-23-55 sshd[1438]: Received disconnect from 203.202.242.130: 11: disconnected by user
+Sep  9 12:31:24 ip-172-31-23-55 sshd[1355]: pam_unix(sshd:session): session closed for user ubuntu
+Sep  9 13:08:32 ip-172-31-23-55 sshd[1510]: Did not receive identification string from 202.170.80.40
+Sep  9 13:17:01 ip-172-31-23-55 CRON[1511]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 13:17:01 ip-172-31-23-55 CRON[1511]: pam_unix(cron:session): session closed for user root
+Sep  9 14:17:01 ip-172-31-23-55 CRON[1547]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 14:17:01 ip-172-31-23-55 CRON[1547]: pam_unix(cron:session): session closed for user root
+Sep  9 14:38:13 ip-172-31-23-55 sshd[1561]: Received disconnect from 97.79.236.69: 11: disconnected by user [preauth]
+Sep  9 15:17:01 ip-172-31-23-55 CRON[1574]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 15:17:01 ip-172-31-23-55 CRON[1574]: pam_unix(cron:session): session closed for user root
+Sep  9 16:06:31 ip-172-31-23-55 sshd[1599]: Invalid user admin from 185.110.132.201
+Sep  9 16:06:31 ip-172-31-23-55 sshd[1599]: input_userauth_request: invalid user admin [preauth]
+Sep  9 16:06:31 ip-172-31-23-55 sshd[1599]: Received disconnect from 185.110.132.201: 11: Bye Bye [preauth]
+Sep  9 16:17:01 ip-172-31-23-55 CRON[1601]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 16:17:01 ip-172-31-23-55 CRON[1601]: pam_unix(cron:session): session closed for user root
+Sep  9 16:42:18 ip-172-31-23-55 sshd[1615]: Invalid user support from 185.110.132.201
+Sep  9 16:42:18 ip-172-31-23-55 sshd[1615]: input_userauth_request: invalid user support [preauth]
+Sep  9 16:42:18 ip-172-31-23-55 sshd[1615]: Received disconnect from 185.110.132.201: 11: Bye Bye [preauth]
+Sep  9 17:00:24 ip-172-31-23-55 sshd[1628]: Did not receive identification string from 125.212.234.99
+Sep  9 17:00:28 ip-172-31-23-55 sshd[1629]: Invalid user user from 125.212.234.99
+Sep  9 17:00:28 ip-172-31-23-55 sshd[1629]: input_userauth_request: invalid user user [preauth]
+Sep  9 17:00:28 ip-172-31-23-55 sshd[1629]: error: Received disconnect from 125.212.234.99: 3: com.jcraft.jsch.JSchException: Auth fail [preauth]
+Sep  9 17:17:01 ip-172-31-23-55 CRON[1642]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  9 17:17:01 ip-172-31-23-55 CRON[1642]: pam_unix(cron:session): session closed for user root
+Sep  9 17:17:22 ip-172-31-23-55 sshd[1645]: Received disconnect from 185.110.132.201: 11: Bye Bye [preauth]
+Sep  9 17:23:35 ip-172-31-23-55 sshd[1647]: Accepted publickey for ubuntu from 103.199.152.94 port 57925 ssh2: RSA 73:e7:e7:84:a9:41:9a:55:01:7b:fe:88:8b:1d:77:e4
+Sep  9 17:23:35 ip-172-31-23-55 sshd[1647]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Sep  9 17:24:25 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/nano .gitignore
+Sep  9 17:24:25 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:24:39 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:24:53 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt-get install git
+Sep  9 17:24:53 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:24:58 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:25:10 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git add --all
+Sep  9 17:25:10 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:25:10 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:25:18 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git init
+Sep  9 17:25:18 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:25:18 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:25:21 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git add --all
+Sep  9 17:25:21 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:26:14 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:40:29 ip-172-31-23-55 sshd[2955]: Invalid user admin from 91.224.160.106
+Sep  9 17:40:29 ip-172-31-23-55 sshd[2955]: input_userauth_request: invalid user admin [preauth]
+Sep  9 17:40:32 ip-172-31-23-55 sshd[2955]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:40:33 ip-172-31-23-55 sshd[2957]: Invalid user admin from 91.224.160.106
+Sep  9 17:40:33 ip-172-31-23-55 sshd[2957]: input_userauth_request: invalid user admin [preauth]
+Sep  9 17:40:36 ip-172-31-23-55 sshd[2957]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:40:37 ip-172-31-23-55 sshd[2959]: Invalid user admin from 91.224.160.106
+Sep  9 17:40:37 ip-172-31-23-55 sshd[2959]: input_userauth_request: invalid user admin [preauth]
+Sep  9 17:40:40 ip-172-31-23-55 sshd[2959]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:40:41 ip-172-31-23-55 sshd[2961]: Invalid user admin from 91.224.160.106
+Sep  9 17:40:41 ip-172-31-23-55 sshd[2961]: input_userauth_request: invalid user admin [preauth]
+Sep  9 17:40:43 ip-172-31-23-55 sshd[2961]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:40:48 ip-172-31-23-55 sshd[2963]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:40:52 ip-172-31-23-55 sshd[2965]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:40:55 ip-172-31-23-55 sshd[2967]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:40:57 ip-172-31-23-55 sshd[2969]: Invalid user support from 91.224.160.106
+Sep  9 17:40:57 ip-172-31-23-55 sshd[2969]: input_userauth_request: invalid user support [preauth]
+Sep  9 17:40:59 ip-172-31-23-55 sshd[2969]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:41:00 ip-172-31-23-55 sshd[2971]: Invalid user user from 91.224.160.106
+Sep  9 17:41:00 ip-172-31-23-55 sshd[2971]: input_userauth_request: invalid user user [preauth]
+Sep  9 17:41:03 ip-172-31-23-55 sshd[2971]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:41:04 ip-172-31-23-55 sshd[2973]: Invalid user manager from 91.224.160.106
+Sep  9 17:41:04 ip-172-31-23-55 sshd[2973]: input_userauth_request: invalid user manager [preauth]
+Sep  9 17:41:07 ip-172-31-23-55 sshd[2973]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:41:08 ip-172-31-23-55 sshd[2975]: Invalid user ubnt from 91.224.160.106
+Sep  9 17:41:08 ip-172-31-23-55 sshd[2975]: input_userauth_request: invalid user ubnt [preauth]
+Sep  9 17:41:10 ip-172-31-23-55 sshd[2975]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:41:11 ip-172-31-23-55 sshd[2977]: Invalid user test from 91.224.160.106
+Sep  9 17:41:11 ip-172-31-23-55 sshd[2977]: input_userauth_request: invalid user test [preauth]
+Sep  9 17:41:14 ip-172-31-23-55 sshd[2977]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:41:15 ip-172-31-23-55 sshd[2979]: Invalid user tech from 91.224.160.106
+Sep  9 17:41:15 ip-172-31-23-55 sshd[2979]: input_userauth_request: invalid user tech [preauth]
+Sep  9 17:41:17 ip-172-31-23-55 sshd[2979]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:41:18 ip-172-31-23-55 sshd[2981]: Invalid user operator from 91.224.160.106
+Sep  9 17:41:18 ip-172-31-23-55 sshd[2981]: input_userauth_request: invalid user operator [preauth]
+Sep  9 17:41:21 ip-172-31-23-55 sshd[2981]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:41:23 ip-172-31-23-55 sshd[2983]: Invalid user webadmin from 91.224.160.106
+Sep  9 17:41:23 ip-172-31-23-55 sshd[2983]: input_userauth_request: invalid user webadmin [preauth]
+Sep  9 17:41:25 ip-172-31-23-55 sshd[2983]: Received disconnect from 91.224.160.106: 11:  [preauth]
+Sep  9 17:43:24 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/sh
+Sep  9 17:43:24 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:43:47 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:44:44 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git add --all
+Sep  9 17:44:44 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:44:48 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:45:19 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git remote add origin https://github.com/Mashpy/ajenti_track.git
+Sep  9 17:45:19 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:45:19 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:47:45 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git remote add origin https://github.com/Mashpy/ajenti_track.git
+Sep  9 17:47:45 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:47:45 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:49:01 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/bin/rm -rf .git
+Sep  9 17:49:01 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:49:02 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:49:11 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git init
+Sep  9 17:49:11 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Sep  9 17:49:11 ip-172-31-23-55 sudo: pam_unix(sudo:session): session closed for user root
+Sep  9 17:49:22 ip-172-31-23-55 sudo:   ubuntu : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/git add --all
+Sep  9 17:49:22 ip-172-31-23-55 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)

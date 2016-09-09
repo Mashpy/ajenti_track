@@ -1,0 +1,1 @@
+../../../../../share/pyshared/daemon/version/version_info.py

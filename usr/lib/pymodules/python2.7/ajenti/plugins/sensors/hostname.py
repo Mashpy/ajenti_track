@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/sensors/hostname.py

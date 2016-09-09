@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/jsonpointer-1.0.egg-info
+/usr/lib/python2.7/dist-packages/jsonpointer.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-json-pointer
+/usr/share/doc/python-json-pointer/README.md
+/usr/share/doc/python-json-pointer/changelog.Debian.gz
+/usr/share/doc/python-json-pointer/copyright

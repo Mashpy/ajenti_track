@@ -1,0 +1,1 @@
+/usr/share/pyshared/reconfigure/configs/squid.py

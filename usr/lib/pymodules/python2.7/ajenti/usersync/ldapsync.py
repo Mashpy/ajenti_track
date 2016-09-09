@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/usersync/ldapsync.py

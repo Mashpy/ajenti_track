@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/dashboard/content/js/controls.dashboard.coffee

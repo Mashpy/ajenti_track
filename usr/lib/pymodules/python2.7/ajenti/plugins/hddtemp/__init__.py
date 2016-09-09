@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/hddtemp/__init__.py

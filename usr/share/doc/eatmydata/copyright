@@ -1,0 +1,30 @@
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
+Name: libeatmydata
+Maintainer: Stewart Smith <stewart@flamingspork.com>
+Source: https://launchpad.net/libeatmydata
+ http://www.flamingspork.com/projects/libeatmydata/
+
+Copyright: 2007-2010, Stewart Smith <stewart@flamingspork.com>
+           2010, Olly Betts
+           2009, Pavel Pushkarev
+           2009, Tamas TEVESZ
+           2010, Modestas Vainius <modax@debian.org>
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 3 can be found in file '/usr/share/common-licenses/GPL-3'.
+
+Files: debian/*
+Copyright: 2010, Modestas Vainius <modax@debian.org>
+License: GPL-3+
+ On Debian systems, the full text of the GNU General Public License
+ version 3 can be found in file '/usr/share/common-licenses/GPL-3'.

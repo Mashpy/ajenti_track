@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/munin/content/js/plot.coffee

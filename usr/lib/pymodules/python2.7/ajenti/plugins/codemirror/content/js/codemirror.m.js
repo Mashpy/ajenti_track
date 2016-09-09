@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/codemirror/content/js/codemirror.m.js

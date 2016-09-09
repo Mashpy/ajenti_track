@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/locales/__init__.py

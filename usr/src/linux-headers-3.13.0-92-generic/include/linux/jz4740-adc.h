@@ -1,0 +1,1 @@
+../../../linux-headers-3.13.0-92/include/linux/jz4740-adc.h

@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/configurator/__init__.py

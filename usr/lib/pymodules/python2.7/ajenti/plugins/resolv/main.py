@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/resolv/main.py

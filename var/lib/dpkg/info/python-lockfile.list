@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/lockfile-0.8.egg-info
+/usr/lib/python2.7/dist-packages/lockfile.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-lockfile
+/usr/share/doc/python-lockfile/copyright
+/usr/share/doc/python-lockfile/ACKS
+/usr/share/doc/python-lockfile/README
+/usr/share/doc/python-lockfile/changelog.Debian.gz

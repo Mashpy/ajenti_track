@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/sensors/__init__.py

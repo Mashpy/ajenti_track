@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/services/main.py

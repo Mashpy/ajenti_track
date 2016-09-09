@@ -1,0 +1,6 @@
+3ebf50996544f3ed72a765fc63f30262  usr/bin/eatmydata
+b2750e461b61555a533d47b128ebc2a0  usr/lib/libeatmydata/libeatmydata.so
+c3a34b782f6c5e107ded9d76ca94dde2  usr/share/doc/eatmydata/changelog.Debian.gz
+da311cbe6a5cab3e13fc3cb482fc26e0  usr/share/doc/eatmydata/copyright
+73a593112ead3f5a075afd86bff681ab  usr/share/libeatmydata/eatmydata.sh
+27e7c212132d7cdf375a733a4d8c8883  usr/share/man/man1/eatmydata.1.gz

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/eatmydata
+/usr/share/doc/eatmydata/copyright
+/usr/share/doc/eatmydata/changelog.Debian.gz
+/usr/share/libeatmydata
+/usr/share/libeatmydata/eatmydata.sh
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/eatmydata.1.gz
+/usr/bin
+/usr/bin/eatmydata
+/usr/lib
+/usr/lib/libeatmydata
+/usr/lib/libeatmydata/libeatmydata.so

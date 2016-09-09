@@ -1,0 +1,6 @@
+/etc/bash_completion.d/cryptdisks
+/etc/init/cryptdisks.conf
+/etc/init/cryptdisks-udev.conf
+/etc/default/cryptdisks
+/etc/init.d/cryptdisks-early
+/etc/init.d/cryptdisks

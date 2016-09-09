@@ -1,0 +1,14 @@
+84ad8f1382a96b3345bfab547076fdc4  lib/systemd/system/acpid.service
+ee6cb99e50e580c50331a73045412ae9  lib/systemd/system/acpid.socket
+7f8bc9f2bd7e66157322ffbc640930dc  usr/bin/acpi_listen
+7c057ef737f23264a994b7be27aa7bbc  usr/sbin/acpid
+af6a106a1eea511933a1106e28fe58c8  usr/share/doc/acpid/README.Debian
+eef11352d8cb7347fc12eb5e51967575  usr/share/doc/acpid/README.gz
+ce41470c6c2fa07a6b9f133bac4e3e65  usr/share/doc/acpid/changelog.Debian.gz
+aedd96213631b9d4c6a02fda6b6fe97f  usr/share/doc/acpid/copyright
+dfda6b75e2fc923a2f59a3f3ed03d04f  usr/share/doc/acpid/examples/ac
+ce12558f20d230c8ed5d1325766f5407  usr/share/doc/acpid/examples/ac.sh
+a0d3f9a8480faf602a7415d03267f49f  usr/share/doc/acpid/examples/default
+faf2a529017eaca618cacc368f9e7c27  usr/share/doc/acpid/examples/default.sh
+4f214cbda907d6150cf4a238f4eedf53  usr/share/man/man8/acpi_listen.8.gz
+8f230ff6e9d96b0663763b0b32c9d479  usr/share/man/man8/acpid.8.gz

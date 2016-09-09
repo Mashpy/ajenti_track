@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/dashboard/__init__.py

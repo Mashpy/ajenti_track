@@ -1,0 +1,1 @@
+../../../../../share/pyshared/passlib/ext/__init__.py

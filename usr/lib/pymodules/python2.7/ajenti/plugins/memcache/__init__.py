@@ -1,0 +1,1 @@
+/usr/share/pyshared/ajenti/plugins/memcache/__init__.py
