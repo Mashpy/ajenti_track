@@ -1,0 +1,24 @@
+From root@ip-172-31-23-55.us-west-2.compute.internal Sat Sep 10 06:29:01 2016
+Return-path: <root@ip-172-31-23-55.us-west-2.compute.internal>
+Envelope-to: root@ip-172-31-23-55.us-west-2.compute.internal
+Delivery-date: Sat, 10 Sep 2016 06:29:01 +0000
+Received: from root by ip-172-31-23-55.us-west-2.compute.internal with local (Exim 4.82)
+	(envelope-from <root@ip-172-31-23-55.us-west-2.compute.internal>)
+	id 1bibmf-0003Hn-O2
+	for root@ip-172-31-23-55.us-west-2.compute.internal; Sat, 10 Sep 2016 06:29:01 +0000
+From: root@ip-172-31-23-55.us-west-2.compute.internal (Cron Daemon)
+To: root@ip-172-31-23-55.us-west-2.compute.internal
+Subject: Cron <root@ip-172-31-23-55> test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin>
+X-Cron-Env: <HOME=/root>
+X-Cron-Env: <LOGNAME=root>
+Message-Id: <E1bibmf-0003Hn-O2@ip-172-31-23-55.us-west-2.compute.internal>
+Date: Sat, 10 Sep 2016 06:29:01 +0000
+
+/etc/cron.daily/exim4-base:
+LOG: MAIN
+  Warning: purging the environment.
+ Suggested action: use keep_environment.
+

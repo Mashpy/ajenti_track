@@ -4869,7 +4869,6 @@ Description: package renamed -> cloud-init
 Description-md5: 4cf74a8ef9cc7376e227720b76813136
 Bugs: https://bugs.launchpad.net/ubuntu/+filebug
 Origin: Ubuntu
-Phased-Update-Percentage: 90
 
 Package: eiciel
 Priority: optional
@@ -10312,7 +10311,7 @@ Description: ISC DHCP relay daemon
 Description-md5: 8ac0a3dc9bfa84255727d8b36fa148b7
 Bugs: https://bugs.launchpad.net/ubuntu/+filebug
 Origin: Ubuntu
-Phased-Update-Percentage: 50
+Phased-Update-Percentage: 70
 
 Package: isc-dhcp-server-ldap
 Priority: optional
@@ -10337,7 +10336,7 @@ Enhances: isc-dhcp-server
 Description-md5: 315981eda99e6f970143cbd2e782b05c
 Bugs: https://bugs.launchpad.net/ubuntu/+filebug
 Origin: Ubuntu
-Phased-Update-Percentage: 50
+Phased-Update-Percentage: 70
 
 Package: iscsitarget
 Priority: optional

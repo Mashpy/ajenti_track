@@ -1,0 +1,11 @@
+/.
+/var
+/var/lib
+/var/lib/ajenti
+/var/lib/ajenti/plugins
+/var/lib/ajenti/plugins/vh-vsftpd
+/var/lib/ajenti/plugins/vh-vsftpd/vsftpd.py
+/var/lib/ajenti/plugins/vh-vsftpd/__init__.py
+/var/lib/ajenti/plugins/vh-vsftpd/layout
+/var/lib/ajenti/plugins/vh-vsftpd/layout/ext.xml
+/var/lib/ajenti/plugins/vh-vsftpd/package.desc

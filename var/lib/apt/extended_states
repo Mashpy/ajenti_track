@@ -350,3 +350,15 @@ Package: libdbi-perl
 Architecture: amd64
 Auto-Installed: 1
 
+Package: db-util
+Architecture: amd64
+Auto-Installed: 1
+
+Package: vsftpd
+Architecture: amd64
+Auto-Installed: 1
+
+Package: db5.3-util
+Architecture: amd64
+Auto-Installed: 1
+

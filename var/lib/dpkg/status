@@ -3934,6 +3934,19 @@ Description: File comparison utilities
 Original-Maintainer: Santiago Vila <sanvila@debian.org>
 Homepage: http://www.gnu.org/software/diffutils/
 
+Package: ajenti-v-ftp-vsftpd
+Status: install ok installed
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-ftp-vsftpd
+Version: 0.2.5
+Provides: ajenti-v-ftp
+Depends: ajenti-v, vsftpd (>= 3.0.2), db-util
+Description: VSFTPD support for Ajenti V
+Homepage: http://ajenti.org/
+
 Package: libpolkit-agent-1-0
 Status: install ok installed
 Priority: optional
@@ -4768,6 +4781,35 @@ Description: python 3.x module for update-manager
  Python module for update-manager (UpdateManager).
  .
  This package contains the python 3.x version of this module.
+
+Package: vsftpd
+Status: install ok installed
+Priority: extra
+Section: net
+Installed-Size: 353
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.0.2-1ubuntu2.14.04.1
+Replaces: ftp-server
+Provides: ftp-server
+Depends: debconf (>= 0.5) | debconf-2.0, sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), libc6 (>= 2.15), libcap2 (>= 2.10), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.0), libwrap0 (>= 7.6-4~), adduser, libpam-modules, netbase
+Recommends: logrotate
+Conflicts: ftp-server
+Conffiles:
+ /etc/systemd/system/vsftpd.service 15767a25695a9f148e9feb731c5a1f0b
+ /etc/vsftpd.conf b95bd4eef05d8db3a7f0e494723dae21
+ /etc/logrotate.d/vsftpd dac2cb7b9cfd8a03b4fa9ca3601a43a6
+ /etc/init/vsftpd.conf 4dcef85ff33f31f1f486865a94d800e8
+ /etc/pam.d/vsftpd e75200b7896d8b2c2f2590d0e3d4a6ef
+ /etc/ftpusers 839f3157aad792bafbbdcd932a95a345
+Description: lightweight, efficient FTP server written for security
+ This package provides the "Very Secure FTP Daemon", written from
+ the ground up with security in mind.
+ .
+ It supports both anonymous and non-anonymous FTP access, PAM authentication,
+ bandwidth limiting, and the Linux sendfile() facility.
+Homepage: http://vsftpd.beasts.org/
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
 
 Package: tasksel
 Status: install ok installed
@@ -5875,6 +5917,22 @@ Description: Courier mail server - IMAP server
  shared and virtual shared folders.
 Homepage: http://www.courier-mta.org/
 Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+
+Package: db-util
+Status: install ok installed
+Priority: extra
+Section: utils
+Installed-Size: 38
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: db-defaults
+Version: 1:5.3.21~exp1ubuntu1
+Depends: db5.3-util
+Description: Berkeley Database Utilities
+ This empty package depends on the recommended utilities package
+ containing different tools for manipulating databases and installs
+ unversioned links to current database utilities.
+Original-Maintainer: Debian Berkeley DB Group <pkg-db-devel@lists.alioth.debian.org>
 
 Package: libterm-readkey-perl
 Status: install ok installed
@@ -9363,6 +9421,36 @@ Description: Python interface to the PAM library
  available in Python. With this module you can write Python applications
  that implement authentication services using PAM.
 Original-Maintainer: Dima Barsky <dima@debian.org>
+
+Package: db5.3-util
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 245
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: db5.3
+Version: 5.3.28-3ubuntu3
+Depends: libc6 (>= 2.14), libdb5.3
+Description: Berkeley v5.3 Database Utilities
+ This package provides different tools for manipulating databases
+ in the Berkeley v5.3 database format, and includes:
+  - db5.3_archive: write the pathnames of the log files no longer in use.
+  - db5.3_checkpoint: daemon process to monitor the database log and
+    checkpoint it periodically.
+  - db5.3_deadlock: traverse the database environment lock region and
+    abort lock requests when a deadlock is detected.
+  - db5.3_load: loads (and creates) a database from standard input.
+  - db5.3_dump: read a database file and write it in a format understood
+    by db4.{2..8}_load.
+  - db5.3_printlog: dump log files in human readable format.
+  - db5.3_stat: display statistics for Berkeley DB environments.
+  - db5.3_upgrade: upgrades the version of files and the databases they
+    contain.
+  - db5.3_verify: check the structure of files and their databases.
+Homepage: http://www.oracle.com/technology/software/products/berkeley-db/index.html
+Original-Maintainer: Debian Berkeley DB Group <pkg-db-devel@lists.alioth.debian.org>
 
 Package: software-properties-common
 Status: install ok installed

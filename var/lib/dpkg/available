@@ -3817,6 +3817,19 @@ Description-md5: 5cf0bc18e36aa2957e62b309d6aa34f9
 Supported: 5y
 Task: minimal
 
+Package: ajenti-v-ftp-vsftpd
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-ftp-vsftpd
+Version: 0.2.5
+Provides: ajenti-v-ftp
+Depends: ajenti-v, vsftpd (>= 3.0.2), db-util
+Size: 2542
+Description: VSFTPD support for Ajenti V
+Homepage: http://ajenti.org/
+
 Package: libpolkit-agent-1-0
 Priority: optional
 Section: libs
@@ -4652,6 +4665,28 @@ Description: python 3.x module for update-manager
  Python module for update-manager (UpdateManager).
  .
  This package contains the python 3.x version of this module.
+
+Package: vsftpd
+Priority: extra
+Section: net
+Installed-Size: 353
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.0.2-1ubuntu2.14.04.1
+Replaces: ftp-server
+Provides: ftp-server
+Depends: debconf (>= 0.5) | debconf-2.0, sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), libc6 (>= 2.15), libcap2 (>= 2.10), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.0), libwrap0 (>= 7.6-4~), adduser, libpam-modules, netbase
+Recommends: logrotate
+Conflicts: ftp-server
+Size: 111462
+Description: lightweight, efficient FTP server written for security
+ This package provides the "Very Secure FTP Daemon", written from
+ the ground up with security in mind.
+ .
+ It supports both anonymous and non-anonymous FTP access, PAM authentication,
+ bandwidth limiting, and the Linux sendfile() facility.
+Homepage: http://vsftpd.beasts.org/
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
 
 Package: tasksel
 Priority: important
@@ -5697,6 +5732,22 @@ Description: Courier mail server - IMAP server
  shared and virtual shared folders.
 Homepage: http://www.courier-mta.org/
 Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+
+Package: db-util
+Priority: extra
+Section: utils
+Installed-Size: 38
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: db-defaults
+Version: 1:5.3.21~exp1ubuntu1
+Depends: db5.3-util
+Size: 2724
+Description: Berkeley Database Utilities
+ This empty package depends on the recommended utilities package
+ containing different tools for manipulating databases and installs
+ unversioned links to current database utilities.
+Original-Maintainer: Debian Berkeley DB Group <pkg-db-devel@lists.alioth.debian.org>
 
 Package: libterm-readkey-perl
 Priority: optional
@@ -7607,6 +7658,25 @@ Description: change and administer password and group data
 Homepage: http://pkg-shadow.alioth.debian.org/
 Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
 
+Package: nginx
+Priority: optional
+Section: httpd
+Installed-Size: 93
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.4.6-1ubuntu3.5
+Depends: nginx-core (>= 1.4.6-1ubuntu3.5) | nginx-full (>= 1.4.6-1ubuntu3.5) | nginx-light (>= 1.4.6-1ubuntu3.5) | nginx-extras (>= 1.4.6-1ubuntu3.5) | nginx-naxsi (>= 1.4.6-1ubuntu3.5), nginx-core (<< 1.4.6-1ubuntu3.5.1~) | nginx-full (<< 1.4.6-1ubuntu3.5.1~) | nginx-light (<< 1.4.6-1ubuntu3.5.1~) | nginx-extras (<< 1.4.6-1ubuntu3.5.1~) | nginx-naxsi (<< 1.4.6-1ubuntu3.5.1~)
+Size: 5454
+Description: small, powerful, scalable web/proxy server
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This is a dependency package to install either nginx-core (by default),
+ nginx-full, nginx-light, nginx-extras, or nginx-naxsi.
+Homepage: http://nginx.net
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+
 Package: bsdmainutils
 Priority: important
 Section: utils
@@ -7631,25 +7701,6 @@ Description: collection of more utilities from FreeBSD
  their own packages. Also here was tsort, which is now in the "coreutils"
  package.
 Original-Maintainer: Debian Bsdmainutils Team <pkg-bsdmainutils@teams.debian.net>
-
-Package: nginx
-Priority: optional
-Section: httpd
-Installed-Size: 93
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Architecture: all
-Version: 1.4.6-1ubuntu3.5
-Depends: nginx-core (>= 1.4.6-1ubuntu3.5) | nginx-full (>= 1.4.6-1ubuntu3.5) | nginx-light (>= 1.4.6-1ubuntu3.5) | nginx-extras (>= 1.4.6-1ubuntu3.5) | nginx-naxsi (>= 1.4.6-1ubuntu3.5), nginx-core (<< 1.4.6-1ubuntu3.5.1~) | nginx-full (<< 1.4.6-1ubuntu3.5.1~) | nginx-light (<< 1.4.6-1ubuntu3.5.1~) | nginx-extras (<< 1.4.6-1ubuntu3.5.1~) | nginx-naxsi (<< 1.4.6-1ubuntu3.5.1~)
-Size: 5454
-Description: small, powerful, scalable web/proxy server
- Nginx ("engine X") is a high-performance web and reverse proxy server
- created by Igor Sysoev. It can be used both as a standalone web server
- and as a proxy to reduce the load on back-end HTTP or mail servers.
- .
- This is a dependency package to install either nginx-core (by default),
- nginx-full, nginx-light, nginx-extras, or nginx-naxsi.
-Homepage: http://nginx.net
-Original-Maintainer: Kartik Mistry <kartik@debian.org>
 
 Package: hostname
 Essential: yes
@@ -9126,6 +9177,36 @@ Description: Python interface to the PAM library
  available in Python. With this module you can write Python applications
  that implement authentication services using PAM.
 Original-Maintainer: Dima Barsky <dima@debian.org>
+
+Package: db5.3-util
+Priority: optional
+Section: database
+Installed-Size: 245
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: db5.3
+Version: 5.3.28-3ubuntu3
+Depends: libc6 (>= 2.14), libdb5.3
+Size: 63630
+Description: Berkeley v5.3 Database Utilities
+ This package provides different tools for manipulating databases
+ in the Berkeley v5.3 database format, and includes:
+  - db5.3_archive: write the pathnames of the log files no longer in use.
+  - db5.3_checkpoint: daemon process to monitor the database log and
+    checkpoint it periodically.
+  - db5.3_deadlock: traverse the database environment lock region and
+    abort lock requests when a deadlock is detected.
+  - db5.3_load: loads (and creates) a database from standard input.
+  - db5.3_dump: read a database file and write it in a format understood
+    by db4.{2..8}_load.
+  - db5.3_printlog: dump log files in human readable format.
+  - db5.3_stat: display statistics for Berkeley DB environments.
+  - db5.3_upgrade: upgrades the version of files and the databases they
+    contain.
+  - db5.3_verify: check the structure of files and their databases.
+Homepage: http://www.oracle.com/technology/software/products/berkeley-db/index.html
+Original-Maintainer: Debian Berkeley DB Group <pkg-db-devel@lists.alioth.debian.org>
 
 Package: software-properties-common
 Priority: optional

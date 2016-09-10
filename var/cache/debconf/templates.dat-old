@@ -11489,3 +11489,85 @@ Extended_description-sv.utf-8: /etc/fstab innehåller åtminstone en post som ä
 Type: note
 Owners: util-linux/noauto-with-nonzero-passnum
 
+Name: vsftpd/directory
+Default: /srv/ftp
+Description: FTP root directory:
+Description-ca.utf-8: Directori arrel del servidor FTP:
+Description-cs.utf-8: Kořenový adresář FTP:
+Description-da.utf-8: FTP-rodmappe:
+Description-de.utf-8: FTP-Wurzelverzeichnis:
+Description-es.utf-8: Directorio raíz del servidor de FTP:
+Description-fi.utf-8: FTP-juurihakemisto:
+Description-fr.utf-8: Répertoire racine FTP :
+Description-gl.utf-8: Directorio raíz do FTP:
+Description-id.utf-8: Direktory root FTP
+Description-it.utf-8: Directory radice FTP:
+Description-ja.utf-8: FTP の root ディレクトリ:
+Description-nl.utf-8: FTP-hoofdmap:
+Description-pt.utf-8: Directório raiz FTP:
+Description-pt_br.utf-8: Diretório raiz do FTP:
+Description-ru.utf-8: Корневой каталог FTP:
+Description-sv.utf-8: Rot-katalog för FTP:
+Description-zh_cn.utf-8: FTP 根目录：
+Extended_description: Please specify the directory that will be used as root for the FTP server.
+Extended_description-ca.utf-8: Especifiqueu el directori que es farà servir com a directori arrel per al servidor FTP.
+Extended_description-cs.utf-8: Zadejte prosím adresář, ve kterém bude umístěn kořen FTP serveru:
+Extended_description-da.utf-8: Angiv venligst mappen som vil blive brugt som rod for FTP-serveren.
+Extended_description-de.utf-8: Bitte geben Sie das Verzeichnis an, welches als Wurzelverzeichnis für den FTP-Server verwendet werden soll.
+Extended_description-es.utf-8: Especifique el directorio que se utilizará como directorio raíz para el servidor de FTP.
+Extended_description-fi.utf-8: Anna hakemisto, jota käytetään FTP-palvelimen juurena.
+Extended_description-fr.utf-8: Veuillez choisir le répertoire racine qui sera utilisé par le serveur FTP.
+Extended_description-gl.utf-8: Especifique o directorio que se empregará como raíz polo servidor FTP.
+Extended_description-id.utf-8: Silakan masukkan direktori yang akan digunakan oleh root untuk server FTP
+Extended_description-it.utf-8: Specificare la directory che verrà utilizzata come radice per il server FTP.
+Extended_description-ja.utf-8: FTP サーバの root ディレクトリとして利用するディレクトリを指定してください。
+Extended_description-nl.utf-8: Welke map moet er worden gebruikt als hoofdmap voor de FTP-server?
+Extended_description-pt.utf-8: Por favor especifique o directório que será usado como a raiz do servidor FTP.
+Extended_description-pt_br.utf-8: Por favor, especifique o diretório que será usado como raiz para o servidor FTP.
+Extended_description-ru.utf-8: Укажите каталог, который будет использован в качестве корневого каталога FTP сервера.
+Extended_description-sv.utf-8: Ange katalog som ska agera rot-nivå för ftp-servern.
+Extended_description-zh_cn.utf-8: 请指定用作 FTP 服务器根目录的目录。
+Type: string
+Owners: vsftpd/directory
+
+Name: vsftpd/username
+Default: ftp
+Description: Dedicated system account for the vsftpd FTP daemon:
+Description-ca.utf-8: Compte del sistema dedicat al servei de FTP «vsftpd»:
+Description-cs.utf-8: Vyhrazený systémový účet, pod kterým bude běžet FTP démon vsftpd:
+Description-da.utf-8: Dedikeret systemkonto for vsftpd FTP-dæmonen:
+Description-de.utf-8: Eigenes Systemkonto für den vsftpd FTP-Daemon:
+Description-es.utf-8: Cuenta del sistema dedicada para el demonio de FTP vsftpd:
+Description-fi.utf-8: Dedikoitu järjestelmätunnus vsfptd:n FTP-taustaohjelman ajamiseen:
+Description-fr.utf-8: Identifiant dédié pour le démon FTP vsftpd :
+Description-gl.utf-8: Conta de usuario do sistema adicada ao daemon FTP vsftpd:
+Description-id.utf-8: Akun system yang diperuntukkan untuk daemon FTP vsftpd
+Description-it.utf-8: Account di sistema dedicato per il demone FTP di vsftpd:
+Description-ja.utf-8: vsftpd FTP デーモン専用のシステムアカウント:
+Description-nl.utf-8: Speciale systeemaccount voor de vsftpd-achtergronddienst:
+Description-pt.utf-8: Conta dedicada do sistema para o deamon FTP vsftpd:
+Description-pt_br.utf-8: Conta do sistema dedicada ao daemon FTP vsftpd:
+Description-ru.utf-8: Специально выделенная системная учётная запись для FTP службы vsftpd:
+Description-sv.utf-8: Dedikerat systemkonto för ftp-tjänsten vsftpd:
+Description-zh_cn.utf-8: 指定操作 vsftpd FTP 守护进程的专用系统帐户：
+Extended_description: The FTP server must use a dedicated account for its operation so that the system's security is not compromised by running it with superuser privileges.\n\nPlease choose that account's username.
+Extended_description-ca.utf-8: El servidor FTP ha d'utilitzar un compte dedicat per al seu funcionament perquè la seguretat del sistema no es vegi compromesa en executar-ho amb privilegis de super-usuari.\n\nElegiu el nom d'usuari per a aquest compte.
+Extended_description-cs.utf-8: Pokud by byl FTP server spuštěn se superuživatelskými oprávněními, mohlo by dojít ke kompromitaci zabezpečení systému. Proto musí FTP server pro svoji činnost používat vyhrazený neprivilegovaný účet.\n\nZvolte prosím název totoho účtu.
+Extended_description-da.utf-8: FTP-serveren skal bruge en dedikeret konto til sine handlinger, så at systemets sikkerhed ikke bliver kompromitteret af at køre serveren med superbrugerprivilegier.\n\nVælg venligst den kontos brugernavn.
+Extended_description-de.utf-8: Der FTP-Server muss ein eigenes Konto für den Betrieb verwenden, um die Sicherheit des Systems nicht durch das Betreiben mit Superuser-Rechten zu kompromittieren.\n\nBitte wählen Sie den Benutzernamen dieses Kontos.
+Extended_description-es.utf-8: El servidor de FTP debe utilizar una cuenta dedicada para su funcionamiento, de tal modo que la seguridad del sistema no se vea comprometida por su utilización con privilegios de administración.\n\nElija un nombre de usuario para esa cuenta.
+Extended_description-fi.utf-8: FTP-palvelimen tulee käyttää dedikoitua tunnusta toiminnoissaan, jotta järjestelmän turvallisuus ei vaarannu kuten käytettäessä pääkäyttäjäoikeuksia.\n\nValitse kyseisen tunnuksen nimi.
+Extended_description-fr.utf-8: Le serveur FTP doit être exécuté avec un identifiant spécifique, différent du superutilisateur, afin de ne pas compromettre la sécurité du système.\n\nVeuillez choisir cet identifiant.
+Extended_description-gl.utf-8: O servidor FTP debe empregar unha conta adicada a el para que a seguridade do sistema non se poña en perigo ao executalo con privilexios de administrador.\n\nEscolla o nome de usuario desa conta.
+Extended_description-id.utf-8: Server FTP harus menggunakan akun yang diperuntukkan untuk pengoperasian sehinggakeamanan sistem tidak terganggu dengan pengoperasiannya dengan hak superuser\n\nSilakan pilih nama pengguna
+Extended_description-it.utf-8: Il server FTP deve utilizzare un account dedicato per eseguire le proprie operazioni, in modo che la sicurezza del sistema non rischi di essere compromessa eseguendolo con privilegi di superutente.\n\nScegliere il nome utente di tale account.
+Extended_description-ja.utf-8: FTP サーバはその動作について専用のアカウントを使うようになっているため、管理者特権で動作していてもシステムのセキュリティは侵害されません。\n\nアカウントのユーザ名を選んでください。
+Extended_description-nl.utf-8: De FTP-server moet een speciale account gebruiken voor zijn werkzaamheden, want als hij met beheerdersrechten wordt uitgevoerd kan dit de beveiliging van het systeem in gevaar brengen.\n\nWelke gebruikersnaam met de account krijgen?
+Extended_description-pt.utf-8: O servidor FTP tem que usar uma conta dedicada para as suas operações, isto para que a segurança do sistema não seja comprometida ao corrê-lo com privilégios de superutilizador.\n\nPor favor escolha o nome dessa conta.
+Extended_description-pt_br.utf-8: O servidor FTP deve usar uma conta dedicada para sua operação, de modo que a segurança do sistema não seja comprometida por ser executado com privilégios de superusuário.\n\nPor favor, escolha a conta de usuário.
+Extended_description-ru.utf-8: Для улучшения безопасности системы FTP сервер должен использовать специально выделенную учётную запись, а не запускаться с правами суперпользователя.\n\nУкажите имя такой учётной записи.
+Extended_description-sv.utf-8: FTP-servern måste ha ett dedikerat konto för att fungera på ett säkert sätt, att använda privilegier från en superanvändare är inte säkert.\n\nAnge kontots användarnamn.
+Extended_description-zh_cn.utf-8: FTP 服务器必须使用一个专用的账户来进行操作，这样就不会因为使用超级用户权限运行而破坏系统的安全。\n\n请选择账户的用户名。
+Type: string
+Owners: vsftpd/username
+

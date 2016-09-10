@@ -1,0 +1,4 @@
+df18f45e0027c0e54594a08451894c9b  var/lib/ajenti/plugins/vh-vsftpd/vsftpd.py
+6c7508025241d55c0a4ce5a0344c92be  var/lib/ajenti/plugins/vh-vsftpd/__init__.py
+1d21188868047ef9c1b26ba67500e279  var/lib/ajenti/plugins/vh-vsftpd/layout/ext.xml
+d20b5fb1308e9c04340e33fe0f4c21dd  var/lib/ajenti/plugins/vh-vsftpd/package.desc

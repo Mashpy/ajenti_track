@@ -1,48 +1,21 @@
-2016-09-10 03:59:51,921 INFO     registry.register_crypt_handler(): registered crypt handler 'sha512_crypt': <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
-2016-09-10 03:59:52,083 INFO     core.run(): Ajenti 1.2.23.8 running on platform: debian
-2016-09-10 03:59:52,896 INFO     core.run(): Starting server on (u'0.0.0.0', 8000)
-2016-09-10 03:59:52,904 INFO     core.run(): SSL enabled: /etc/ajenti/ajenti.pem
-2016-09-10 03:59:52,913 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
-2016-09-10 04:00:06,902 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.94
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e25b7c10> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e255ccd0> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e255c190> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2576dd0> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2589d90> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e25b7b10> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e250fe10> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2589210> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e25b7c90> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2524b90> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2442f50> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e23dc550> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2368d90> True
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2524a50> True
-2016-09-10 06:17:43,454 INFO     main.create_task(): [cron] created a CrontabNormalTaskData
-2016-09-10 06:17:47,152 INFO     main.on_save(): [cron] edited tasks
-2016-09-10 06:17:55,189 INFO     main.on_save(): [cron] edited tasks
-2016-09-10 06:19:13,471 INFO     main.create_task(): [cron] created a CrontabNormalTaskData
-2016-09-10 06:19:20,811 INFO     main.remove_task(): [cron] removed false
-Socket is dead
+2016-09-10 06:29:33,146 INFO     registry.register_crypt_handler(): registered crypt handler 'sha512_crypt': <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2016-09-10 06:29:33,410 INFO     core.run(): Ajenti 1.2.23.8 running on platform: debian
+2016-09-10 06:29:34,224 INFO     core.run(): Starting server on (u'0.0.0.0', 8000)
+2016-09-10 06:29:34,231 INFO     core.run(): SSL enabled: /etc/ajenti/ajenti.pem
+2016-09-10 06:29:34,242 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
 Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
     result = self._run(*self.args, **self.kwargs)
-  File "/usr/lib/python2.7/dist-packages/socketio/transports.py", line 251, in send_into_ws
-    websocket.send(message)
-  File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
-    raise WebSocketError(MSG_SOCKET_DEAD)
-WebSocketError: Socket is dead
-<Greenlet at 0x7f43e49ffcd0: send_into_ws> failed with WebSocketError
+  File "/usr/lib/python2.7/dist-packages/gevent/server.py", line 102, in wrap_socket_and_handle
+    ssl_socket = self.wrap_socket(client_socket, **self.ssl_args)
+  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 395, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 106, in __init__
+    self.do_handshake()
+  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 317, in do_handshake
+    return self._sslobj.do_handshake()
+SSLError: [Errno 8] _ssl.c:510: EOF occurred in violation of protocol
+<Greenlet at 0x7f4e2f6decd0: <bound method SocketIOServer.wrap_socket_and_handle of <SocketIOServer at 0x7f4e2eaf7d10 fileno=8 address=0.0.0.0:8000>>(<socket at 0x7f4e2ebb1590 fileno=14 sock=172.31.23, ('103.199.152.87', 63403))> failed with SSLError
 
-2016-09-10 06:22:27,905 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.87
-Socket is dead
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
-    result = self._run(*self.args, **self.kwargs)
-  File "/usr/lib/python2.7/dist-packages/socketio/transports.py", line 251, in send_into_ws
-    websocket.send(message)
-  File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
-    raise WebSocketError(MSG_SOCKET_DEAD)
-WebSocketError: Socket is dead
-<Greenlet at 0x7f43e2137af0: send_into_ws> failed with WebSocketError
-
+2016-09-10 06:29:56,315 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.87
+2016-09-10 06:29:56,315 INFO    : user root logged in through AjentiSyncProvider from 103.199.152.87

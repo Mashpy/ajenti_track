@@ -37,3 +37,10 @@
 2016-09-10 06:15:03 exim 4.82 daemon started: pid=11024, -q30m, listening for SMTP on port 25 (IPv6 and IPv4) port 465 (IPv6 and IPv4)
 2016-09-10 06:15:03 Start queue run: pid=11025
 2016-09-10 06:15:03 End queue run: pid=11025
+2016-09-10 06:28:55 Warning: purging the environment.
+ Suggested action: use keep_environment.
+2016-09-10 06:29:01 Warning: purging the environment.
+ Suggested action: use keep_environment.
+2016-09-10 06:29:01 1bibmf-0003Hn-O2 <= root@ip-172-31-23-55.us-west-2.compute.internal U=root P=local S=934
+2016-09-10 06:29:01 1bibmf-0003Hn-O2 => /var/mail/mail <root@ip-172-31-23-55.us-west-2.compute.internal> R=mail4root T=address_file
+2016-09-10 06:29:01 1bibmf-0003Hn-O2 Completed
