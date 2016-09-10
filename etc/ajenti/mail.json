@@ -1,0 +1,15 @@
+{
+    "custom_mta_config": "", 
+    "mailboxes": [], 
+    "custom_mta_routers": "", 
+    "forwarding_mailboxes": [], 
+    "custom_mta_local_router": "", 
+    "tls_enable": false, 
+    "custom_mta_acl": "", 
+    "custom_mta_transports": "", 
+    "dkim_private_key": "", 
+    "tls_certificate": "", 
+    "dkim_enable": false, 
+    "tls_privatekey": "", 
+    "dkim_selector": "x"
+}

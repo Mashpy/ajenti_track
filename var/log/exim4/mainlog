@@ -9,3 +9,10 @@
 2016-09-10 05:24:07 End queue run: pid=10588
 2016-09-10 05:54:07 Start queue run: pid=10628
 2016-09-10 05:54:07 End queue run: pid=10628
+2016-09-10 06:06:35 Warning: purging the environment.
+ Suggested action: use keep_environment.
+2016-09-10 06:06:37 Warning: purging the environment.
+ Suggested action: use keep_environment.
+2016-09-10 06:06:37 exim 4.82 daemon started: pid=10678, -q30m, listening for SMTP on port 25 (IPv6 and IPv4) port 465 (IPv6 and IPv4)
+2016-09-10 06:06:37 Start queue run: pid=10679
+2016-09-10 06:06:37 End queue run: pid=10679

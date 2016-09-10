@@ -2,3 +2,9 @@ Sep 10 03:54:07 ip-172-31-23-55 authdaemond: modules="authpam", daemons=5
 Sep 10 03:54:07 ip-172-31-23-55 authdaemond: Installing libauthpam
 Sep 10 03:54:07 ip-172-31-23-55 authdaemond: Installation complete: authpam
 Sep 10 04:24:02 ip-172-31-23-55 imapd-ssl: Unexpected SSL connection shutdown.
+Sep 10 06:06:37 ip-172-31-23-55 authdaemond: stopping authdaemond children
+Sep 10 06:06:37 ip-172-31-23-55 authdaemond: modules="authuserdb authpam", daemons=5
+Sep 10 06:06:37 ip-172-31-23-55 authdaemond: Installing libauthuserdb
+Sep 10 06:06:37 ip-172-31-23-55 authdaemond: Installation complete: authuserdb
+Sep 10 06:06:37 ip-172-31-23-55 authdaemond: Installing libauthpam
+Sep 10 06:06:37 ip-172-31-23-55 authdaemond: Installation complete: authpam
