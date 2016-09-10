@@ -18,3 +18,7 @@ php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e244
 php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e23dc550> True
 php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2368d90> True
 php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2524a50> True
+2016-09-10 06:17:43,454 INFO     main.create_task(): [cron] created a CrontabNormalTaskData
+2016-09-10 06:17:47,152 INFO     main.on_save(): [cron] edited tasks
+2016-09-10 06:17:55,189 INFO     main.on_save(): [cron] edited tasks
+2016-09-10 06:17:55,189 INFO    : [cron] edited tasks
