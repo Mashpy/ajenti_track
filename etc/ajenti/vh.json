@@ -1,7 +1,7 @@
 {
     "websites": [
         {
-            "maintenance_mode": true, 
+            "maintenance_mode": false, 
             "locations": [], 
             "custom_conf": "", 
             "ssl_key_path": "", 
@@ -10,7 +10,15 @@
             "custom_conf_toplevel": "", 
             "name": "mashpy.me", 
             "enabled": true, 
-            "extensions": {}, 
+            "extensions": {
+                "ajenti.plugins.vh.processes.ProcessesExtension": {
+                    "processes": []
+                }, 
+                "ajenti.plugins.vh-mysql.mysql.MySQLExtension": {
+                    "users": [], 
+                    "databases": []
+                }
+            }, 
             "domains": [], 
             "root": "/srv/new-website", 
             "ports": [

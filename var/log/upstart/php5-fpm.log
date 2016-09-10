@@ -6,3 +6,23 @@
 [10-Sep-2016 03:54:11] NOTICE: fpm is running, pid 9055
 [10-Sep-2016 03:54:11] NOTICE: ready to handle connections
 [10-Sep-2016 03:54:11] NOTICE: systemd monitor interval set to 10000ms
+[10-Sep-2016 04:29:07] NOTICE: Terminating ...
+[10-Sep-2016 04:29:07] NOTICE: exiting, bye-bye!
+[10-Sep-2016 04:29:07] NOTICE: fpm is running, pid 9581
+[10-Sep-2016 04:29:07] NOTICE: ready to handle connections
+[10-Sep-2016 04:29:07] NOTICE: systemd monitor interval set to 10000ms
+[10-Sep-2016 04:29:11] NOTICE: Terminating ...
+[10-Sep-2016 04:29:11] NOTICE: exiting, bye-bye!
+[10-Sep-2016 04:29:11] NOTICE: fpm is running, pid 9637
+[10-Sep-2016 04:29:11] NOTICE: ready to handle connections
+[10-Sep-2016 04:29:11] NOTICE: systemd monitor interval set to 10000ms
+[10-Sep-2016 04:29:13] NOTICE: Terminating ...
+[10-Sep-2016 04:29:13] NOTICE: exiting, bye-bye!
+[10-Sep-2016 04:29:13] NOTICE: fpm is running, pid 9693
+[10-Sep-2016 04:29:13] NOTICE: ready to handle connections
+[10-Sep-2016 04:29:13] NOTICE: systemd monitor interval set to 10000ms
+[10-Sep-2016 04:29:17] NOTICE: Terminating ...
+[10-Sep-2016 04:29:17] NOTICE: exiting, bye-bye!
+[10-Sep-2016 04:29:17] NOTICE: fpm is running, pid 9746
+[10-Sep-2016 04:29:17] NOTICE: ready to handle connections
+[10-Sep-2016 04:29:17] NOTICE: systemd monitor interval set to 10000ms
