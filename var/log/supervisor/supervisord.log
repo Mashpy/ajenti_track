@@ -23,3 +23,7 @@
 2016-09-10 04:42:31,791 INFO RPC interface 'supervisor' initialized
 2016-09-10 04:42:31,791 CRIT Server 'unix_http_server' running without any HTTP authentication checking
 2016-09-10 04:42:31,791 INFO supervisord started with pid 7133
+2016-09-10 04:51:02,437 CRIT Supervisor running as root (no user in config file)
+2016-09-10 04:51:02,438 INFO RPC interface 'supervisor' initialized
+2016-09-10 04:51:02,438 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2016-09-10 04:51:02,442 INFO supervisord started with pid 7133

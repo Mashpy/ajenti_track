@@ -2,7 +2,24 @@
     "websites": [
         {
             "maintenance_mode": false, 
-            "locations": [], 
+            "locations": [
+                {
+                    "custom_conf_override": false, 
+                    "path_append_pattern": false, 
+                    "pattern": "[^/]\\.php(/|$)", 
+                    "custom_conf": "", 
+                    "path": "", 
+                    "match": "regex", 
+                    "backend": {
+                        "params": {
+                            "php_admin_values": "open_basedir = none;", 
+                            "php_flags": "", 
+                            "pm": "dynamic"
+                        }, 
+                        "type": "php-fcgi"
+                    }
+                }
+            ], 
             "custom_conf": "", 
             "ssl_key_path": "", 
             "owner": "root", 
