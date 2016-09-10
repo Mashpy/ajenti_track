@@ -18,3 +18,8 @@ Start-Date: 2016-09-10  06:28:55
 Commandline: apt-get install ajenti-v-ftp-vsftpd:all+
 Install: db-util:amd64 (5.3.21~exp1ubuntu1, automatic), vsftpd:amd64 (3.0.2-1ubuntu2.14.04.1, automatic), ajenti-v-ftp-vsftpd:amd64 (0.2.5), db5.3-util:amd64 (5.3.28-3ubuntu3, automatic)
 End-Date: 2016-09-10  06:28:57
+
+Start-Date: 2016-09-10  07:28:57
+Commandline: apt-get install ajenti-v-ruby-puma:all+
+Install: ajenti-v-ruby-puma:amd64 (0.1.8)
+End-Date: 2016-09-10  07:28:58

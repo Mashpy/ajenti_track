@@ -1,0 +1,9 @@
+/.
+/var
+/var/lib
+/var/lib/ajenti
+/var/lib/ajenti/plugins
+/var/lib/ajenti/plugins/vh-puma
+/var/lib/ajenti/plugins/vh-puma/puma.py
+/var/lib/ajenti/plugins/vh-puma/__init__.py
+/var/lib/ajenti/plugins/vh-puma/package.desc

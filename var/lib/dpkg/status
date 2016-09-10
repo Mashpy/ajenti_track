@@ -359,6 +359,19 @@ Description: POSIX-compliant shell
 Homepage: http://gondor.apana.org.au/~herbert/dash/
 Original-Maintainer: Gerrit Pape <pape@smarden.org>
 
+Package: ajenti-v-ruby-puma
+Status: install ok installed
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-ruby-puma
+Version: 0.1.8
+Provides: ajenti-v-appgate
+Depends: ajenti-v
+Description: Ruby support for Ajenti V (via Puma.io)
+Homepage: http://ajenti.org/
+
 Package: python-six
 Status: install ok installed
 Priority: optional

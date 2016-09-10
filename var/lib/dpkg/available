@@ -324,6 +324,19 @@ Description-md5: 8d4d9c32c6b2b70328f7f774a0cc1248
 Supported: 5y
 Task: minimal
 
+Package: ajenti-v-ruby-puma
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-ruby-puma
+Version: 0.1.8
+Provides: ajenti-v-appgate
+Depends: ajenti-v
+Size: 1938
+Description: Ruby support for Ajenti V (via Puma.io)
+Homepage: http://ajenti.org/
+
 Package: python-six
 Priority: optional
 Section: python

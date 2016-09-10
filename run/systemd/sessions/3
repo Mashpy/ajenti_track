@@ -2,7 +2,7 @@
 UID=1000
 USER=ubuntu
 ACTIVE=1
-STATE=active
+STATE=closing
 REMOTE=1
 KILL_PROCESSES=0
 TYPE=tty

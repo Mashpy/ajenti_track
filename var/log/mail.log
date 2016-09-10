@@ -26,3 +26,4 @@ Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installing libauthuserdb
 Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installation complete: authuserdb
 Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installing libauthpam
 Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installation complete: authpam
+Sep 10 07:25:28 ip-172-31-23-55 imapd-ssl: couriertls: /etc/courier/mail.pem: error:0906D06C:PEM routines:PEM_read_bio:no start line

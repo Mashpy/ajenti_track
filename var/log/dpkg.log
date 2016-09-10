@@ -996,3 +996,13 @@
 2016-09-10 06:28:57 status unpacked ajenti-v-ftp-vsftpd:all 0.2.5
 2016-09-10 06:28:57 status half-configured ajenti-v-ftp-vsftpd:all 0.2.5
 2016-09-10 06:28:57 status installed ajenti-v-ftp-vsftpd:all 0.2.5
+2016-09-10 07:28:57 startup archives unpack
+2016-09-10 07:28:58 install ajenti-v-ruby-puma:all <none> 0.1.8
+2016-09-10 07:28:58 status half-installed ajenti-v-ruby-puma:all 0.1.8
+2016-09-10 07:28:58 status unpacked ajenti-v-ruby-puma:all 0.1.8
+2016-09-10 07:28:58 status unpacked ajenti-v-ruby-puma:all 0.1.8
+2016-09-10 07:28:58 startup packages configure
+2016-09-10 07:28:58 configure ajenti-v-ruby-puma:all 0.1.8 <none>
+2016-09-10 07:28:58 status unpacked ajenti-v-ruby-puma:all 0.1.8
+2016-09-10 07:28:58 status half-configured ajenti-v-ruby-puma:all 0.1.8
+2016-09-10 07:28:58 status installed ajenti-v-ruby-puma:all 0.1.8
