@@ -92,7 +92,12 @@
                     ]
                 }, 
                 "ajenti.plugins.vh-mysql.mysql.MySQLExtension": {
-                    "users": [], 
+                    "users": [
+                        {
+                            "password": "5d622355-07cf-47dd-8803-dee5c4a33a92", 
+                            "name": "railsmashpyme"
+                        }
+                    ], 
                     "databases": []
                 }
             }, 

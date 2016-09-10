@@ -17,3 +17,4 @@ php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e252
 php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2442f50> True
 php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e23dc550> True
 php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2368d90> True
+php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e2524a50> True
