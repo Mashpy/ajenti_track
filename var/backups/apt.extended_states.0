@@ -1,0 +1,352 @@
+Package: grub-gfxpayload-lists
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: os-prober
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-image-3.13.0-92-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libfreetype6
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-3.13.0-92-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-virtual
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub2-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-3.13.0-92
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub-pc-bin
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub-pc
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liberror-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: git-man
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-dbus
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-support
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liblcms2-2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjpeg-turbo8
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwebpmux1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-passlib
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-pil
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-greenlet
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwebp5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libtiff5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-ldap
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-imaging
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-dbus-dev
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-psutil
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gi
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gevent-websocket
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-lxml
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gevent-socketio
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-catcher
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apt-show-versions
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libapt-pkg-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libxslt1.1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-markupsafe
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-lockfile
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjbig0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-gevent
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-exconsole
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-daemon
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-mako
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-reconfigure
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjpeg8
+Architecture: amd64
+Auto-Installed: 1
+
+Package: heirloom-mailx
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-server-core-5.5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-server-5.5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: courier-authlib
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaio1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-client-core-5.5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libtcl8.6
+Architecture: amd64
+Auto-Installed: 1
+
+Package: exim4-base
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php5-fpm
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libltdl7
+Architecture: amd64
+Auto-Installed: 1
+
+Package: courier-imap
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php5-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: exim4
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libfontconfig1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: exim4-daemon-light
+Architecture: amd64
+Auto-Installed: 1
+
+Package: expect
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libvpx1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libgamin0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: gamin
+Architecture: amd64
+Auto-Installed: 1
+
+Package: fontconfig-config
+Architecture: amd64
+Auto-Installed: 1
+
+Package: supervisor
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libgd3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-client-5.5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libhtml-template-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libterm-readkey-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: nginx-core
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: exim4-config
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libmysqlclient18
+Architecture: amd64
+Auto-Installed: 1
+
+Package: courier-authlib-userdb
+Architecture: amd64
+Auto-Installed: 1
+
+Package: courier-base
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php5-json
+Architecture: amd64
+Auto-Installed: 1
+
+Package: nginx-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: nginx
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-meld3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: courier-imap-ssl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-server
+Architecture: amd64
+Auto-Installed: 1
+
+Package: courier-authdaemon
+Architecture: amd64
+Auto-Installed: 1
+
+Package: courier-ssl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: fonts-dejavu-core
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libdbd-mysql-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libxpm4
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libdbi-perl
+Architecture: amd64
+Auto-Installed: 1
+
