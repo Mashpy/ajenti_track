@@ -1,0 +1,4 @@
+aac19544baf18bf6f75ae6bd7c8f60a6  usr/lib/courier/mkimapdcert
+55ba1994f286a6cb8e447d71a0267497  usr/share/doc/courier-imap-ssl/copyright
+93a11e4bf765c790de7b4b58346226cf  usr/share/lintian/overrides/courier-imap-ssl
+b7f41e61485518691507f79f92d44fc3  usr/share/man/man8/mkimapdcert.8.gz

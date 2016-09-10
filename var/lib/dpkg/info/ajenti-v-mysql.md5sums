@@ -1,0 +1,4 @@
+fc2ab286a9bdfc7457f8e3f7e7eab6ae  var/lib/ajenti/plugins/vh-mysql/__init__.py
+1d720e42b795c316b782ecbdb0cad02d  var/lib/ajenti/plugins/vh-mysql/layout/ext.xml
+259d6c85c32b1a407d87de351216f41f  var/lib/ajenti/plugins/vh-mysql/package.desc
+fad973ce7309a8487306c434a1a7d8e8  var/lib/ajenti/plugins/vh-mysql/mysql.py

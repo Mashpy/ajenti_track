@@ -1,0 +1,12 @@
+update-alternatives 2016-09-10 03:54:07: run with --install /usr/bin/mailx mailx /usr/bin/heirloom-mailx 60 --slave /usr/bin/mail mail /usr/bin/heirloom-mailx --slave /usr/bin/Mail Mail /usr/bin/heirloom-mailx --slave /usr/share/man/man1/mailx.1.gz mailx.1.gz /usr/share/man/man1/heirloom-mailx.1.gz --slave /usr/share/man/man1/mail.1.gz mail.1.gz /usr/share/man/man1/heirloom-mailx.1.gz --slave /usr/share/man/man1/Mail.1.gz Mail.1.gz /usr/share/man/man1/heirloom-mailx.1.gz
+update-alternatives 2016-09-10 03:54:07: link group mailx updated to point to /usr/bin/heirloom-mailx
+update-alternatives 2016-09-10 03:54:10: run with --install /usr/bin/deliverquota deliverquota /usr/bin/deliverquota.courier 10 --slave /usr/share/man/man8/deliverquota.8.gz deliverquota.8.gz /usr/share/man/man8/deliverquota.courier.8.gz
+update-alternatives 2016-09-10 03:54:10: link group deliverquota updated to point to /usr/bin/deliverquota.courier
+update-alternatives 2016-09-10 03:54:10: run with --install /usr/share/man/man5/maildir.5.gz maildir.5.gz /usr/share/man/man5/maildir.courier.5.gz 5
+update-alternatives 2016-09-10 03:54:10: link group maildir.5.gz updated to point to /usr/share/man/man5/maildir.courier.5.gz
+update-alternatives 2016-09-10 03:54:10: run with --install /usr/bin/maildirmake maildirmake /usr/bin/maildirmake.courier 5 --slave /usr/share/man/man1/maildirmake.1.gz maildirmake.1.gz /usr/share/man/man1/maildirmake.courier.1.gz
+update-alternatives 2016-09-10 03:54:10: link group maildirmake updated to point to /usr/bin/maildirmake.courier
+update-alternatives 2016-09-10 03:54:10: run with --install /usr/share/man/man7/maildirquota.7.gz maildirquota.7.gz /usr/share/man/man7/maildirquota.courier.7.gz 5
+update-alternatives 2016-09-10 03:54:10: link group maildirquota.7.gz updated to point to /usr/share/man/man7/maildirquota.courier.7.gz
+update-alternatives 2016-09-10 03:54:10: run with --install /usr/bin/makedat makedat /usr/bin/makedat.courier 5 --slave /usr/share/man/man1/makedat.1.gz makedat.1.gz /usr/share/man/man1/makedat.courier.1.gz
+update-alternatives 2016-09-10 03:54:10: link group makedat updated to point to /usr/bin/makedat.courier

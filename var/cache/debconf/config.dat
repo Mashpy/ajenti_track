@@ -157,6 +157,28 @@ Name: console-setup/use_system_font
 Template: console-setup/use_system_font
 Owners: console-setup
 
+Name: courier-base/maildir
+Template: courier-base/maildir
+Owners: courier-base
+
+Name: courier-base/maildirpath
+Template: courier-base/maildirpath
+Owners: courier-base
+
+Name: courier-base/webadmin-configmode
+Template: courier-base/webadmin-configmode
+Value: false
+Owners: courier-base
+Flags: seen
+Variables:
+ courieruser = daemon
+
+Name: courier-ssl/certnotice
+Template: courier-ssl/certnotice
+Value: 
+Owners: courier-ssl
+Flags: seen
+
 Name: cryptsetup/prerm_active_mappings
 Template: cryptsetup/prerm_active_mappings
 Owners: cryptsetup
@@ -196,6 +218,93 @@ Owners: debconf
 Name: debian-installer/console-setup-udeb/title
 Template: debian-installer/console-setup-udeb/title
 Owners: keyboard-configuration
+
+Name: exim4-base/drec
+Template: exim4-base/drec
+Owners: exim4-base
+
+Name: exim4-daemon-light/drec
+Template: exim4-daemon-light/drec
+Owners: exim4-daemon-light
+
+Name: exim4/dc_eximconfig_configtype
+Template: exim4/dc_eximconfig_configtype
+Value: local delivery only; not on a network
+Owners: exim4-config
+
+Name: exim4/dc_local_interfaces
+Template: exim4/dc_local_interfaces
+Value: 127.0.0.1 ; ::1
+Owners: exim4-config
+
+Name: exim4/dc_localdelivery
+Template: exim4/dc_localdelivery
+Value: mbox format in /var/mail/
+Owners: exim4-config
+
+Name: exim4/dc_minimaldns
+Template: exim4/dc_minimaldns
+Value: false
+Owners: exim4-config
+
+Name: exim4/dc_other_hostnames
+Template: exim4/dc_other_hostnames
+Value: ip-172-31-23-55.us-west-2.compute.internal
+Owners: exim4-config
+Flags: mailname
+Variables:
+ fqdn = ip-172-31-23-55.us-west-2.compute.internal
+
+Name: exim4/dc_postmaster
+Template: exim4/dc_postmaster
+Value: 
+Owners: exim4-config
+
+Name: exim4/dc_readhost
+Template: exim4/dc_readhost
+Owners: exim4-config
+
+Name: exim4/dc_relay_domains
+Template: exim4/dc_relay_domains
+Owners: exim4-config
+
+Name: exim4/dc_relay_nets
+Template: exim4/dc_relay_nets
+Owners: exim4-config
+
+Name: exim4/dc_smarthost
+Template: exim4/dc_smarthost
+Owners: exim4-config
+
+Name: exim4/drec
+Template: exim4/drec
+Owners: exim4
+
+Name: exim4/exim4-config-title
+Template: exim4/exim4-config-title
+Owners: exim4-config
+
+Name: exim4/hide_mailname
+Template: exim4/hide_mailname
+Owners: exim4-config
+
+Name: exim4/mailname
+Template: exim4/mailname
+Value: ip-172-31-23-55.us-west-2.compute.internal
+Owners: exim4-config
+
+Name: exim4/no_config
+Template: exim4/no_config
+Owners: exim4-config
+
+Name: exim4/purge_spool
+Template: exim4/purge_spool
+Owners: exim4-base
+
+Name: exim4/use_split_config
+Template: exim4/use_split_config
+Value: false
+Owners: exim4-config
 
 Name: glibc/disable-screensaver
 Template: glibc/disable-screensaver
@@ -528,6 +637,34 @@ Name: man-db/install-setuid
 Template: man-db/install-setuid
 Value: false
 Owners: man-db
+
+Name: mysql-server-5.5/nis_warning
+Template: mysql-server-5.5/nis_warning
+Owners: mysql-server-5.5
+
+Name: mysql-server-5.5/postrm_remove_databases
+Template: mysql-server-5.5/postrm_remove_databases
+Owners: mysql-server-5.5
+
+Name: mysql-server-5.5/really_downgrade
+Template: mysql-server-5.5/really_downgrade
+Owners: mysql-server-5.5
+
+Name: mysql-server-5.5/start_on_boot
+Template: mysql-server-5.5/start_on_boot
+Owners: mysql-server-5.5
+
+Name: mysql-server/error_setting_password
+Template: mysql-server/error_setting_password
+Owners: mysql-server-5.5
+
+Name: mysql-server/no_upgrade_when_using_ndb
+Template: mysql-server/no_upgrade_when_using_ndb
+Owners: mysql-server-5.5
+
+Name: mysql-server/password_mismatch
+Template: mysql-server/password_mismatch
+Owners: mysql-server-5.5
 
 Name: ntfs-3g/initramfs
 Template: ntfs-3g/initramfs

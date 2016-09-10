@@ -1,0 +1,5 @@
+/etc/init.d/courier-imap
+/etc/logcheck/ignore.d.server/courier-imap
+/etc/logcheck/violations.ignore.d/courier-imap
+/etc/courier/imapd
+/etc/pam.d/imap

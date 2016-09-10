@@ -1,0 +1,11 @@
+/.
+/var
+/var/lib
+/var/lib/ajenti
+/var/lib/ajenti/plugins
+/var/lib/ajenti/plugins/vh-mysql
+/var/lib/ajenti/plugins/vh-mysql/__init__.py
+/var/lib/ajenti/plugins/vh-mysql/layout
+/var/lib/ajenti/plugins/vh-mysql/layout/ext.xml
+/var/lib/ajenti/plugins/vh-mysql/package.desc
+/var/lib/ajenti/plugins/vh-mysql/mysql.py

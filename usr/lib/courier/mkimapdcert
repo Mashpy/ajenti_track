@@ -1,0 +1,63 @@
+#! /bin/bash
+#
+#
+# Copyright 2000-2007 Double Precision, Inc.  See COPYING for
+# distribution information.
+#
+# This is a short script to quickly generate a self-signed X.509 key for
+# IMAP over SSL.  Normally this script would get called by an automatic
+# package installation routine.
+
+if test "openssl" = "openssl"
+then
+	test -x /usr/bin/openssl || exit 0
+else
+	test -x /usr/local/bin/certtool || exit 0
+fi
+
+prefix="/usr"
+
+if test -f /usr/lib/courier/imapd.pem
+then
+	echo "/usr/lib/courier/imapd.pem already exists."
+	exit 1
+fi
+
+umask 077
+
+cleanup() {
+	rm -f /usr/lib/courier/imapd.pem
+	rm -f /usr/lib/courier/imapd.rand
+	rm -f /usr/lib/courier/imapd.key
+	rm -f /usr/lib/courier/imapd.cert
+	exit 1
+}
+
+cd /usr/lib/courier
+
+if test "openssl" = "openssl"
+then
+	cp /dev/null /usr/lib/courier/imapd.pem
+	chmod 600 /usr/lib/courier/imapd.pem
+	chown daemon /usr/lib/courier/imapd.pem
+
+	dd if=/dev/urandom of=/usr/lib/courier/imapd.rand count=1 2>/dev/null
+	/usr/bin/openssl req -new -x509 -days 365 -nodes \
+		  -config /etc/courier/imapd.cnf -out /usr/lib/courier/imapd.pem -keyout /usr/lib/courier/imapd.pem || cleanup
+	/usr/bin/openssl gendh -rand /usr/lib/courier/imapd.rand 512 >>/usr/lib/courier/imapd.pem || cleanup
+	/usr/bin/openssl x509 -subject -dates -fingerprint -noout -in /usr/lib/courier/imapd.pem || cleanup
+	rm -f /usr/lib/courier/imapd.rand
+else
+	cp /dev/null /usr/lib/courier/imapd.key
+	chmod 600 /usr/lib/courier/imapd.key
+	cp /dev/null /usr/lib/courier/imapd.cert
+	chmod 600 /usr/lib/courier/imapd.cert
+	cp /dev/null /usr/lib/courier/imapd.pem
+	chmod 600 /usr/lib/courier/imapd.pem
+
+	/usr/local/bin/certtool --generate-privkey --outfile imapd.key
+	/usr/local/bin/certtool --generate-self-signed --load-privkey imapd.key --outfile imapd.cert --template /etc/courier/imapd.cnf
+	/usr/local/bin/certtool --generate-dh-params >>imapd.cert
+	cat imapd.key imapd.cert >imapd.pem
+	rm -f imapd.key imapd.cert
+fi

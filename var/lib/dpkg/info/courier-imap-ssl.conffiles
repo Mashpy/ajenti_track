@@ -1,0 +1,5 @@
+/etc/init.d/courier-imap-ssl
+/etc/logcheck/ignore.d.server/courier-imap-ssl
+/etc/logcheck/violations.ignore.d/courier-imap-ssl
+/etc/courier/imapd.cnf
+/etc/courier/imapd-ssl

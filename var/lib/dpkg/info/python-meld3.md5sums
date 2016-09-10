@@ -1,0 +1,16 @@
+f92f7593232438bf6c1b39189256208e  usr/lib/python2.7/dist-packages/meld3/cmeld3.so
+80c86e347de4e6f24f0a9dcafd453b8f  usr/share/doc/python-meld3/README.txt.gz
+f5ac1f24cb7d33153e6f9624a1355b4a  usr/share/doc/python-meld3/TODO.txt
+2b4f96422e0266716de4ce67eb537c73  usr/share/doc/python-meld3/changelog.Debian.gz
+cd11c0a4d290d8087f4b79cb88d7ebae  usr/share/doc/python-meld3/copyright
+897c332c80f21b92743f47b4b1611f5b  usr/share/doc/python-meld3/examples/clearsilverprofile.py
+21ec8c4c7095f3e3b9f5cbb20fe8df06  usr/share/doc/python-meld3/examples/example.py
+0f1d19f2a6c953692f76d6cfffac27c2  usr/share/doc/python-meld3/examples/melddiff.py
+63e3ee21854e4b9bec47fccfedaf2c41  usr/share/doc/python-meld3/examples/meldprofile.py
+f6d6774ec8be999f38bb7c93200ea46e  usr/share/doc/python-meld3/examples/test_getiterator.py
+d4afec3921ea031f212cc59cd24c5283  usr/share/doc/python-meld3/examples/test_meld3.py.gz
+c7ef1815f44c90b88d8ebc928c3a3a9e  usr/share/doc/python-meld3/examples/testclone.py
+367da9f71a6e35e74fe5a4cedb993346  usr/share/doc/python-meld3/examples/zptprofile.py
+f45c082dba5e7930dc4c35f76a71535b  usr/share/pyshared/meld3-0.6.10.egg-info
+58050dde22f29bdc4b83241054dd5f95  usr/share/pyshared/meld3/__init__.py
+f8631b143effc67d40ab580e5ebb05b9  usr/share/pyshared/meld3/meld3.py

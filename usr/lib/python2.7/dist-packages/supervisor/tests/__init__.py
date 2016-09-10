@@ -1,0 +1,1 @@
+../../../../../share/pyshared/supervisor/tests/__init__.py

@@ -1,0 +1,9 @@
+/.
+/var
+/var/lib
+/var/lib/ajenti
+/var/lib/ajenti/plugins
+/var/lib/ajenti/plugins/vh-php-fpm
+/var/lib/ajenti/plugins/vh-php-fpm/__init__.py
+/var/lib/ajenti/plugins/vh-php-fpm/phpfpm.py
+/var/lib/ajenti/plugins/vh-php-fpm/package.desc

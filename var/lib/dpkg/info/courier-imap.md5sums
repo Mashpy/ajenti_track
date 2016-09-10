@@ -1,0 +1,12 @@
+abebad535e1c244436664091dac4be13  usr/bin/imapd
+ddfea9b82f152d47b79840533d0d066a  usr/lib/courier/courier/imaplogin
+47e036905af6edf9e5fe8a05ee50067e  usr/lib/courier/imapd
+241abc614fa6d0844c3e7cee16429817  usr/share/courier/webadmin/admin-40imap.html
+7d931598480e883cded8f1e6c5f3e80b  usr/share/courier/webadmin/admin-40imap.pl
+9e2572fe6368ca759355833551794e1e  usr/share/doc/courier-imap/README.Debian
+dfb5b8313f937ee0b2174b040155d573  usr/share/doc/courier-imap/README.imapkeywords.html
+c1ad4b8ebd48538fd00d6db6e6b4039b  usr/share/doc/courier-imap/README.proxy.gz
+5526ae14de82155a3537fe1d07913427  usr/share/doc/courier-imap/README.proxy.html
+55ba1994f286a6cb8e447d71a0267497  usr/share/doc/courier-imap/copyright
+cdd33c7fd37ecc4075157346b8681aa2  usr/share/lintian/overrides/courier-imap
+6a63739b83fafa4a1b51dcc053ff9b15  usr/share/man/man8/imapd.8.gz

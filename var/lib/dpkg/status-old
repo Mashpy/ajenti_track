@@ -47,6 +47,28 @@ Description: Wietse Venema's TCP wrapper utilities
   - booby traps to implement an early-warning system.
 Original-Maintainer: Marco d'Itri <md@linux.it>
 
+Package: mysql-client-core-5.5
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 6821
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Replaces: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Depends: libc6 (>= 2.17), libreadline6 (>= 6.0), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Description: MySQL database core client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the core client files, as used by Akonadi.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
 Package: python-urllib3
 Status: install ok installed
 Priority: optional
@@ -134,7 +156,7 @@ Homepage: http://www.and.org/ustr/
 Original-Maintainer: Vaclav Ovsik <vaclav.ovsik@i.cz>
 
 Package: python-lxml
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 2482
@@ -184,6 +206,94 @@ Description: Debian configuration management system
  Debconf is a configuration management system for debian packages. Packages
  use Debconf to ask questions when they are installed.
 Original-Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+
+Package: exim4-config
+Status: install ok installed
+Priority: standard
+Section: mail
+Installed-Size: 1004
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: exim4
+Version: 4.82-3ubuntu2.1
+Provides: exim4-config-2
+Depends: debconf (>= 0.5) | debconf-2.0, adduser
+Breaks: exim4-daemon-heavy (<< 4.82-3ubuntu2.1), exim4-daemon-light (<< 4.82-3ubuntu2.1)
+Conflicts: courier-mta, esmtp-run, exim, exim-tls, exim4-config, exim4-config-2, hula-mta, masqmail, mta-dummy, nullmailer, postfix, sendmail-bin, smail, ssmtp, xmail, zmailer
+Conffiles:
+ /etc/exim4/conf.d/main/02_exim4-config_options d0463b31cfc6ef809d0a18a66b684364
+ /etc/exim4/conf.d/main/03_exim4-config_tlsoptions 42f15d13b6b09faf27633dd8580ba299
+ /etc/exim4/conf.d/main/90_exim4-config_log_selector 888348df8f7bd25a0a77d3c05e8fffe3
+ /etc/exim4/conf.d/main/01_exim4-config_listmacrosdefs 9ce2f129b98e90b1ebbfa04979b4a335
+ /etc/exim4/conf.d/acl/00_exim4-config_header e572a7b9954b20950242db2a92b35044
+ /etc/exim4/conf.d/acl/40_exim4-config_check_data c66ee298b4e4a3b55a07364d5e3677ed
+ /etc/exim4/conf.d/acl/30_exim4-config_check_mail 715076d5c3a365a6b38425e478fdca83
+ /etc/exim4/conf.d/acl/20_exim4-config_local_deny_exceptions 516070107501d48a3106d755cb199e95
+ /etc/exim4/conf.d/acl/30_exim4-config_check_rcpt 3db07878fb48195750393e55a6482510
+ /etc/exim4/conf.d/retry/00_exim4-config_header 309f5bf0859ad91e03c5402d6afe6895
+ /etc/exim4/conf.d/retry/30_exim4-config d45d612ffd0ce651fab5e953d61f7524
+ /etc/exim4/conf.d/transport/00_exim4-config_header 9568ac286553a79b8447c9060fed7798
+ /etc/exim4/conf.d/transport/30_exim4-config_maildrop_pipe e04895ab4184472a270ff229de8fbfd3
+ /etc/exim4/conf.d/transport/30_exim4-config_address_reply 9145131105953b0125a228ab9b7c6500
+ /etc/exim4/conf.d/transport/30_exim4-config_procmail_pipe 82379d31ca4bf60d9667f408cb55dbbf
+ /etc/exim4/conf.d/transport/35_exim4-config_address_directory c2a777e8db8fac4f83c2da0c95952598
+ /etc/exim4/conf.d/transport/30_exim4-config_mail_spool a0f0997e4f06f38afdae0ee79759dfea
+ /etc/exim4/conf.d/transport/30_exim4-config_address_file fe97ddf4165820356e90c05fa744f796
+ /etc/exim4/conf.d/transport/30_exim4-config_address_pipe dfcd9d71f1bb4c55ac29cccead29117e
+ /etc/exim4/conf.d/transport/30_exim4-config_remote_smtp 86fc4206e9cbb47dbdcd589b327221f0
+ /etc/exim4/conf.d/transport/30_exim4-config_remote_smtp_smarthost d510a82c8e196370ec713f5e687d6efb
+ /etc/exim4/conf.d/transport/30_exim4-config_maildir_home 3edfd11b8e9a8919a9a14cbc24637d68
+ /etc/exim4/conf.d/transport/10_exim4-config_transport-macros 75631733cbe02d61113e323e9c2476c7
+ /etc/exim4/conf.d/auth/00_exim4-config_header d0ee6ea0b33d9796573bb024ffca20d4
+ /etc/exim4/conf.d/auth/30_exim4-config_examples 9085a3577416c654a12ee7e387c110c8
+ /etc/exim4/conf.d/rewrite/00_exim4-config_header d98361da23f34490d191bf2280728dec
+ /etc/exim4/conf.d/rewrite/31_exim4-config_rewriting f232e855810d98a45ede134b369faa53
+ /etc/exim4/conf.d/router/00_exim4-config_header c0ecc395e9a49487b484126cac4d9559
+ /etc/exim4/conf.d/router/300_exim4-config_real_local 07c6277988b181918f790ffe68c245da
+ /etc/exim4/conf.d/router/700_exim4-config_procmail 28ddff8000ba5577c60eed8fabb520b4
+ /etc/exim4/conf.d/router/800_exim4-config_maildrop ba547442939aa9f57b541d7320aed321
+ /etc/exim4/conf.d/router/400_exim4-config_system_aliases 7dc0cee575163f1d9761f1cf317f8299
+ /etc/exim4/conf.d/router/100_exim4-config_domain_literal 1c4d00a933df2dcc18b1d0e4a3a4bc3d
+ /etc/exim4/conf.d/router/900_exim4-config_local_user 20c8ced8346125170242584e575a95ff
+ /etc/exim4/conf.d/router/mmm_mail4root 8a16022dfc39cae4f508dfab20a8f760
+ /etc/exim4/conf.d/router/200_exim4-config_primary 29f98f21437e2dfa2c2458b5aa8a04ce
+ /etc/exim4/conf.d/router/850_exim4-config_lowuid 52dc089e083a3f5b0bda6af1c6bc48d7
+ /etc/exim4/conf.d/router/500_exim4-config_hubuser 857b2e326d6b46caf07c2ccaa338f11d
+ /etc/exim4/conf.d/router/150_exim4-config_hubbed_hosts 1d4a3bab1738f10f931b73ad60c7bb8d
+ /etc/exim4/conf.d/router/600_exim4-config_userforward 2c63dff568fb6c984c5e4aa3d8142cd8
+ /etc/exim4/exim4.conf.template a0614516eef984584c55dda0a2f1fbda
+ /etc/exim4/passwd.client 4b0013712a87d147c8303fa761e3c771
+ /etc/ppp/ip-up.d/exim4 5f4b9cb6696117b19b32aaa8fa7a6de2
+ /etc/email-addresses 6bea09fbb18e4676012105fa5fc726c6
+Description: configuration for the Exim MTA (v4)
+ Exim (v4) is a mail transport agent. exim4-config provides the configuration
+ for the exim4 daemon packages. The configuration framework has been split
+ off the main package to allow sites to replace the configuration scheme
+ with their own without having to change the actual exim4 packages.
+ .
+ Sites with special configuration needs (having a lot of identically
+ configured machines for example) can use this to distribute their own
+ custom configuration via the packaging system, using the magic
+ available with dpkg's conffile handling, without having to do local
+ changes on all of these machines.
+ .
+ The Debian exim4 packages have their own web page,
+ http://wiki.debian.org/PkgExim4. There is also a Debian-specific
+ FAQ list. Information about the way the Debian packages are
+ configured can be found in
+ /usr/share/doc/exim4-base/README.Debian.gz, which additionally contains
+ information about the way the Debian binary packages are built. The
+ very extensive upstream documentation is shipped in
+ /usr/share/doc/exim4-base/spec.txt.gz. To repeat the debconf-driven
+ configuration process in a standard setup, invoke dpkg-reconfigure
+ exim4-config. There is a Debian-centered mailing list,
+ pkg-exim4-users@lists.alioth.debian.org. Please ask Debian-specific
+ questions there, and only write to the upstream exim-users mailing
+ list if you are sure that your question is not Debian-specific. You
+ can find the subscription web page on
+ http://lists.alioth.debian.org/mailman/listinfo/pkg-exim4-users
+Homepage: http://www.exim.org/
+Original-Maintainer: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
 
 Package: libasprintf0c2
 Status: install ok installed
@@ -511,6 +621,38 @@ Description: Miscellaneous utilities specific to Debian
  tempfile which
 Original-Maintainer: Clint Adams <clint@debian.org>
 
+Package: libdbi-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 2155
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.630-1
+Provides: perl-dbdabi-94
+Depends: perl (>= 5.18.1-4build1), perlapi-5.18.1, libc6 (>= 2.4)
+Suggests: libclone-perl (>= 0.34), libmldbm-perl, libnet-daemon-perl, libplrpc-perl, libsql-statement-perl (>= 1.402)
+Breaks: libdbd-anydata-perl (<< 0.11+), libdbd-csv-perl (<< 0.3600+), libsql-statement-perl (<< 1.33+)
+Description: Perl Database Interface (DBI)
+ DBI (DataBase Interface) is a Perl framework that provides a common interface
+ to access various backend databases in a uniform manner. DBD (DataBase Driver)
+ modules provide implementations for various backend data storage mechanisms
+ including networked relational databases (particularly SQL databases) and even
+ web services such as the Google search engine.
+ .
+ It is extremely portable and available for a wide range of operating systems,
+ architectures and data stores, including:
+ .
+  * Oracle
+  * Microsoft SQL Server
+  * IBM DB2
+  * SQLite
+  * PostgreSQL
+  * Firebird
+  * MySQL
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://dbi.perl.org/
+
 Package: libclass-accessor-perl
 Status: install ok installed
 Priority: optional
@@ -552,6 +694,19 @@ Description: X11 miscellaneous micro-utility library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXmu
 Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: ajenti-v-nginx
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-nginx
+Version: 0.1.45
+Provides: ajenti-v-webserver
+Depends: ajenti-v (>= 0.2.26), nginx
+Description: NGINX support for Ajenti V
+Homepage: http://ajenti.org/
 
 Package: python-twisted-bin
 Status: install ok installed
@@ -803,7 +958,7 @@ Homepage: http://dbus.freedesktop.org/
 Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 
 Package: python-exconsole
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 46
@@ -847,6 +1002,27 @@ Description: transitional dummy package (module-init-tools to kmod)
  This dummy package is provided to support the transition from
  module-init-tools to kmod and should be removed afterwards.
 Original-Maintainer: Marco d'Itri <md@linux.it>
+
+Package: libgamin0
+Status: install ok unpacked
+Priority: optional
+Section: libs
+Installed-Size: 115
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gamin
+Version: 0.1.10-4.1ubuntu1
+Replaces: libfam0, libfam0c102
+Provides: libfam0, libfam0c102
+Depends: libc6 (>= 2.15), gamin
+Conflicts: libfam0, libfam0c102
+Description: Client library for the gamin file and directory monitoring system
+ Gamin is a file and directory monitoring system defined to be a
+ subset of the FAM (File Alteration Monitor) system.
+ .
+ This package contains the client library for the gamin file and directory
+ monitoring system.
+Original-Maintainer: Michael Banck <mbanck@debian.org>
 
 Package: libffi6
 Status: install ok installed
@@ -943,7 +1119,7 @@ Homepage: http://directory.fsf.org/project/libgcrypt/
 Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 
 Package: python-dbus
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 398
@@ -1031,6 +1207,24 @@ Description: Universally Unique ID library
  See RFC 4122 for more information.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
 Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: libaio1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 52
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libaio
+Version: 0.3.109-4
+Pre-Depends: multiarch-support
+Description: Linux kernel AIO access library - shared library
+ This library enables userspace to use Linux kernel asynchronous I/O
+ system calls, important for the performance of databases and other
+ advanced applications.
+Original-Maintainer: Guillem Jover <guillem@debian.org>
+Homepage: http://www.kernel.org/pub/linux/libs/aio/
 
 Package: libtasn1-6
 Status: install ok installed
@@ -1272,6 +1466,29 @@ Description: MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
 Homepage: http://web.mit.edu/kerberos/
 Original-Maintainer: Sam Hartman <hartmans@debian.org>
 
+Package: php5-json
+Status: install ok unpacked
+Priority: optional
+Section: php
+Installed-Size: 159
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: php-json
+Version: 1.3.2-2build1
+Replaces: php5-dev (<< 5.5.0~rc1+dfsg-1~)
+Depends: libc6 (>= 2.14), phpapi-20121212, ucf, libjson-c2 (>= 0.11-3~)
+Breaks: php5-common (<< 5.5.0~rc1+dfsg-1~), php5-dev (<< 5.5.0~rc1+dfsg-1~)
+Conffiles:
+ /etc/php5/mods-available/json.ini newconffile
+Description: JSON module for php5
+ This package provides a module for JSON functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Homepage: http://pecl.php.net/package/jsonc
+
 Package: python-minimal
 Status: install ok installed
 Priority: standard
@@ -1397,8 +1614,25 @@ Description: Interfaces for Python
 Homepage: http://pypi.python.org/pypi/zope.interface
 Original-Maintainer: Debian/Ubuntu Zope Team <pkg-zope-developers@lists.alioth.debian.org>
 
+Package: courier-authdaemon
+Status: install ok installed
+Priority: optional
+Section: mail
+Installed-Size: 60
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: courier-authlib
+Version: 0.63.0-6ubuntu1
+Depends: courier-authlib (>= 0.63.0), lsb-base (>= 3.0-10)
+Conffiles:
+ /etc/courier/authdaemonrc 72568de34229e573ad36a0ac4313ad69
+ /etc/init.d/courier-authdaemon 4a61904b947b6000441625e18499de89
+Description: Courier authentication daemon
+ This package contains the authentication daemon for the Courier applications.
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+
 Package: python-pil
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 1123
@@ -1460,6 +1694,27 @@ Description: basic terminal type definitions
  vt52, and xterm.
 Homepage: http://invisible-island.net/ncurses/
 Original-Maintainer: Craig Small <csmall@debian.org>
+
+Package: expect
+Status: install ok installed
+Priority: optional
+Section: interpreters
+Installed-Size: 320
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 5.45-5ubuntu1
+Depends: libc6 (>= 2.14), libtcl8.6 (>= 8.6.0)
+Conflicts: expectk (<< 5.45)
+Description: Automates interactive applications
+ Expect is a tool for automating interactive applications according to a script.
+ Following the script, Expect knows what can be expected from a program and what
+ the correct response should be. Expect is also useful for testing these same
+ applications. And by adding Tk, you can also wrap interactive applications in
+ X11 GUIs. An interpreted language provides branching and high-level control
+ structures to direct the dialogue. In addition, the user can take control and
+ interact directly when desired, afterward returning control to the script.
+Original-Maintainer: Sergei Golovan <sgolovan@debian.org>
+Homepage: http://sourceforge.net/projects/expect/
 
 Package: libpopt0
 Status: install ok installed
@@ -1707,7 +1962,7 @@ Homepage: http://userweb.kernel.org/~kzak/util-linux/
 Original-Maintainer: LaMont Jones <lamont@debian.org>
 
 Package: python-gevent-websocket
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 102
@@ -1827,7 +2082,7 @@ Original-Maintainer: Olly Betts <olly@survex.com>
 Homepage: http://xapian.org/
 
 Package: python-mako
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 351
@@ -2003,7 +2258,7 @@ Description: use an overlayfs on top of a read-only root filesystem
 Homepage: http://launchpad.net/cloud-initramfs-tools
 
 Package: python-reconfigure
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 201
@@ -2036,6 +2291,34 @@ Description: helper tools for all init systems
  specific to systemd at all. Maintainers of other init systems are welcome to
  include their helpers in this package.
 Original-Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: courier-imap-ssl
+Status: install ok unpacked
+Priority: extra
+Section: mail
+Installed-Size: 122
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: courier (0.68.2-1ubuntu3)
+Version: 4.10.0-20120615-1ubuntu3
+Depends: courier-imap (>= 1.3.7-3), courier-ssl (>= 0.68.2), openssl, lsb-base (>= 1.3.9ubuntu3), debconf
+Suggests: courier-doc, imap-client
+Conffiles:
+ /etc/init.d/courier-imap-ssl newconffile
+ /etc/logcheck/ignore.d.server/courier-imap-ssl newconffile
+ /etc/logcheck/violations.ignore.d/courier-imap-ssl newconffile
+ /etc/courier/imapd.cnf newconffile
+ /etc/courier/imapd-ssl newconffile
+Description: Courier mail server - IMAP over SSL
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP,
+ SSL, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and mailing list
+ services within a single, consistent, framework.
+ .
+ IMAP over SSL is handled by the regular IMAP daemon from courier-imap
+ in conjunction with the SSL/TLS wrapper supplied by courier-ssl.
+Homepage: http://www.courier-mta.org/
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
 
 Package: bzip2
 Status: install ok installed
@@ -2152,7 +2435,7 @@ Description: Secure Sockets Layer toolkit - cryptographic utility
 Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 
 Package: python-gi
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 709
@@ -2445,7 +2728,7 @@ Description: SGML infrastructure and SGML catalog file support
 Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
 
 Package: libxslt1.1
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: libs
 Installed-Size: 486
@@ -2466,6 +2749,35 @@ Description: XSLT 1.0 processing library - runtime library
  transformations.
 Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
 Homepage: http://xmlsoft.org/xslt/
+
+Package: gamin
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Installed-Size: 162
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1.10-4.1ubuntu1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.35.9), libgamin0 (= 0.1.10-4.1ubuntu1)
+Conflicts: fam
+Conffiles:
+ /etc/gamin/gaminrc newconffile
+Description: File and directory monitoring system
+ Gamin is a file and directory monitoring system which allows
+ applications to detect when a file or a directory has been added,
+ removed or modified by somebody else.
+ .
+ It can be used by desktops like KDE, GNOME or Xfce to have their
+ virtual file systems keep track of changes to files and directories.
+ For example, if a file manager displays a directory to the user, and
+ the user removes one of the files via the command-line, gamin will
+ notify the file manager of this change so that it can update the
+ directory display.
+ .
+ Gamin has been designed as a drop-in replacement for FAM with security
+ and maintainability in mind and can use Linux's advanced inotify
+ service when available.
+Original-Maintainer: Michael Banck <mbanck@debian.org>
 
 Package: pciutils
 Status: install ok installed
@@ -2706,6 +3018,45 @@ Description: Full screen ncurses traceroute tool
  mtr-tiny is compiled without support for X and conserves disk space.
 Original-Maintainer: Robert Woodcock <rcw@debian.org>
 Homepage: http://www.bitwizard.nl/mtr/
+
+Package: nginx-core
+Status: install ok installed
+Priority: optional
+Section: httpd
+Installed-Size: 959
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nginx
+Version: 1.4.6-1ubuntu3.5
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.4.6-1ubuntu3.5), libc6 (>= 2.14), libgd3 (>= 2.1.0~alpha~), libgeoip1, libpcre3, libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.2.0)
+Suggests: nginx-doc (= 1.4.6-1ubuntu3.5)
+Breaks: nginx (<< 1.4.5-1)
+Conflicts: nginx-extras, nginx-full, nginx-light, nginx-naxsi
+Description: nginx web/proxy server (core version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extras).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser,
+ Charset, Empty GIF, FastCGI, Geo, Gzip, Headers, Index, Limit Requests,
+ Limit Zone, Log, Map, Memcached, Proxy, Referer, Rewrite, SCGI,
+ Split Clients, SSI, Upstream, User ID, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Debug, GeoIP, Gzip Precompression, HTTP Sub,
+ Image Filter, IPv6, Real IP, Spdy, SSL, Stub Status, Substitution, WebDAV,
+ XSLT.
+ .
+ MAIL MODULES: Mail Core, IMAP, POP3, SMTP, SSL.
+ .
+ NOTE: This is identical to the -full build, but without any third party
+ modules built in.
+Homepage: http://nginx.net
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
 
 Package: libk5crypto3
 Status: install ok installed
@@ -3150,6 +3501,29 @@ Description: interactive high-level object-oriented language (default version)
 Homepage: http://www.python.org/
 Original-Maintainer: Matthias Klose <doko@debian.org>
 
+Package: libfontconfig1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 498
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: fontconfig
+Version: 2.11.0-0ubuntu4.2
+Provides: libfontconfig
+Depends: fontconfig-config (= 2.11.0-0ubuntu4.2), libc6 (>= 2.14), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.2.1)
+Pre-Depends: multiarch-support
+Description: generic font configuration library - runtime
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the runtime library needed to launch applications
+ using fontconfig.
+Original-Maintainer: Keith Packard <keithp@debian.org>
+
 Package: ifupdown
 Status: install ok installed
 Priority: important
@@ -3515,7 +3889,7 @@ Description: package management runtime library
 Original-Maintainer: APT Development Team <deity@lists.debian.org>
 
 Package: python-passlib
-Status: install ok unpacked
+Status: install ok installed
 Priority: extra
 Section: python
 Installed-Size: 797
@@ -3653,7 +4027,7 @@ Description: The Landscape administration system client
 Original-Maintainer: Landscape Team <landscape-team@canonical.com>
 
 Package: libwebpmux1
-Status: install ok unpacked
+Status: install ok installed
 Priority: extra
 Section: libs
 Installed-Size: 62
@@ -3753,6 +4127,30 @@ Description: Python 3 bindings for gobject-introspection libraries
  package. With these packages, the libraries can be used from Python 3.
 Homepage: https://wiki.gnome.org/PyGObject
 Original-Maintainer: Josselin Mouette <joss@debian.org>
+
+Package: libxpm4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 121
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxpm
+Version: 1:3.5.10-1
+Depends: libc6 (>= 2.14), libx11-6
+Pre-Depends: multiarch-support
+Description: X11 pixmap library
+ libXpm provides support and common operation for the XPM pixmap format, which
+ is commonly used in legacy X applications.  XPM is an extension of the
+ monochrome XBM bitmap specified in the X protocol.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXpm
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 
 Package: libkmod2
 Status: install ok installed
@@ -3868,7 +4266,7 @@ Description: GNU dbm database support for Python
 Original-Maintainer: Matthias Klose <doko@debian.org>
 
 Package: liblcms2-2
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: libs
 Installed-Size: 392
@@ -3990,6 +4388,27 @@ Description: Free Implementation of the Unicode BiDi algorithm
 Original-Maintainer: Debian Hebrew Packaging Team <debian-hebrew-package@lists.alioth.debian.org>
 Homepage: http://www.fribidi.org/
 
+Package: libvpx1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1712
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libvpx
+Version: 1.3.0-2
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Description: VP8 video codec (shared library)
+ VP8 is an open video codec, originally developed by On2 and released
+ as open source by Google Inc. It is the successor of the VP3 codec,
+ on which the Theora codec was based.
+ .
+ This package contains the shared libraries.
+Original-Maintainer: Sebastian Dröge <slomo@debian.org>
+Homepage: http://www.webmproject.org
+
 Package: zlib1g
 Status: install ok installed
 Priority: required
@@ -4032,7 +4451,7 @@ Homepage: http://www.h5l.org/
 Original-Maintainer: Brian May <bam@debian.org>
 
 Package: libapt-pkg-perl
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: perl
 Installed-Size: 259
@@ -4045,6 +4464,44 @@ Description: Perl interface to libapt-pkg
  file/command line parsing, version comparison, inspection of the binary
  package cache and source package details.
 Original-Maintainer: Brendan O'Dea <bod@debian.org>
+
+Package: exim4-daemon-light
+Status: install ok installed
+Priority: standard
+Section: mail
+Installed-Size: 1142
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: exim4
+Version: 4.82-3ubuntu2.1
+Replaces: exim4-base (<= 4.61-1), mail-transport-agent
+Provides: exim4-localscanapi-1.0, exim4-localscanapi-1.1, mail-transport-agent
+Depends: exim4-base (>= 4.82), libc6 (>= 2.15), libdb5.3, libgnutls26 (>= 2.12.17-0), libpcre3, debconf (>= 0.5) | debconf-2.0
+Conflicts: mail-transport-agent
+Description: lightweight Exim MTA (v4) daemon
+ Exim (v4) is a mail transport agent. This package contains the exim4
+ daemon with only basic features enabled. It works well with the
+ standard setups that are provided by Debian and includes support for
+ TLS encryption and the dlopen patch to allow dynamic loading of a
+ local_scan function.
+ .
+ The Debian exim4 packages have their own web page,
+ http://wiki.debian.org/PkgExim4. There is also a Debian-specific
+ FAQ list. Information about the way the Debian packages are
+ configured can be found in
+ /usr/share/doc/exim4-base/README.Debian.gz, which additionally contains
+ information about the way the Debian binary packages are built. The
+ very extensive upstream documentation is shipped in
+ /usr/share/doc/exim4-base/spec.txt.gz. To repeat the debconf-driven
+ configuration process in a standard setup, invoke dpkg-reconfigure
+ exim4-config. There is a Debian-centered mailing list,
+ pkg-exim4-users@lists.alioth.debian.org. Please ask Debian-specific
+ questions there, and only write to the upstream exim-users mailing
+ list if you are sure that your question is not Debian-specific. You
+ can find the subscription web page on
+ http://lists.alioth.debian.org/mailman/listinfo/pkg-exim4-users
+Homepage: http://www.exim.org/
+Original-Maintainer: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
 
 Package: os-prober
 Status: install ok installed
@@ -4147,7 +4604,7 @@ Homepage: http://xcb.freedesktop.org
 Original-Maintainer: XCB Developers <xcb@lists.freedesktop.org>
 
 Package: python-support
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 155
@@ -4208,7 +4665,7 @@ Description: manage release upgrades
  This is the core of update-manager and the release upgrader
 
 Package: python-dbus-dev
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 63
@@ -4681,7 +5138,7 @@ Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
 
 Package: apt-show-versions
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: admin
 Installed-Size: 169
@@ -4690,9 +5147,9 @@ Architecture: all
 Version: 0.22.3
 Depends: perl | perl-5.005 | perl-5.004, apt, libapt-pkg-perl (>= 0.1.21), libstorable-perl
 Conffiles:
- /etc/cron.daily/apt-show-versions newconffile
- /etc/apt/apt.conf.d/20apt-show-versions newconffile
- /etc/bash_completion.d/apt-show-versions newconffile
+ /etc/cron.daily/apt-show-versions ceccc6292ad7c2e762bd04f0bee3bf98
+ /etc/apt/apt.conf.d/20apt-show-versions e02489f6adb594c2609841ba130345fe
+ /etc/bash_completion.d/apt-show-versions aba34f21c14ad141ea2033d39f2327c5
 Description: lists available package versions with distribution
  apt-show-versions parses the dpkg status file and the APT lists for
  the installed and available package versions and distribution and
@@ -4784,6 +5241,55 @@ Description: Python bindings to libcurl
 Homepage: http://pycurl.sourceforge.net
 Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 
+Package: mysql-common
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Breaks: amarok (<< 2.5.0-2), mysql-client-5.1 (<< 5.5), mysql-server-5.1 (<< 5.5), mysql-server-core-5.1 (<< 5.5)
+Conffiles:
+ /etc/mysql/my.cnf 77f15d6c87f9c136c4efcda072017f71
+ /etc/mysql/conf.d/.keepme d41d8cd98f00b204e9800998ecf8427e
+Description: MySQL database common files, e.g. /etc/mysql/my.cnf
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes files needed by all versions of the client library,
+ e.g. /etc/mysql/my.cnf.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: libgd3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 482
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libgd2
+Version: 2.1.0-3ubuntu0.3
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libtiff5 (>= 4.0.3), libvpx1 (>= 1.0.0), libxpm4, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Suggests: libgd-tools
+Description: GD Graphics Library
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the runtime package of the library.
+Homepage: http://www.libgd.org/
+Original-Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+
 Package: libreadline6
 Status: install ok installed
 Priority: important
@@ -4806,7 +5312,7 @@ Description: GNU readline and history libraries, run-time libraries
 Original-Maintainer: Matthias Klose <doko@debian.org>
 
 Package: python-gevent
-Status: install ok unpacked
+Status: install ok installed
 Priority: extra
 Section: python
 Installed-Size: 882
@@ -4878,6 +5384,19 @@ Description: library to apply JSON patches - python 2.x
 Original-Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
 Homepage: https://github.com/stefankoegl/python-json-patch
 
+Package: ajenti-v-mail
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-mail
+Version: 0.1.36
+Provides: ajenti-v-mailserver
+Depends: ajenti-v, courier-imap, courier-imap-ssl, exim4
+Description: Mail for Ajenti V
+Homepage: http://ajenti.org/
+
 Package: libplymouth2
 Status: install ok installed
 Priority: optional
@@ -4923,6 +5442,47 @@ Description: Vi IMproved - enhanced vi editor
  (or less).
 Homepage: http://www.vim.org/
 Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
+
+Package: fonts-dejavu-core
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 2898
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: fonts-dejavu
+Version: 2.34-1ubuntu1
+Replaces: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Breaks: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Conffiles:
+ /etc/fonts/conf.avail/57-dejavu-serif.conf 1dca2f4ec93842e94f3919f7e0c8f7a9
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf f7df7bba810dd953dd78212900f4dcad
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf 0b01522fe76b4e5b8ab3d12383371348
+ /etc/fonts/conf.avail/57-dejavu-sans-mono.conf d3e4d007a9ac6c47243b5994f1d195e3
+ /etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf d2ee39274982cb4f831783cff742c8bc
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf 0cbf30e4580c5a8570da071ab12c5e4d
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf e90c678d46f49bb9d6ba469b64e80c0c
+ /etc/fonts/conf.avail/58-dejavu-lgc-serif.conf 5f0b00e681b1f40b65dd336696ee0bbb
+ /etc/fonts/conf.avail/58-dejavu-lgc-sans.conf b4a8f51e45aa24fdee47b3f838cc0205
+ /etc/fonts/conf.avail/57-dejavu-sans.conf 29cfe6c581fe2dbc222525ce00097002
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf 6488b24401e477e35aa71237054c8ada
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf 10d6f2176d76ee9b89a19a17811257f2
+Description: Vera font family derivate with additional characters
+ DejaVu provides an expanded version of the Vera font family aiming for
+ quality and broader Unicode coverage while retaining the original Vera
+ style. DejaVu currently works towards conformance with the Multilingual
+ European Standards (MES-1 and MES-2) for Unicode coverage. The DejaVu
+ fonts provide serif, sans and monospaced variants.
+ .
+ This package only contains the sans, sans-bold, serif, serif-bold,
+ mono and mono-bold variants. For additional variants, see the
+ ttf-dejavu-extra package.
+ .
+ DejaVu fonts are intended for use on low-resolution devices (mainly
+ computer screens) but can be used in printing as well.
+Original-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Homepage: http://dejavu-fonts.org/
 
 Package: rsync
 Status: install ok installed
@@ -5109,7 +5669,7 @@ Description: Point-to-Point Protocol (PPP) - daemon
 Original-Maintainer: Marco d'Itri <md@linux.it>
 
 Package: libjpeg-turbo8
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: libs
 Installed-Size: 331
@@ -5214,6 +5774,35 @@ Description: Log rotation utility
 Homepage: https://fedorahosted.org/logrotate/
 Original-Maintainer: Paul Martin <pm@debian.org>
 
+Package: libltdl7
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 397
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libtool
+Version: 2.4.2-1.7ubuntu1
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Description: A system independent dlopen wrapper for GNU libtool
+ This package contains the run-time libltdl library.
+ .
+ A small library that aims at hiding the various difficulties of
+ dlopening libraries from programmers.  It is a system independent
+ dlopen wrapper for GNU libtool.
+ .
+ It supports the following dlopen interfaces:
+   * dlopen (Solaris, Linux and various BSD flavors)
+   * shl_load (HP-UX)
+   * LoadLibrary (Win16 and Win32)
+   * load_add_on (BeOS)
+   * GNU DLD (emulates dynamic linking for static libraries)
+   * libtool's dlpreopen
+Homepage: http://www.gnu.org/software/libtool/
+Original-Maintainer: Kurt Roeckx <kurt@roeckx.be>
+
 Package: libexpat1
 Status: install ok installed
 Priority: optional
@@ -5255,6 +5844,57 @@ Description: Handles update-grub for ec2 instances
  /boot/grub/menu.lst up to date while not conflicting with grub-pc.
  This package provides that.
 
+Package: courier-imap
+Status: install ok unpacked
+Priority: extra
+Section: mail
+Installed-Size: 637
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: courier (0.68.2-1ubuntu3)
+Version: 4.10.0-20120615-1ubuntu3
+Replaces: imap-server
+Provides: imap-server
+Depends: courier-authlib (>= 0.63.0), libc6 (>= 2.15), libgamin0 | libfam0, libgdbm3 (>= 1.8.3), default-mta | mail-transport-agent, courier-base (>= 0.68.2), debconf
+Suggests: courier-doc, imap-client, courier-imap-ssl
+Conflicts: imap-server
+Conffiles:
+ /etc/init.d/courier-imap newconffile
+ /etc/logcheck/ignore.d.server/courier-imap newconffile
+ /etc/logcheck/violations.ignore.d/courier-imap newconffile
+ /etc/courier/imapd newconffile
+ /etc/pam.d/imap newconffile
+Description: Courier mail server - IMAP server
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP,
+ SSL, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and mailing list
+ services within a single, consistent, framework.
+ .
+ This package provides an IMAP server that accesses email stored in Maildirs
+ format mailboxes. This server has an extremely small footprint and provides
+ shared and virtual shared folders.
+Homepage: http://www.courier-mta.org/
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+
+Package: libterm-readkey-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 117
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.31-1
+Depends: perl (>= 5.18.1-4), perlapi-5.18.1, libc6 (>= 2.15)
+Description: perl module for simple terminal control
+ Term::ReadKey is a compiled perl module dedicated to providing simple
+ control over terminal driver modes (cbreak, raw, cooked, etc.,) support for
+ non-blocking reads, if the architecture allows, and some generalized handy
+ functions for working with terminals. One of the main goals is to have the
+ functions as portable as possible, so you can just plug in "use
+ Term::ReadKey" on any architecture and have a good likelyhood of it working.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/TermReadKey/
+
 Package: openssh-sftp-server
 Status: install ok installed
 Priority: optional
@@ -5288,6 +5928,30 @@ Description: secure shell (SSH) sftp server module, for SFTP access from remote 
 Homepage: http://www.openssh.org/
 Original-Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
 
+Package: libdbd-mysql-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 307
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 4.025-1
+Depends: perl (>= 5.18.1-4build1), perl-dbdabi-94, perlapi-5.18.1, libc6 (>= 2.4), libmysqlclient18 (>= 5.5.13-1), libdbi-perl
+Description: Perl5 database interface to the MySQL database
+ DBD::mysql is the Perl5 Database Interface driver for the MySQL
+ database. In other words: DBD::mysql is an interface between the Perl
+ programming language and the MySQL programming API that comes with the
+ MySQL relational database management system. Most functions provided by
+ this programming API are supported. Some rarely used functions are
+ missing, mainly because noone ever requested them. However supported
+ features include: compression of data between server and client; timeouts;
+ SSL; prepared statement support; server administration such as creating
+ and dropping databases and restarting the server; auto-reconnection;
+ utf8; bind type guessing; bind comment placeholders; automated insert ids;
+ transactions; multiple result sets and multithreading.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/DBD-mysql
+
 Package: patch
 Status: install ok installed
 Priority: standard
@@ -5307,7 +5971,7 @@ Description: Apply a diff file to an original
 Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 
 Package: ajenti
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: admin
 Installed-Size: 5911
@@ -5316,8 +5980,8 @@ Architecture: all
 Version: 1.2.23.8
 Depends: python (>= 2.6), python-support (>= 0.90.0), python-lxml (>= 2.2.4), python-gevent, openssl, python-gevent-socketio, python-psutil (>= 0.6.0), python-reconfigure (>= 0.1.46), python-daemon, python-passlib, python-requests (>= 0.12.0), python-dbus, python-imaging, apt-show-versions, python-catcher, python-exconsole (>= 0.1.5), python-ldap
 Conffiles:
- /etc/init.d/ajenti newconffile
- /etc/ajenti/config.json newconffile
+ /etc/init.d/ajenti ba71533c2049b2d690d485216ae9895a
+ /etc/ajenti/config.json fba732f15c532861a387d8fde3c3f3f2
 Description: Server administration web interface
  It provides rich functionality and support for lots of server software,
  along with system configuration options.
@@ -5341,7 +6005,7 @@ Description: binaries used by initramfs-tools
 Original-Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
 
 Package: libjbig0
-Status: install ok unpacked
+Status: install ok installed
 Priority: extra
 Section: libs
 Installed-Size: 93
@@ -5452,7 +6116,7 @@ Original-Maintainer: Josselin Mouette <joss@debian.org>
 Homepage: https://wiki.gnome.org/GnomeKeyring
 
 Package: python-greenlet
-Status: install ok unpacked
+Status: install ok installed
 Priority: extra
 Section: python
 Installed-Size: 77
@@ -5635,6 +6299,29 @@ Description: command-line network traffic analyzer
 Homepage: http://www.tcpdump.org/
 Original-Maintainer: Romain Francoise <rfrancoise@debian.org>
 
+Package: courier-ssl
+Status: install ok unpacked
+Priority: optional
+Section: mail
+Installed-Size: 157
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: courier
+Version: 0.68.2-1ubuntu3
+Depends: debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.15), libssl1.0.0 (>= 1.0.0), courier-base (>= 0.68.2), openssl, debconf
+Description: Courier mail server - SSL/TLS Support
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP,
+ SSL, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and mailing list
+ services within a single, consistent, framework.
+ .
+ Courier uses the a SSL/TLS wrapper application named
+ couriertls instead of embedding SSL/TLS support in the different applications.
+ Additionally, this package contains a default set
+ of trusted X.509 root CA certs.
+Homepage: http://www.courier-mta.org/
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+
 Package: liblockfile-bin
 Status: install ok installed
 Priority: standard
@@ -5691,25 +6378,8 @@ Description: Linux kernel headers for version 3.13.0 on 64 bit x86 SMP
  This is for sites that want the latest kernel headers.  Please read
  /usr/share/doc/linux-headers-3.13.0-92/debian.README.gz for details.
 
-Package: libtext-soundex-perl
-Status: install ok installed
-Priority: optional
-Section: perl
-Installed-Size: 80
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Architecture: amd64
-Version: 3.4-1build1
-Depends: perl (>= 5.18.1-4), perlapi-5.18.1, libc6 (>= 2.3)
-Description: implementation of the soundex algorithm
- Text::Soundex implements the original soundex algorithm developed by Robert
- Russell and Margaret Odell, patented in 1918 and 1922, as well as a variation
- called "American Soundex" used for US census data, and current maintained by
- the National Archives and Records Administration (NARA).
-Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
-Homepage: https://metacpan.org/release/Text-Soundex/
-
 Package: libtiff5
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: libs
 Installed-Size: 577
@@ -5726,6 +6396,23 @@ Description: Tag Image File Format (TIFF) library
  includes the shared library.
 Homepage: http://libtiff.maptools.org
 Original-Maintainer: Jay Berkenbilt <qjb@debian.org>
+
+Package: libtext-soundex-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 80
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.4-1build1
+Depends: perl (>= 5.18.1-4), perlapi-5.18.1, libc6 (>= 2.3)
+Description: implementation of the soundex algorithm
+ Text::Soundex implements the original soundex algorithm developed by Robert
+ Russell and Margaret Odell, patented in 1918 and 1922, as well as a variation
+ called "American Soundex" used for US census data, and current maintained by
+ the National Archives and Records Administration (NARA).
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/Text-Soundex/
 
 Package: librtmp0
 Status: install ok installed
@@ -6010,6 +6697,19 @@ Description: runtime components for the Universally Unique ID library
  program.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
 Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: ajenti-v
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v
+Version: 0.2.57
+Provides: ajenti-v-core
+Depends: ajenti (>= 1.2.21.12), ajenti-v-webserver, python-reconfigure (>= 0.1.39), supervisor (>= 3.0)
+Description: Virtual hosting solution for Ajenti
+Homepage: http://ajenti.org/
 
 Package: at
 Status: install ok installed
@@ -6398,6 +7098,47 @@ Description: query and manipulate user account information - shared libraries
 Homepage: http://cgit.freedesktop.org/accountsservice/
 Original-Maintainer: Alessio Treglia <alessio@debian.org>
 
+Package: python-meld3
+Status: install ok installed
+Priority: extra
+Section: python
+Installed-Size: 167
+Maintainer: Jackson Doak <noskcaj@ubuntu.com>
+Architecture: amd64
+Version: 0.6.10-1
+Provides: python2.7-meld3
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), libc6 (>= 2.2.5)
+Description: HTML/XML templating system for Python
+ meld3 is an HTML/XML templating system for Python 2.3+ which keeps
+ template markup and dynamic rendering logic separate from one
+ another. meld3 can deal with HTML or XML/XHTML input and can output
+ well-formed HTML or XML/XHTML.
+Homepage: https://pypi.python.org/pypi/meld3
+
+Package: libtcl8.6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 3699
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: tcl8.6
+Version: 8.6.1-4ubuntu1
+Replaces: tcl8.6 (<< 8.6.0-2), tcl8.6-lib (<< 8.6.0-2)
+Provides: libtcl
+Depends: tzdata, libc6 (>= 2.15), zlib1g (>= 1:1.2.2)
+Pre-Depends: multiarch-support
+Suggests: tcl8.6
+Conflicts: tcl74 (<= 7.4p3-2), tcl8.6 (<< 8.6.0-2), tcl8.6-lib (<< 8.6.0-2)
+Description: Tcl (the Tool Command Language) v8.6 - run-time library files
+ Tcl is a powerful, easy to use, embeddable, cross-platform interpreted
+ scripting language.  This package contains the Tcl library and auxiliary
+ code which allows one to run Tcl-enabled applications.  This version
+ includes thread support.
+Homepage: http://www.tcl.tk/
+Original-Maintainer: Debian Tcl/Tk Packagers <pkg-tcltk-devel@lists.alioth.debian.org>
+
 Package: debconf-i18n
 Status: install ok installed
 Priority: important
@@ -6436,6 +7177,41 @@ Conffiles:
  /etc/update-manager/release-upgrades df41b4619e6054b4558a75e316923611
 Description: manage release upgrades
  This is the core of the Ubuntu Release Upgrader
+
+Package: php5-fpm
+Status: install ok unpacked
+Priority: optional
+Section: php
+Installed-Size: 9027
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: php5
+Version: 5.5.9+dfsg-1ubuntu4.19
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.3, libpcre3, libssl1.0.0 (>= 1.0.0), libsystemd-daemon0 (>= 31), libxml2 (>= 2.9.0), zlib1g (>= 1:1.1.4), sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), mime-support, php5-common (= 5.5.9+dfsg-1ubuntu4.19), libmagic1, ucf, tzdata
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Suggests: php-pear
+Conffiles:
+ /etc/logrotate.d/php5-fpm newconffile
+ /etc/init.d/php5-fpm newconffile
+ /etc/php5/fpm/pool.d/www.conf newconffile
+ /etc/php5/fpm/php-fpm.conf newconffile
+ /etc/init/php5-fpm.conf newconffile
+Description: server-side, HTML-embedded scripting language (FPM-CGI binary)
+ This package provides the Fast Process Manager interpreter that runs
+ as a daemon and receives Fast/CGI requests.  Note that MOST Apache users
+ probably want the libapache2-mod-php5 package.
+ .
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+Homepage: http://www.php.net/
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
 
 Package: fuse
 Status: install ok installed
@@ -6676,6 +7452,32 @@ Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
 Homepage: http://curl.haxx.se
 Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
 
+Package: php5-common
+Status: install ok half-configured
+Priority: optional
+Section: php
+Installed-Size: 1127
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: php5
+Version: 5.5.9+dfsg-1ubuntu4.19
+Provides: php5-mhash, phpapi-20121212
+Depends: libc6 (>= 2.14), sed (>= 4.1.1-1), psmisc (>= 22.15-1~), lsof, ucf, php5-json
+Suggests: php5-user-cache
+Breaks: php-apc (<< 4.0.0), php-crypt-gpg (<< 1.3.2), php5-json (<< 1.3.1-1~), php5-suhosin (<< 0.9.34), php5-xcache (<< 3.1~), php5-xdebug (<< 2.2.2)
+Conflicts: php5-mhash
+Conffiles:
+ /etc/cron.d/php5 c1629acd8cda1a2ff234ca9c9b6ecd27
+Description: Common files for packages built from the php5 source
+ This package contains the documentation and example files relevant to all
+ the other packages built from the php5 source.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+Homepage: http://www.php.net/
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+
 Package: keyboard-configuration
 Status: install ok installed
 Priority: optional
@@ -6746,6 +7548,28 @@ Description: event-based init daemon
  shutdown and supervising them while the system is running.
 Homepage: http://upstart.ubuntu.com/
 Orig-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: libmysqlclient18
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 3413
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Depends: mysql-common (>= 5.5.50-0ubuntu0.14.04.1), libc6 (>= 2.17), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Description: MySQL database client library
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client library.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
 Package: mlocate
 Status: install ok installed
@@ -6936,6 +7760,23 @@ Description: Cyrus SASL - pluggable authentication modules
 Homepage: http://www.cyrusimap.org/
 Original-Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.debian.org>
 
+Package: courier-authlib-userdb
+Status: install ok installed
+Priority: optional
+Section: mail
+Installed-Size: 109
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: courier-authlib
+Version: 0.63.0-6ubuntu1
+Depends: courier-authlib (>= 0.63.0), libc6 (>= 2.14), libgdbm3 (>= 1.8.3)
+Conflicts: courier-base (<< 0.48)
+Description: userdb support for the Courier authentication library
+ This package contains the userdb support for the Courier authentication
+ library. Userdb is a simple way to manage virtual mail accounts using
+ a GDBM-based database file.
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+
 Package: libsasl2-2
 Status: install ok installed
 Priority: standard
@@ -6995,6 +7836,25 @@ Description: change and administer password and group data
  Shadow passwords are supported.  See /usr/share/doc/passwd/README.Debian
 Homepage: http://pkg-shadow.alioth.debian.org/
 Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+
+Package: nginx
+Status: install ok installed
+Priority: optional
+Section: httpd
+Installed-Size: 93
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.4.6-1ubuntu3.5
+Depends: nginx-core (>= 1.4.6-1ubuntu3.5) | nginx-full (>= 1.4.6-1ubuntu3.5) | nginx-light (>= 1.4.6-1ubuntu3.5) | nginx-extras (>= 1.4.6-1ubuntu3.5) | nginx-naxsi (>= 1.4.6-1ubuntu3.5), nginx-core (<< 1.4.6-1ubuntu3.5.1~) | nginx-full (<< 1.4.6-1ubuntu3.5.1~) | nginx-light (<< 1.4.6-1ubuntu3.5.1~) | nginx-extras (<< 1.4.6-1ubuntu3.5.1~) | nginx-naxsi (<< 1.4.6-1ubuntu3.5.1~)
+Description: small, powerful, scalable web/proxy server
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This is a dependency package to install either nginx-core (by default),
+ nginx-full, nginx-light, nginx-extras, or nginx-naxsi.
+Homepage: http://nginx.net
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
 
 Package: bsdmainutils
 Status: install ok installed
@@ -7157,7 +8017,7 @@ Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
 Homepage: http://www.maxmind.com/
 
 Package: libjpeg8
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: libs
 Installed-Size: 26
@@ -7233,6 +8093,33 @@ Description: S-Lang programming library - runtime version
  need the companion -dev package as well.
 Homepage: http://www.jedsoft.org/slang/
 Original-Maintainer: Alastair McKinstry <mckinstry@debian.org>
+
+Package: libhtml-template-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 214
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.95-1
+Depends: perl
+Suggests: libipc-sharedcache-perl
+Description: module for using HTML templates with Perl
+ HTML::Template attempts to make using HTML templates simple and
+ natural. It extends standard HTML with the pseudo tags <TMPL_VAR>,
+ <TMPL_LOOP>, <TMPL_INCLUDE>, <TMPL_IF> and <TMPL_ELSE>. These are used
+ to implement some basic logic - variable substitution, loops,
+ conditional branches - inside the HTML template, while leaving the more
+ complex computations to separate Perl code. This keeps the template
+ accessible for designers and other non-Perl people, without limiting
+ the programmer.
+ .
+ HTML::Template optionally stores its cache in shared memory using the
+ IPC::SharedCache module. Please install libipc-sharedcache-perl and
+ pass the shared_cache option to HTML::Template if you want to make use
+ of this.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/HTML-Template/
 
 Package: initscripts
 Status: install ok installed
@@ -7331,7 +8218,7 @@ Original-Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
 Homepage: https://github.com/stefankoegl/python-json-pointer
 
 Package: python-ldap
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 312
@@ -7641,6 +8528,30 @@ Description: X11 client-side library
  git://anongit.freedesktop.org/git/xorg/lib/libX11
 Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 
+Package: supervisor
+Status: install ok installed
+Priority: extra
+Section: admin
+Installed-Size: 1485
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 3.0b2-1
+Depends: python, python-meld3, python-pkg-resources (>= 0.6c7)
+Conffiles:
+ /etc/supervisor/supervisord.conf 99dc7e8a1178ede9ae9794aaecbca436
+ /etc/init.d/supervisor 1231a0c80010def37d26232a6ad5faf3
+ /etc/default/supervisor 67439cde76c4bdea63553b8893172e53
+Description: A system for controlling process state
+ Supervisor is a system for controlling and maintaining process state,
+ similar to what init does, but not intended as an init replacement.
+ .
+ It will manage individual processes or groups of processes that
+ need to be started and stopped in order, and it is possible to
+ control individual process state via an rpc mechanism, thus allowing
+ ordinary users to restart processes.
+Original-Maintainer: Qijiang Fan <fqj1994@gmail.com>
+Homepage: http://supervisord.org/
+
 Package: grub-gfxpayload-lists
 Status: install ok installed
 Priority: optional
@@ -7844,7 +8755,7 @@ Homepage: http://hal.freedesktop.org/docs/PolicyKit/
 Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 
 Package: python-daemon
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 113
@@ -8335,6 +9246,43 @@ Description: module using libc functions for internationalization in Perl
 Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Homepage: http://search.cpan.org/dist/gettext/gettext.pm
 
+Package: mysql-server-5.5
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 31948
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Replaces: libmysqlclient-dev (<< 5.5.17~), mysql-client-5.1, mysql-server (<< 5.5.50-0ubuntu0.14.04.1), mysql-server-5.0, mysql-server-5.1
+Provides: virtual-mysql-server
+Depends: initscripts (>= 2.88dsf-13.3), libdbi-perl, lsb-base (>= 3.0-10), mysql-client-5.5 (>= 5.5.50-0ubuntu0.14.04.1), mysql-server-core-5.5 (>= 5.5.50-0ubuntu0.14.04.1), passwd, perl (>= 5.6), psmisc, debconf (>= 0.5) | debconf-2.0, sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), libc6 (>= 2.17), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Pre-Depends: adduser (>= 3.40), debconf, mysql-common (>= 5.5.50-0ubuntu0.14.04.1)
+Recommends: libhtml-template-perl
+Suggests: tinyca, mailx
+Breaks: libmysqlclient-dev (<< 5.5.17~), mysql-client-5.1, mysql-server (<< 5.5.50-0ubuntu0.14.04.1), mysql-server-5.1
+Conffiles:
+ /etc/init/mysql.conf 71336a028e3501bae965ac13f0e6d3fc
+ /etc/apparmor.d/usr.sbin.mysqld 51b30a3f9aaa6b638be7829d5055e766
+ /etc/logrotate.d/mysql-server ad3409fde2da2d7e0534e3cb4fa3a1ed
+ /etc/init.d/mysql 2cc1e39210498f561c2a70ca20f97e28
+ /etc/mysql/debian-start 2bdb4cf46f73f70c593072c2dafd2f62
+ /etc/mysql/conf.d/mysqld_safe_syslog.cnf 347fa9f3d579ffc06c39bf7e69f4fc6e
+ /etc/logcheck/ignore.d.paranoid/mysql-server-5_5 6babe46e791059cdd5a26f4f7fec9eca
+ /etc/logcheck/ignore.d.server/mysql-server-5_5 2d34a7ed83fefc165cd1dfea3a72ccc8
+ /etc/logcheck/ignore.d.workstation/mysql-server-5_5 2d34a7ed83fefc165cd1dfea3a72ccc8
+Description: MySQL database server binaries and system database setup
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package contains all the infrastructure needed to setup system
+ databases.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
 Package: ubuntu-keyring
 Status: install ok installed
 Priority: important
@@ -8497,6 +9445,19 @@ Description: Heimdal Kerberos - NTLM support library
  compatible with MIT Kerberos.
 Homepage: http://www.h5l.org/
 Original-Maintainer: Brian May <bam@debian.org>
+
+Package: ajenti-v-php-fpm
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-php-fpm
+Version: 0.1.21
+Provides: ajenti-v-appgate
+Depends: ajenti-v, php5-fpm
+Description: PHP support for Ajenti V (via PHP-FPM)
+Homepage: http://ajenti.org/
 
 Package: dmsetup
 Status: install ok installed
@@ -8744,6 +9705,37 @@ Description: Tools to test the reachability of network hosts
  This package includes a ping6 utility which supports IPv6 network
  connections.
 Original-Maintainer: Noah Meyerhans <noahm@debian.org>
+
+Package: exim4
+Status: install ok installed
+Priority: standard
+Section: mail
+Installed-Size: 44
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 4.82-3ubuntu2.1
+Depends: debconf (>= 0.5) | debconf-2.0, debconf (>= 1.4.69) | cdebconf (>= 0.39), exim4-base (>= 4.82), exim4-daemon-light | exim4-daemon-heavy | exim4-daemon-custom
+Description: metapackage to ease Exim MTA (v4) installation
+ Exim (v4) is a mail transport agent. exim4 is the metapackage depending
+ on the essential components for a basic exim4 installation.
+ .
+ The Debian exim4 packages have their own web page,
+ http://wiki.debian.org/PkgExim4. There is also a Debian-specific
+ FAQ list. Information about the way the Debian packages are
+ configured can be found in
+ /usr/share/doc/exim4-base/README.Debian.gz, which additionally contains
+ information about the way the Debian binary packages are built. The
+ very extensive upstream documentation is shipped in
+ /usr/share/doc/exim4-base/spec.txt.gz. To repeat the debconf-driven
+ configuration process in a standard setup, invoke dpkg-reconfigure
+ exim4-config. There is a Debian-centered mailing list,
+ pkg-exim4-users@lists.alioth.debian.org. Please ask Debian-specific
+ questions there, and only write to the upstream exim-users mailing
+ list if you are sure that your question is not Debian-specific. You
+ can find the subscription web page on
+ http://lists.alioth.debian.org/mailman/listinfo/pkg-exim4-users
+Homepage: http://www.exim.org/
+Original-Maintainer: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
 
 Package: libheimbase1-heimdal
 Status: install ok installed
@@ -9066,7 +10058,7 @@ Description: Python interface to libapt-pkg (locales)
 Original-Maintainer: APT Development Team <deity@lists.debian.org>
 
 Package: python-markupsafe
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 79
@@ -9084,7 +10076,7 @@ Homepage: http://pypi.python.org/pypi/MarkupSafe
 Original-Maintainer: Piotr Ożarowski <piotr@debian.org>
 
 Package: python-lockfile
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 57
@@ -9112,7 +10104,7 @@ Original-Maintainer: Ben Finney <ben+debian@benfinney.id.au>
 Homepage: http://pypi.python.org/pypi/lockfile
 
 Package: python-catcher
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 59
@@ -9185,7 +10177,7 @@ Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian
 Homepage: http://search.cpan.org/dist/Sub-Name/
 
 Package: python-imaging
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 49
@@ -9228,7 +10220,7 @@ Original-Maintainer: Matthias Klose <doko@debian.org>
 
 Package: libc-bin
 Essential: yes
-Status: install ok installed
+Status: install ok triggers-pending
 Priority: required
 Section: libs
 Installed-Size: 3436
@@ -9255,6 +10247,7 @@ Description: Embedded GNU C Library: Binaries
   * ldd, ldconfig: print/configure shared library dependencies
   * locale, localedef: show/generate locale definitions
   * tzselect, zdump, zic: select/dump/compile time zones
+Triggers-Pending: ldconfig
 Homepage: http://www.eglibc.org
 Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 
@@ -9325,6 +10318,19 @@ Description: Heimdal Kerberos - libraries
  This package contains the Kerberos 5 library.
 Homepage: http://www.h5l.org/
 Original-Maintainer: Brian May <bam@debian.org>
+
+Package: ajenti-v-nodejs
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-nodejs
+Version: 0.1.9
+Provides: ajenti-v-appgate
+Depends: ajenti-v, supervisor
+Description: Node.JS support for Ajenti V
+Homepage: http://ajenti.org/
 
 Package: xml-core
 Status: install ok installed
@@ -9442,6 +10448,67 @@ Description: Transitional package to ensure multiarch compatibility
 Homepage: http://www.eglibc.org
 Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 
+Package: fontconfig-config
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 354
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: fontconfig
+Version: 2.11.0-0ubuntu4.2
+Replaces: fontconfig (<< 2.3.2-2)
+Depends: fonts-dejavu-core | ttf-bitstream-vera | fonts-freefont-ttf | gsfonts-x11, ucf (>= 0.29)
+Conflicts: fontconfig (<< 2.3.2-2)
+Conffiles:
+ /etc/fonts/conf.avail/10-hinting-medium.conf b663214dd84d0f5c4e279b153e0b38f9
+ /etc/fonts/conf.avail/10-no-sub-pixel.conf be58bec47ddb8b3f31449ca8f5d189f9
+ /etc/fonts/conf.avail/70-yes-bitmaps.conf 91c414090c7d8bfe557785fe845cb6bd
+ /etc/fonts/conf.avail/10-hinting-full.conf 65b0e8b7e1392797850856d8411d7272
+ /etc/fonts/conf.avail/10-sub-pixel-rgb.conf 2ac915a20e9b2b969d81c9b359afffce
+ /etc/fonts/conf.avail/10-sub-pixel-vbgr.conf 29d7b694ec6d7260a475fe9d9a45a9a0
+ /etc/fonts/conf.avail/30-urw-aliases.conf 49db036d2a065197e140484c0513e69f
+ /etc/fonts/conf.avail/10-antialias.conf d77e6cfb9608490da012671c25213fe4
+ /etc/fonts/conf.avail/10-autohint.conf 2f1cac91d6c79102f0de9956d39037d5
+ /etc/fonts/conf.avail/25-unhint-nonlatin.conf a5379350710f56a807962f3f06d3ffc1
+ /etc/fonts/conf.avail/45-latin.conf 4f87ee2bc115cd59c7a776298f5bfe73
+ /etc/fonts/conf.avail/40-nonlatin.conf fc449daf3edc6852b372c69b44bfe9ac
+ /etc/fonts/conf.avail/30-metric-aliases.conf f30482cdf3e424acee0ee828dac3d3d5
+ /etc/fonts/conf.avail/60-latin.conf 2a898e836efee4347362e1e7f09cd0d6
+ /etc/fonts/conf.avail/65-nonlatin.conf 1470f5cee12ee55b9a807e41a2495bf9
+ /etc/fonts/conf.avail/80-delicious.conf fcad9a0561af18b7965910ccea55453f
+ /etc/fonts/conf.avail/50-user.conf d01cf387e9d7ebacb173629853094d76
+ /etc/fonts/conf.avail/49-sansserif.conf 22278b0b48e5864d9c7fcbc178da0db3
+ /etc/fonts/conf.avail/65-khmer.conf ce66ea0c26f43091ab70092f3f7024d4
+ /etc/fonts/conf.avail/11-lcdfilter-legacy.conf 7eeabd78833172177d7f92d39ec273ce
+ /etc/fonts/conf.avail/20-unhint-small-vera.conf 6fb496d0bb963a54d5db870955ddd771
+ /etc/fonts/conf.avail/10-sub-pixel-vrgb.conf 15bc20b8895b039e23952c637bcc1a70
+ /etc/fonts/conf.avail/10-hinting-slight.conf 4d7df8529053d526a503b472ee42b2b3
+ /etc/fonts/conf.avail/69-unifont.conf 49a6cb52e1cf23e0f691807a3e8c105d
+ /etc/fonts/conf.avail/11-lcdfilter-light.conf f6f338937c5a7a0254ab27a5532a79a0
+ /etc/fonts/conf.avail/70-force-bitmaps.conf 6423e63e204d4ea4629cd3f58636fcdc
+ /etc/fonts/conf.avail/90-synthetic.conf 7659edb861f44ff8e9f4e31567d24e47
+ /etc/fonts/conf.avail/10-unhinted.conf 532865fefdf3e37ceeb77010accb3b47
+ /etc/fonts/conf.avail/65-fonts-persian.conf 4600ab82eed76e726bffb2fc99d1f1b7
+ /etc/fonts/conf.avail/10-scale-bitmap-fonts.conf c79833ef7e11fc58472aae2d55e233b2
+ /etc/fonts/conf.avail/53-monospace-lcd-filter.conf a6737024098d0bdc74b70846d4b99fe9
+ /etc/fonts/conf.avail/11-lcdfilter-default.conf a877f23d2e9179ef3a1ee0ab6a9e2b15
+ /etc/fonts/conf.avail/70-no-bitmaps.conf dccfa658875eea3b30514d7a8bc306bc
+ /etc/fonts/conf.avail/10-sub-pixel-bgr.conf 3d239181743d3ebfbbfa2bafe211ae0c
+ /etc/fonts/conf.avail/51-local.conf a2fa562c168c2c4cc0c2480bfdc0f8eb
+ /etc/fonts/conf.avail/10-hinting.conf 4d1fb88a99c516270526c8dca5764df8
+ /etc/fonts/fonts.conf 38c3eafd34be9fa974cba0c090be1c1b
+ /etc/fonts/conf.d/README 42d13304ed2e9e5b60b74d6ed29b3729
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+Original-Maintainer: Keith Packard <keithp@debian.org>
+
 Package: python-oauth
 Status: install ok installed
 Priority: extra
@@ -9509,6 +10576,33 @@ Description: small, friendly text editor inspired by Pico
   - full internationalization support.
 Homepage: http://www.nano-editor.org/
 Original-Maintainer: Jordi Mallach <jordi@debian.org>
+
+Package: heirloom-mailx
+Status: install ok installed
+Priority: optional
+Section: mail
+Installed-Size: 506
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 12.5-2+deb7u1build0.14.04.1
+Replaces: nail
+Provides: imap-client, mail-reader, mailx
+Depends: base-files (>= 2.2.0), libc6 (>= 2.14), libgssapi-krb5-2 (>= 1.10+dfsg~), libssl1.0.0 (>= 1.0.0)
+Suggests: exim4 | mail-transport-agent
+Conflicts: mailutils (<< 1:1.1+dfsg1-4), mailx (<< 1:20071201)
+Conffiles:
+ /etc/nail.rc 0b38ebc4dc092bfe594c4b07f7df37d6
+Description: feature-rich BSD mail(1)
+ Workalike of the classical mail(1). Heirloom mailx can produce and
+ read MIME and S/MIME messages and has greatly improved character-set
+ handling, including support for UTF-8.
+ .
+ It can send messages through a local /usr/bin/sendmail interface or
+ SMTP, using a smarthost. Mail can be read from local mailboxes as
+ well as via POP3 or IMAP connections. Network protocols can be
+ encrypted using SSL/TLS.
+Original-Maintainer: Hilko Bengen <bengen@debian.org>
+Homepage: http://heirloom.sourceforge.net/mailx.html
 
 Package: libcryptsetup4
 Status: install ok installed
@@ -9656,6 +10750,19 @@ Description: parse Debian changelogs and output them in other formats
   * HTML (customizable via HTML::Template templates).
 Original-Maintainer: Frank Lichtenheld <djpig@debian.org>
 
+Package: ajenti-v-mysql
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Source: ajenti-v-mysql
+Version: 0.3.8
+Provides: ajenti-v-db
+Depends: ajenti-v (>= 0.2.34), mysql-server | mariadb-server, mysql-client | mariadb-client
+Description: MySQL support for Ajenti V
+Homepage: http://ajenti.org/
+
 Package: libnih-dbus1
 Status: install ok installed
 Priority: required
@@ -9771,7 +10878,7 @@ Homepage: http://userspace.selinuxproject.org/
 Original-Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
 
 Package: python-gevent-socketio
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 132
@@ -9887,6 +10994,47 @@ Description: Dynamic library for security auditing - common files
 Homepage: http://people.redhat.com/sgrubb/audit/
 Original-Maintainer: Debian QA Group <packages@qa.debian.org>
 
+Package: nginx-common
+Status: install ok installed
+Priority: optional
+Section: httpd
+Installed-Size: 215
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: nginx
+Version: 1.4.6-1ubuntu3.5
+Replaces: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Depends: lsb-base (>= 3.2-14), init-system-helpers (>= 1.13~)
+Suggests: fcgiwrap, nginx-doc
+Breaks: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Conffiles:
+ /etc/logrotate.d/nginx 0e89633bf31f8831755b3c13009e7921
+ /etc/init.d/nginx 32f93dc04055a4bf2ed13a760c7c29b3
+ /etc/nginx/koi-win af75b7ee3629abd37f2884888575a374
+ /etc/nginx/koi-utf 75adefd733ce08538dc1f77732e7963e
+ /etc/nginx/naxsi-ui.conf.1.4.1 6be82259836cb8fad0afde03ebf101d4
+ /etc/nginx/nginx.conf a85dcbc5367783f3d42d0b7eab22ea50
+ /etc/nginx/fastcgi_params b52a930102d29af34efbcbd9e4aa33d7
+ /etc/nginx/win-utf 0f39cbfca77d4f3bb5d33f009a514c71
+ /etc/nginx/mime.types 3b06b30a5610f04118a04e7b8030a563
+ /etc/nginx/uwsgi_params fef09dc5f55146ce7f1d35afa0c4d5a8
+ /etc/nginx/naxsi_core.rules 6d266967bcd2098dda2331ebd73d57c1
+ /etc/nginx/proxy_params 2612ba3438c3b7855ea7779a879e6aef
+ /etc/nginx/sites-available/default f2a429b4ab6b011006350c8646d38f4c
+ /etc/nginx/scgi_params 5624912a37e92b6ecd26c0845201d533
+ /etc/nginx/naxsi.rules 8510ce5ff8d3a7a710fa42e127651594
+ /etc/ufw/applications.d/nginx 3e24def79cf627acc2ab1b1bdfbc645c
+ /etc/default/nginx 18a8a9d155770b17e9d31d9b0e4bcf50
+Description: small, powerful, scalable web/proxy server - common files
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package contains base configuration files used by all versions of
+ nginx.
+Homepage: http://nginx.net
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+
 Package: python-openssl
 Status: install ok installed
 Priority: optional
@@ -9911,6 +11059,21 @@ Description: Python 2 wrapper around the OpenSSL library
  corresponding function in the OpenSSL library.
 Homepage: http://launchpad.net/pyopenssl
 Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: courier-authlib
+Status: install ok installed
+Priority: optional
+Section: mail
+Installed-Size: 300
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.63.0-6ubuntu1
+Depends: libc6 (>= 2.15), libgdbm3 (>= 1.8.3), libltdl7 (>= 2.4.2), libpam0g (>= 0.99.7.1), expect
+Conflicts: courier-authdaemon (<< 0.58), courier-authmysql, courier-authpostgresql, courier-base (<< 0.48)
+Description: Courier authentication library
+ The Courier authentication library provides authentication services for
+ other Courier applications.
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
 
 Package: libevent-2.0-5
 Status: install ok installed
@@ -10212,6 +11375,55 @@ Description: /dev/ and hotplug management daemon
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
 
+Package: exim4-base
+Status: install ok installed
+Priority: standard
+Section: mail
+Installed-Size: 1503
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: exim4
+Version: 4.82-3ubuntu2.1
+Replaces: exim, exim-tls, exim4-daemon-custom, exim4-daemon-heavy, exim4-daemon-light
+Depends: libc6 (>= 2.14), libdb5.3, debconf (>= 0.5) | debconf-2.0, cron | fcron, exim4-config (>= 4.30) | exim4-config-2, adduser, netbase, lsb-base (>= 3.0-6)
+Recommends: psmisc, mailx, perl-modules
+Suggests: mail-reader, eximon4, exim4-doc-html | exim4-doc-info, gnutls-bin | openssl, file, spf-tools-perl, swaks
+Breaks: exim4-daemon-custom (<< 4.82), exim4-daemon-heavy (<< 4.82), exim4-daemon-light (<< 4.82)
+Conflicts: exim, exim-tls
+Conffiles:
+ /etc/logrotate.d/exim4-base cd9fc4ad67f13176c098fab4bbcd32b5
+ /etc/logrotate.d/exim4-paniclog 27d670010e80246c4a1dd89419589009
+ /etc/init.d/exim4 d6726698bf2f309ce8ed02457bb524ec
+ /etc/cron.daily/exim4-base 17bf6e02c3f3d3180cb74668bba28144
+Description: support files for all Exim MTA (v4) packages
+ Exim (v4) is a mail transport agent. exim4-base provides the support
+ files needed by all exim4 daemon packages. You need an additional package
+ containing the main executable. The available packages are:
+ .
+  exim4-daemon-light
+  exim4-daemon-heavy
+ .
+ If you build exim4 from the source package locally, you can also
+ build an exim4-daemon-custom package tailored to your own feature set.
+ .
+ The Debian exim4 packages have their own web page,
+ http://wiki.debian.org/PkgExim4. There is also a Debian-specific
+ FAQ list. Information about the way the Debian packages are
+ configured can be found in
+ /usr/share/doc/exim4-base/README.Debian.gz, which additionally contains
+ information about the way the Debian binary packages are built. The
+ very extensive upstream documentation is shipped in
+ /usr/share/doc/exim4-base/spec.txt.gz. To repeat the debconf-driven
+ configuration process in a standard setup, invoke dpkg-reconfigure
+ exim4-config. There is a Debian-centered mailing list,
+ pkg-exim4-users@lists.alioth.debian.org. Please ask Debian-specific
+ questions there, and only write to the upstream exim-users mailing
+ list if you are sure that your question is not Debian-specific. You
+ can find the subscription web page on
+ http://lists.alioth.debian.org/mailman/listinfo/pkg-exim4-users
+Homepage: http://www.exim.org/
+Original-Maintainer: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+
 Package: libnuma1
 Status: install ok installed
 Priority: optional
@@ -10270,7 +11482,7 @@ Homepage: http://www.netfilter.org/
 Original-Maintainer: Laurence J. Lane <ljlane@debian.org>
 
 Package: python-psutil
-Status: install ok unpacked
+Status: install ok installed
 Priority: optional
 Section: python
 Installed-Size: 292
@@ -10436,6 +11648,30 @@ Description: Config File Handling Library used by BIND
  and clients to read and write ISC-style configuration files like named.conf
  and rndc.conf.
 Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: mysql-server-core-5.5
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 19863
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Replaces: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.0, mysql-server-core-5.1
+Provides: mysql-server-core
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.17), libstdc++6 (>= 4.1.1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.2.0)
+Breaks: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.1
+Description: MySQL database server binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the server binaries but doesn't contain all the
+ infrastructure needed to setup system databases.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
 Package: ubuntu-minimal
 Status: install ok installed
@@ -10941,7 +12177,7 @@ Homepage: http://www.vim.org/
 Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 
 Package: libwebp5
-Status: install ok unpacked
+Status: install ok installed
 Priority: extra
 Section: libs
 Installed-Size: 366
@@ -11003,6 +12239,30 @@ Description: Header files related to Linux kernel version 3.13.0
  that want the latest kernel headers. Please read
  /usr/share/doc/linux-headers-3.13.0-92/debian.README.gz for details
 
+Package: mysql-server
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 128
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Depends: mysql-server-5.5
+Description: MySQL database server (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mysql-server (currently mysql-server-5.5), as determined by the MySQL
+ maintainers. Install this package if in doubt about which MySQL
+ version you need. That will install the version recommended by the
+ package maintainers.
+ .
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
 Package: ssh-import-id
 Status: install ok installed
 Priority: extra
@@ -11021,6 +12281,32 @@ Description: securely retrieve an SSH public key and install it locally
  public keys, and append these to the current user's ~/.ssh/authorized_keys
  file.
 Homepage: http://launchpad.net/ssh-import-id
+
+Package: php5-mysql
+Status: install ok unpacked
+Priority: optional
+Section: php
+Installed-Size: 290
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: php5
+Version: 5.5.9+dfsg-1ubuntu4.19
+Replaces: php5-mysqli, php5-mysqlnd
+Depends: libc6 (>= 2.14), libmysqlclient18 (>= 5.5.24+dfsg-1), phpapi-20121212, php5-common (= 5.5.9+dfsg-1ubuntu4.19), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Conflicts: php5-mysqli, php5-mysqlnd
+Description: MySQL module for php5
+ This package provides modules for MySQL database connections directly from
+ PHP scripts.  It includes the generic "mysql" module which can be used
+ to connect to all versions of MySQL, an improved "mysqli" module for
+ MySQL version 4.1 or later, and the pdo_mysql module for use with
+ the PHP Data Object extension.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+Homepage: http://www.php.net/
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
 
 Package: less
 Status: install ok installed
@@ -11062,6 +12348,30 @@ Description: changehat AppArmor library
  parsing routines.
 Homepage: http://apparmor.net/
 Original-Maintainer: Kees Cook <kees@debian.org>
+
+Package: mysql-client-5.5
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 29673
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Replaces: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Provides: mysql-client, virtual-mysql-client
+Depends: debianutils (>= 1.6), libdbd-mysql-perl (>= 1.2202), libdbi-perl, libterm-readkey-perl, mysql-client-core-5.5, mysql-common (>= 5.5.50-0ubuntu0.14.04.1), perl, libc6 (>= 2.17), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Description: MySQL database client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client binaries and the additional tools
+ innotop and mysqlreport.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
 Package: libglib2.0-0
 Status: install ok installed
@@ -11205,6 +12515,32 @@ Description: text-based template engine and Python code generator
   * Compiles templates into optimized, yet readable, Python code.
 Homepage: http://www.cheetahtemplate.org/
 Original-Maintainer: Arnaud Fontaine <arnau@debian.org>
+
+Package: courier-base
+Status: install ok unpacked
+Priority: optional
+Section: mail
+Installed-Size: 516
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: courier
+Version: 0.68.2-1ubuntu3
+Replaces: courier-debug (<< 0.44.2)
+Depends: debconf (>= 0.5.00) | debconf-2.0, libc6 (>= 2.15), libgamin0 | libfam0, libgdbm3 (>= 1.8.3), perl, courier-authlib (>= 0.63.0), courier-authlib-userdb, courier-authdaemon, lsb-base (>= 3.1-23)
+Conflicts: courier-debug (<< 0.44.2), courier-imap (<= 1.3.3), sqwebmail (<< 0.45.6)
+Conffiles:
+ /etc/courier/shared/index newconffile
+Description: Courier mail server - base system
+ The Courier mail transfer agent (MTA) is an integrated mail/groupware
+ server based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP,
+ SSL, and HTTP. Courier provides ESMTP, IMAP, POP3, webmail, and mailing list
+ services within a single, consistent, framework.
+ .
+ This package provides the functionality needed by all courier packages
+ such as some configuration files, helper programs and the Courier TCP server
+ daemon.
+Homepage: http://www.courier-mta.org/
+Original-Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
 
 Package: libnfnetlink0
 Status: install ok installed

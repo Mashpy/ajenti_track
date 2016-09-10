@@ -1,0 +1,127 @@
+#! /bin/bash -e
+### BEGIN INIT INFO
+# Short-Description: Courier IMAP-SSL server
+# Provides:          courier-imap-ssl
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Description:       courier-imap is an IMAP Mail Delivery Agent with SSL.
+### END INIT INFO
+prefix="/usr"
+exec_prefix=${prefix}
+sysconfdir="/etc/courier"
+bindir="${exec_prefix}/bin"
+sbindir="${exec_prefix}/sbin"
+libexecdir="${prefix}/lib/courier"
+run_dir="/var/run/courier"
+calendar_dir="/var/run/courier/calendar"
+TCPD=${sbindir}/couriertcpd
+DAEMONPROG=${sbindir}/imapd
+DAEMON=imapd-ssl
+PROGRAM="Courier IMAP-SSL server"
+
+# first of all check if daemon is available
+if ! [ -x "${bindir}/imapd" ]; then
+	exit 0
+fi
+
+# load LSB functions
+. /lib/lsb/init-functions
+
+if [ ! -d ${run_dir} ]; then
+	mkdir -p ${run_dir}
+	chown daemon:daemon ${run_dir}
+fi
+
+if [ ! -d ${calendar_dir} ]; then
+	mkdir -p ${calendar_dir}
+	chown daemon:daemon ${calendar_dir}
+fi
+
+
+if ! [ -x $TCPD ]; then
+	log_action_msg "$PROGRAM: ERROR - $TCPD missing"
+	exit 1
+fi
+
+if ! [ -f ${sysconfdir}/imapd ]; then
+	log_action_msg "$PROGRAM: ERROR - imapd configuration file missing"
+	exit 1
+fi
+
+if ! [ -f ${sysconfdir}/imapd-ssl ]; then
+	log_action_msg "$PROGRAM: ERROR - imapd-ssl configuration file missing"
+	exit 1
+fi
+
+# read/set defaults
+if [ -f /etc/default/courier ]; then
+	. /etc/default/courier
+fi
+# ensure that maildirpath is set
+if [ -z "$MAILDIRPATH" ]; then
+	MAILDIRPATH=Maildir
+fi
+
+. ${sysconfdir}/imapd
+. ${sysconfdir}/imapd-ssl
+
+# ensure that umask is set
+if [ -z "$IMAP_UMASK" ]; then
+	IMAP_UMASK=022
+fi
+
+if ! [ -x $COURIERTLS ]; then
+	log_action_msg "$PROGRAM: ERROR - $COURIERTLS missing"
+	exit 1
+fi
+
+START=no
+case "$IMAPDSSLSTART" in
+	[yY]*)START=yes;;
+esac
+
+case "$1" in
+	start)
+	if [ "$START" = "yes" ]; then
+		log_daemon_msg "Starting $PROGRAM" "$DAEMON"
+
+		umask $IMAP_UMASK
+		ulimit -v $IMAP_ULIMITD
+		/usr/bin/env - /bin/sh -c " . ${sysconfdir}/imapd ; \
+		. ${sysconfdir}/imapd-ssl ; \
+		IMAP_TLS=1 ; export IMAP_TLS ; \
+		`sed -n '/^#/d;/=/p' <${sysconfdir}/imapd | \
+			sed 's/=.*//;s/^/export /;s/$/;/'`
+		`sed -n '/^#/d;/=/p' <${sysconfdir}/imapd-ssl | \
+			sed 's/=.*//;s/^/export /;s/$/;/'`
+		PROXY_HOSTNAME=$PROXY_HOSTNAME ; \
+		/usr/sbin/courierlogger -pid=$SSLPIDFILE -start $SSLLOGGEROPTS \
+		$TCPD -address=$SSLADDRESS \
+			-maxprocs=$MAXDAEMONS -maxperip=$MAXPERIP \
+			$TCPDOPTS \
+			$SSLPORT $COURIERTLS -server -tcpd \
+			${libexecdir}/courier/imaplogin \
+				${bindir}/imapd $MAILDIRPATH"
+		log_end_msg 0
+	fi
+	;;
+	stop)
+	log_daemon_msg "Stopping $PROGRAM" "$DAEMON"
+	/usr/sbin/courierlogger -pid=$SSLPIDFILE -stop
+	log_end_msg 0
+	;;
+	restart | force-reload)
+	$0 stop
+	$0 start
+	;;
+	status)
+	status_of_proc -p $SSLPIDFILE $DAEMON "$PROGRAM" && exit 0 || exit $?
+	;;
+	*)
+  log_success_msg "Usage: $0 {start|stop|restart|force-reload}"
+	exit 2
+	;;
+esac
+exit 0

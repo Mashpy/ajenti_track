@@ -1,0 +1,7 @@
+37c72ec653e0e0494404a8bd4d00ae8e  usr/bin/heirloom-mailx
+935cbcd7658306a07177927f9935cb2d  usr/share/doc/heirloom-mailx/README.gz
+ad89f121bfceffb4a5224deead0ac5ee  usr/share/doc/heirloom-mailx/TODO
+c93c2a67ca6330d7d56336212562dacc  usr/share/doc/heirloom-mailx/changelog.Debian.gz
+786eb76b8e51ddc1a12f8de3449ab800  usr/share/doc/heirloom-mailx/copyright
+61e29c3028d27366cae441714d0b59cc  usr/share/man/man1/heirloom-mailx.1.gz
+2d51a37e7febc747502812469beb994c  usr/share/menu/heirloom-mailx

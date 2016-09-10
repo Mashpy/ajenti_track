@@ -1,0 +1,3 @@
+/etc/supervisor/supervisord.conf
+/etc/init.d/supervisor
+/etc/default/supervisor

@@ -1,0 +1,1 @@
+../../../../../../share/pyshared/supervisor/medusa/demo/publish.py

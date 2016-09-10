@@ -1,0 +1,9 @@
+/.
+/var
+/var/lib
+/var/lib/ajenti
+/var/lib/ajenti/plugins
+/var/lib/ajenti/plugins/vh-nodejs
+/var/lib/ajenti/plugins/vh-nodejs/__init__.py
+/var/lib/ajenti/plugins/vh-nodejs/nodejs.py
+/var/lib/ajenti/plugins/vh-nodejs/package.desc

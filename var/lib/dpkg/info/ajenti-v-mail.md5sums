@@ -1,0 +1,8 @@
+fc2ac7b55914efaea2d7a32777d7e0f1  var/lib/ajenti/plugins/vh-mail/templates.py
+0f479e1a285dc4210bb9d6b388f11a4a  var/lib/ajenti/plugins/vh-mail/__init__.py
+b3d43160a9d4b9f636f15ded968d2cb3  var/lib/ajenti/plugins/vh-mail/api.py
+73bc98b71b5675a0f3b22aa0613c77b5  var/lib/ajenti/plugins/vh-mail/layout/main.xml
+7b962a573074e42f01c58241fe784a53  var/lib/ajenti/plugins/vh-mail/layout/not-configured.xml
+7f0d984abbb5e9c14658e1fea84862ea  var/lib/ajenti/plugins/vh-mail/main.py
+1b9e8145863446b7abff619384dafb87  var/lib/ajenti/plugins/vh-mail/package.desc
+2c51b8ce74dd472c9f5dfc7d73f4362e  var/lib/ajenti/plugins/vh-mail/ipc.py

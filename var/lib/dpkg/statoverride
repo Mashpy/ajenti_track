@@ -1,3 +1,4 @@
 root mlocate 2755 /usr/bin/mlocate
 root landscape 4754 /usr/lib/landscape/apt-update
+root Debian-exim 640 /etc/exim4/passwd.client
 root crontab 2755 /usr/bin/crontab

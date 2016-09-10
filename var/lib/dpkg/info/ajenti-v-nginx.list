@@ -1,0 +1,10 @@
+/.
+/var
+/var/lib
+/var/lib/ajenti
+/var/lib/ajenti/plugins
+/var/lib/ajenti/plugins/vh-nginx
+/var/lib/ajenti/plugins/vh-nginx/nginx_templates.py
+/var/lib/ajenti/plugins/vh-nginx/nginx.py
+/var/lib/ajenti/plugins/vh-nginx/__init__.py
+/var/lib/ajenti/plugins/vh-nginx/package.desc

@@ -1,0 +1,5 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: (Connection|Disconnected), ip=\[[.:[:alnum:]]+\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: LOGIN, user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], port=\[[0-9]+\], protocol=IMAP$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: (LOGOUT|TIMEOUT|DISCONNECTED), user=[-_.@[:alnum:]]+, ip=\[[.:[:alnum:]]+\], headers=[0-9]+, body=[0-9]+, rcvd=[0-9]+, sent=[0-9]+, time=[0-9]+, starttls=[01]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: couriertls: read: Connection timed out$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ imapd-ssl: couriertls: accept: Connection reset by peer$

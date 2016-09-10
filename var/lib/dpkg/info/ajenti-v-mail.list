@@ -1,0 +1,15 @@
+/.
+/var
+/var/lib
+/var/lib/ajenti
+/var/lib/ajenti/plugins
+/var/lib/ajenti/plugins/vh-mail
+/var/lib/ajenti/plugins/vh-mail/templates.py
+/var/lib/ajenti/plugins/vh-mail/__init__.py
+/var/lib/ajenti/plugins/vh-mail/api.py
+/var/lib/ajenti/plugins/vh-mail/layout
+/var/lib/ajenti/plugins/vh-mail/layout/main.xml
+/var/lib/ajenti/plugins/vh-mail/layout/not-configured.xml
+/var/lib/ajenti/plugins/vh-mail/main.py
+/var/lib/ajenti/plugins/vh-mail/package.desc
+/var/lib/ajenti/plugins/vh-mail/ipc.py

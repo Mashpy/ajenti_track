@@ -47,6 +47,28 @@ Description: Wietse Venema's TCP wrapper utilities
   - booby traps to implement an early-warning system.
 Original-Maintainer: Marco d'Itri <md@linux.it>
 
+Package: mysql-client-core-5.5
+Priority: optional
+Section: database
+Installed-Size: 6821
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Replaces: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Depends: libc6 (>= 2.17), libreadline6 (>= 6.0), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Size: 708748
+Description: MySQL database core client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the core client files, as used by Akonadi.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
 Package: python-urllib3
 Priority: optional
 Section: python
@@ -136,6 +158,34 @@ Homepage: http://www.and.org/ustr/
 Description-md5: 3b313e492269d05b2f9ba5d0aa1bd7a3
 Supported: 5y
 Task: minimal
+
+Package: python-lxml
+Priority: optional
+Section: python
+Installed-Size: 2482
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: lxml
+Version: 3.3.3-1ubuntu0.1
+Provides: python2.7-lxml
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), libc6 (>= 2.14), libxml2 (>= 2.9.0), libxslt1.1 (>= 1.1.26)
+Suggests: python-lxml-dbg
+Size: 629248
+Description: pythonic binding for the libxml2 and libxslt libraries
+ lxml is a new Python binding for libxml2 and libxslt, completely
+ independent from existing Python bindings. Its aim:
+ .
+   * Pythonic API.
+   * Documented.
+   * Use Python unicode strings in API.
+   * Safe (no segfaults).
+   * No manual memory management!
+ .
+ lxml aims to provide a Pythonic API by following as much as possible
+ the ElementTree API, trying to avoid inventing too many new APIs,
+ or the user's having to learn new things -- XML is complicated enough.
+Homepage: http://lxml.de/
+Original-Maintainer: Matthias Klose <doko@debian.org>
 
 Package: debconf
 Priority: required
@@ -488,6 +538,38 @@ Description-md5: ccafef5bb90a2453aecca96cbb772d23
 Supported: 5y
 Task: minimal
 
+Package: libdbi-perl
+Priority: optional
+Section: perl
+Installed-Size: 2155
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.630-1
+Provides: perl-dbdabi-94
+Depends: perl (>= 5.18.1-4build1), perlapi-5.18.1, libc6 (>= 2.4)
+Suggests: libclone-perl (>= 0.34), libmldbm-perl, libnet-daemon-perl, libplrpc-perl, libsql-statement-perl (>= 1.402)
+Breaks: libdbd-anydata-perl (<< 0.11+), libdbd-csv-perl (<< 0.3600+), libsql-statement-perl (<< 1.33+)
+Size: 879494
+Description: Perl Database Interface (DBI)
+ DBI (DataBase Interface) is a Perl framework that provides a common interface
+ to access various backend databases in a uniform manner. DBD (DataBase Driver)
+ modules provide implementations for various backend data storage mechanisms
+ including networked relational databases (particularly SQL databases) and even
+ web services such as the Google search engine.
+ .
+ It is extremely portable and available for a wide range of operating systems,
+ architectures and data stores, including:
+ .
+  * Oracle
+  * Microsoft SQL Server
+  * IBM DB2
+  * SQLite
+  * PostgreSQL
+  * Firebird
+  * MySQL
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://dbi.perl.org/
+
 Package: libclass-accessor-perl
 Priority: optional
 Section: perl
@@ -780,6 +862,19 @@ Description: simple interprocess messaging system (library)
 Homepage: http://dbus.freedesktop.org/
 Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 
+Package: python-exconsole
+Priority: optional
+Section: python
+Installed-Size: 46
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Version: 0.1.5
+Depends: python (>= 2.6), python-support (>= 0.90.0)
+Size: 3638
+Description: Emergency/postmortem Python console
+Homepage: http://github.com/Eugeny/exconsole
+Python-Version: 2.7
+
 Package: gettext-base
 Priority: standard
 Section: utils
@@ -916,6 +1011,33 @@ Description: LGPL Crypto library - runtime library
 Homepage: http://directory.fsf.org/project/libgcrypt/
 Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 
+Package: python-dbus
+Priority: optional
+Section: python
+Installed-Size: 398
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: dbus-python
+Version: 1.2.0-2build2
+Replaces: python2.4-dbus
+Provides: python2.7-dbus
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), libc6 (>= 2.4), libdbus-1-3 (>= 1.5.12), libdbus-glib-1-2 (>= 0.78), libglib2.0-0 (>= 2.12.0), python-dbus-dev
+Recommends: python-gi | python-gobject-2 | python-qt4-dbus
+Suggests: python-dbus-doc, python-dbus-dbg
+Breaks: gajim (<< 0.11.1), gnome-osd (<< 0.12.0), python-qt4-dbus (<< 4.8.3-3)
+Conflicts: python2.4-dbus
+Size: 82642
+Description: simple interprocess messaging system (Python interface)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ This package provides a Python interface to D-Bus.
+ .
+ See the dbus description for more information about D-Bus in general.
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Homepage: http://www.freedesktop.org/wiki/Software/DBusBindings#Python
+
 Package: libmpdec2
 Priority: optional
 Section: libs
@@ -984,6 +1106,24 @@ Description: Universally Unique ID library
  See RFC 4122 for more information.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
 Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: libaio1
+Priority: optional
+Section: libs
+Installed-Size: 52
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libaio
+Version: 0.3.109-4
+Pre-Depends: multiarch-support
+Size: 6364
+Description: Linux kernel AIO access library - shared library
+ This library enables userspace to use Linux kernel asynchronous I/O
+ system calls, important for the performance of databases and other
+ advanced applications.
+Original-Maintainer: Guillem Jover <guillem@debian.org>
+Homepage: http://www.kernel.org/pub/linux/libs/aio/
 
 Package: libtasn1-6
 Priority: standard
@@ -1339,6 +1479,44 @@ Description: Interfaces for Python
 Homepage: http://pypi.python.org/pypi/zope.interface
 Original-Maintainer: Debian/Ubuntu Zope Team <pkg-zope-developers@lists.alioth.debian.org>
 
+Package: python-pil
+Priority: optional
+Section: python
+Installed-Size: 1123
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: pillow
+Version: 2.3.0-1ubuntu3
+Replaces: python-imaging (<< 1.1.7+2.0.0-1.1)
+Provides: python-pillow, python2.7-pil
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), mime-support | python-pil.imagetk, libc6 (>= 2.14), libfreetype6 (>= 2.2.1), libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), libtiff5 (>= 4.0.3), libwebp5, libwebpmux1, zlib1g (>= 1:1.1.4)
+Suggests: python-pil-doc, python-pil-dbg
+Breaks: python-imaging (<< 1.1.7+2.0.0-1.1)
+Size: 279158
+Description: Python Imaging Library (Pillow fork)
+ The Python Imaging Library (PIL) adds an image object to your Python
+ interpreter. You can load images from a variety of file formats, and
+ apply a rich set of image operations to them.
+ .
+ Image Objects:
+  o Bilevel, greyscale, palette, true colour (RGB), true colour with
+    transparency (RGBA).
+  o colour separation (CMYK).
+  o Copy, cut, paste operations.
+  o Flip, transpose, resize, rotate, and arbitrary affine transforms.
+  o Transparency operations.
+  o Channel and point operations.
+  o Colour transforms, including matrix operations.
+  o Image enhancement, including convolution filters.
+ .
+ File Formats:
+  o Full (Open/Load/Save): BMP, EPS (with ghostscript), GIF, IM, JPEG,
+    MSP, PDF, PNG, PPM, TIFF, XBM.
+  o Read only (Open/Load): ARG, CUR, DCX, FLI, FPX, GBR, GD, ICO, IMT, IPTC,
+    MCIDAS, MPEG, PhotoCD, PCX, PIXAR, PSD, TGA, SGI, SUN, TGA, WMF, XPM.
+  o Save only: PDF, EPS (without ghostscript).
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
 Package: ncurses-base
 Essential: yes
 Priority: required
@@ -1621,6 +1799,28 @@ Description: Basic utilities from 4.4BSD-Lite
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
 Original-Maintainer: LaMont Jones <lamont@debian.org>
 
+Package: python-gevent-websocket
+Priority: optional
+Section: python
+Installed-Size: 102
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gevent-websocket
+Version: 0.9.3-1
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), python-gevent
+Size: 15290
+Description: websocket library for the gevent networking library
+ gevent-websocket is a WebSocket library for the gevent networking library.
+ .
+ Features include:
+ .
+  * Integration on both socket level or using an abstract interface.
+  * RPC and PubSub framework using WAMP (WebSocket Application Messaging
+    Protocol).
+  * Easily extendible using a simple WebSocket protocol plugin API
+Original-Maintainer: Benjamin Drung <benjamin.drung@profitbricks.com>
+Homepage: https://bitbucket.org/Jeffrey/gevent-websocket
+
 Package: python3-apt
 Priority: optional
 Section: python
@@ -1717,6 +1917,30 @@ Description: Search engine library
  collections containing hundreds of millions of documents.
 Original-Maintainer: Olly Betts <olly@survex.com>
 Homepage: http://xapian.org/
+
+Package: python-mako
+Priority: optional
+Section: python
+Installed-Size: 351
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: mako
+Version: 0.9.1-1
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), python-markupsafe
+Suggests: python-beaker (>= 1.1), python-mako-doc
+Enhances: python-pygments, python-pylons, python-turbogears
+Size: 59620
+Description: fast and lightweight templating for the Python platform
+ Mako is a template library written in Python. It provides a familiar, non-XML
+ syntax which compiles into Python modules for maximum performance. Mako's
+ syntax and API borrows from the best ideas of many others, including Django
+ templates, Cheetah, Myghty, and Genshi. Conceptually, Mako is an embedded
+ Python (i.e. Python Server Page) language, which refines the familiar ideas of
+ componentized layout and inheritance to produce one of the most
+ straightforward and flexible models available, while also maintaining close
+ ties to Python calling and scoping semantics.
+Original-Maintainer: Piotr Ożarowski <piotr@debian.org>
+Homepage: http://www.makotemplates.org/
 
 Package: gdisk
 Priority: extra
@@ -1869,6 +2093,19 @@ Description: use an overlayfs on top of a read-only root filesystem
  device.
 Homepage: http://launchpad.net/cloud-initramfs-tools
 
+Package: python-reconfigure
+Priority: optional
+Section: python
+Installed-Size: 201
+Maintainer: Eugeny Pankov <e@ajenti.org>
+Architecture: all
+Version: 0.1.77
+Depends: python (>= 2.6), python-support (>= 0.90.0), python-chardet
+Size: 29936
+Description: Simple config file management library
+Homepage: http://eugeny.github.com/reconfigure
+Python-Version: 2.7
+
 Package: init-system-helpers
 Priority: extra
 Section: admin
@@ -2006,6 +2243,31 @@ Description: Secure Sockets Layer toolkit - cryptographic utility
   * testing SSL/TLS clients and servers;
   * handling S/MIME signed or encrypted mail.
 Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: python-gi
+Priority: optional
+Section: python
+Installed-Size: 709
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: pygobject
+Version: 3.12.0-1ubuntu1
+Replaces: python-gobject (<< 3.0.2-4)
+Provides: python2.7-gi
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), libc6 (>= 2.14), libgirepository-1.0-1 (>= 1.33.10), libglib2.0-0 (>= 2.38.0), gir1.2-glib-2.0 (>= 1.35.9)
+Suggests: python-gi-cairo
+Breaks: python-aptdaemon (<< 1.0), python-gobject (<< 3.0.2-4), python-nautilus (<= 1.1-1), software-center (<= 5.6.0-0ubuntu2)
+Size: 192494
+Description: Python 2.x bindings for gobject-introspection libraries
+ GObject is an abstraction layer that allows programming with an object
+ paradigm that is compatible with many languages. It is a part of Glib,
+ the core library used to build GTK+ and GNOME.
+ .
+ This package contains the Python 2.x binding generator for libraries that
+ support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
+ package. With these packages, the libraries can be used from Python.
+Homepage: https://wiki.gnome.org/PyGObject
+Original-Maintainer: Josselin Mouette <joss@debian.org>
 
 Package: libglib2.0-data
 Priority: optional
@@ -2275,6 +2537,29 @@ Description: SGML infrastructure and SGML catalog file support
    * update-catalog(8): tool for maintaining the root SGML catalog
      file and the package SGML catalog files in the '/etc/sgml' directory
 Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: libxslt1.1
+Priority: optional
+Section: libs
+Installed-Size: 486
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxslt
+Version: 1.1.28-2build1
+Depends: libc6 (>= 2.17), libgcrypt11 (>= 1.4.5), libxml2 (>= 2.9.0)
+Pre-Depends: multiarch-support
+Size: 144980
+Description: XSLT 1.0 processing library - runtime library
+ XSLT is an XML language for defining transformations of XML files from
+ XML to some other arbitrary format, such as XML, HTML, plain text, etc.
+ using standard XSLT stylesheets. libxslt is a C library which
+ implements XSLT version 1.0.
+ .
+ This package contains the libxslt library used by applications for XSLT
+ transformations.
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Homepage: http://xmlsoft.org/xslt/
 
 Package: pciutils
 Priority: standard
@@ -2929,6 +3214,29 @@ Description: interactive high-level object-oriented language (default version)
 Homepage: http://www.python.org/
 Original-Maintainer: Matthias Klose <doko@debian.org>
 
+Package: libfontconfig1
+Priority: optional
+Section: libs
+Installed-Size: 498
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: fontconfig
+Version: 2.11.0-0ubuntu4.2
+Provides: libfontconfig
+Depends: fontconfig-config (= 2.11.0-0ubuntu4.2), libc6 (>= 2.14), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.2.1)
+Pre-Depends: multiarch-support
+Size: 123368
+Description: generic font configuration library - runtime
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the runtime library needed to launch applications
+ using fontconfig.
+Original-Maintainer: Keith Packard <keithp@debian.org>
+
 Package: ifupdown
 Priority: important
 Section: admin
@@ -3246,6 +3554,23 @@ Description: package management runtime library
     https (apt-transport-https) and debtorrent (apt-transport-debtorrent).
 Original-Maintainer: APT Development Team <deity@lists.debian.org>
 
+Package: python-passlib
+Priority: extra
+Section: python
+Installed-Size: 797
+Maintainer: Julien Danjou <acid@debian.org>
+Architecture: all
+Version: 1.5.3-2
+Depends: python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8)
+Size: 155752
+Description: comprehensive password hashing framework
+ Password hashing library for Python 2 & 3, which provides cross-platform
+ implementations of over 20 password hashing algorithms, as well as a
+ framework for managing existing password hashes. It's designed to be useful
+ for a wide range of tasks; from verifying a hash found in /etc/shadow, to
+ providing full-strength password hashing for multi-user applications.
+Homepage: http://code.google.com/p/passlib/
+
 Package: diffutils
 Essential: yes
 Priority: required
@@ -3360,6 +3685,26 @@ Description: The Landscape administration system client
  This package provides the Landscape client and requires a Landscape account.
 Original-Maintainer: Landscape Team <landscape-team@canonical.com>
 
+Package: libwebpmux1
+Priority: extra
+Section: libs
+Installed-Size: 62
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwebp
+Version: 0.4.0-4
+Depends: libc6 (>= 2.14), libwebp5
+Pre-Depends: multiarch-support
+Size: 13720
+Description: Lossy compression of digital photographic images.
+ Image Compression format, based on the VP8 codec.
+ WebP uses the modern VP8 compression format to deliver efficient
+ compression of images for the web. More than 30% extra gain over
+ optimized JPEG, for same quality, is not unusual.
+Original-Maintainer: Jeff Breidenbach <jab@debian.org>
+Homepage: http://webp.googlecode.com
+
 Package: resolvconf
 Priority: optional
 Section: net
@@ -3430,6 +3775,30 @@ Description: Python 3 bindings for gobject-introspection libraries
  package. With these packages, the libraries can be used from Python 3.
 Homepage: https://wiki.gnome.org/PyGObject
 Original-Maintainer: Josselin Mouette <joss@debian.org>
+
+Package: libxpm4
+Priority: optional
+Section: libs
+Installed-Size: 121
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxpm
+Version: 1:3.5.10-1
+Depends: libc6 (>= 2.14), libx11-6
+Pre-Depends: multiarch-support
+Size: 38280
+Description: X11 pixmap library
+ libXpm provides support and common operation for the XPM pixmap format, which
+ is commonly used in legacy X applications.  XPM is an extension of the
+ monochrome XBM bitmap specified in the X protocol.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXpm
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 
 Package: libkmod2
 Priority: required
@@ -3555,6 +3924,29 @@ Description: GNU dbm database support for Python
  create or read GNU dbm database files with Python.
 Original-Maintainer: Matthias Klose <doko@debian.org>
 
+Package: liblcms2-2
+Priority: optional
+Section: libs
+Installed-Size: 392
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: lcms2
+Version: 2.5-0ubuntu4.1
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Suggests: liblcms2-utils
+Size: 131338
+Description: Little CMS 2 color management library
+ LittleCMS 2 intends to be a small-footprint color management engine, with
+ special focus on accuracy and performance. It uses the International Color
+ Consortium standard (ICC) of color management. LittleCMS 2 is a full
+ implementation of ICC specification 4.2 plus all addendums. It fully supports
+ all V2 and V4 profiles, including abstract, devicelink and named color
+ profiles.
+Homepage: http://www.littlecms.com/
+Original-Maintainer: Oleksandr Moskalenko <malex@debian.org>
+
 Package: libcap2-bin
 Priority: optional
 Section: utils
@@ -3663,6 +4055,27 @@ Description: Free Implementation of the Unicode BiDi algorithm
 Original-Maintainer: Debian Hebrew Packaging Team <debian-hebrew-package@lists.alioth.debian.org>
 Homepage: http://www.fribidi.org/
 
+Package: libvpx1
+Priority: optional
+Section: libs
+Installed-Size: 1712
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libvpx
+Version: 1.3.0-2
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Size: 555738
+Description: VP8 video codec (shared library)
+ VP8 is an open video codec, originally developed by On2 and released
+ as open source by Google Inc. It is the successor of the VP3 codec,
+ on which the Theora codec was based.
+ .
+ This package contains the shared libraries.
+Original-Maintainer: Sebastian Dröge <slomo@debian.org>
+Homepage: http://www.webmproject.org
+
 Package: zlib1g
 Priority: required
 Section: libs
@@ -3710,6 +4123,21 @@ Description: Heimdal Kerberos - roken support library
  This package contains the library for roken support.
 Homepage: http://www.h5l.org/
 Original-Maintainer: Brian May <bam@debian.org>
+
+Package: libapt-pkg-perl
+Priority: optional
+Section: perl
+Installed-Size: 259
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1.29build1
+Depends: perl-base (>= 5.18.1-4), perlapi-5.18.1, libapt-pkg4.12 (>= 0.8.0), libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Size: 85904
+Description: Perl interface to libapt-pkg
+ A Perl interface to APT's libapt-pkg which provides modules for configuration
+ file/command line parsing, version comparison, inspection of the binary
+ package cache and source package details.
+Original-Maintainer: Brendan O'Dea <bod@debian.org>
 
 Package: os-prober
 Priority: extra
@@ -3800,6 +4228,27 @@ Description: X C Binding
 Homepage: http://xcb.freedesktop.org
 Original-Maintainer: XCB Developers <xcb@lists.freedesktop.org>
 
+Package: python-support
+Priority: optional
+Section: python
+Installed-Size: 155
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.0.15
+Depends: python (>= 2.5), python-minimal, dpkg (>= 1.14.19)
+Conflicts: debhelper (<< 5.0.38)
+Size: 26672
+Description: automated rebuilding support for Python modules
+ This package contains the 'update-python-modules' script, which takes
+ care of byte-compilation of Python-only modules.
+ .
+ Private modules are automatically rebuilt upon major Python upgrades,
+ avoiding the need for strong dependencies.
+ .
+ Public modules are automatically made available for all installed
+ Python versions.
+Original-Maintainer: Josselin Mouette <joss@debian.org>
+
 Package: locales
 Priority: important
 Section: libs
@@ -3839,6 +4288,29 @@ Breaks: computer-janitor (<= 1.11-0ubuntu1), update-manager (<< 1:0.146.2)
 Size: 5270
 Description: manage release upgrades
  This is the core of update-manager and the release upgrader
+
+Package: python-dbus-dev
+Priority: optional
+Section: python
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: dbus-python
+Version: 1.2.0-2build2
+Replaces: python-dbus (<< 1.0), python-dbus-common (<< 1.0)
+Breaks: python-dbus (<< 1.0), python-dbus-common (<< 1.0)
+Size: 5088
+Description: main loop integration development files for python-dbus
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ This package provides development files required to compile main-loop
+ integration modules for python-dbus, such as dbus.mainloop.qt provided
+ by PyQt. It is Python-version-independent: you must also depend on either
+ python-dbus or python3-dbus, if required.
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Homepage: http://www.freedesktop.org/wiki/Software/DBusBindings#Python
 
 Package: python2.7
 Priority: standard
@@ -4291,6 +4763,27 @@ Description: system and service manager - PAM module
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
 
+Package: apt-show-versions
+Priority: optional
+Section: admin
+Installed-Size: 169
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.22.3
+Depends: perl | perl-5.005 | perl-5.004, apt, libapt-pkg-perl (>= 0.1.21), libstorable-perl
+Size: 33886
+Description: lists available package versions with distribution
+ apt-show-versions parses the dpkg status file and the APT lists for
+ the installed and available package versions and distribution and
+ shows upgrade options within the specific distribution of the selected
+ package.
+ .
+ This is really useful if you have a mixed stable/testing environment
+ and want to list all packages which are from testing and can be
+ upgraded in testing.
+Original-Maintainer: Christoph Martin <christoph.martin@uni-mainz.de>
+Homepage: http://alioth.debian.org/projects/pkg-asv/
+
 Package: console-setup
 Priority: optional
 Section: utils
@@ -4339,6 +4832,52 @@ Description: Python bindings to libcurl
 Homepage: http://pycurl.sourceforge.net
 Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 
+Package: mysql-common
+Priority: optional
+Section: database
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Breaks: amarok (<< 2.5.0-2), mysql-client-5.1 (<< 5.5), mysql-server-5.1 (<< 5.5), mysql-server-core-5.1 (<< 5.5)
+Size: 12946
+Description: MySQL database common files, e.g. /etc/mysql/my.cnf
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes files needed by all versions of the client library,
+ e.g. /etc/mysql/my.cnf.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: libgd3
+Priority: optional
+Section: libs
+Installed-Size: 482
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libgd2
+Version: 2.1.0-3ubuntu0.3
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libtiff5 (>= 4.0.3), libvpx1 (>= 1.0.0), libxpm4, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Suggests: libgd-tools
+Size: 121704
+Description: GD Graphics Library
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the runtime package of the library.
+Homepage: http://www.libgd.org/
+Original-Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+
 Package: libreadline6
 Priority: important
 Section: libs
@@ -4361,6 +4900,22 @@ Description: GNU readline and history libraries, run-time libraries
  The GNU history library provides a consistent user interface for
  recalling lines of previously typed input.
 Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: python-gevent
+Priority: extra
+Section: python
+Installed-Size: 882
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.0-1ubuntu1.1
+Depends: libc6 (>= 2.17), python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), python-greenlet | python-codespeak-lib (<< 1.0)
+Suggests: python-gevent-doc, python-gevent-dbg, python-openssl
+Size: 215412
+Description: gevent is a coroutine-based Python networking library
+ gevent uses greenlet to provide a high-level synchronous API on top of
+ libevent event loop.
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Homepage: http://www.gevent.org/
 
 Package: libncurses5
 Priority: required
@@ -4470,6 +5025,34 @@ Description: Vi IMproved - enhanced vi editor
  (or less).
 Homepage: http://www.vim.org/
 Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
+
+Package: fonts-dejavu-core
+Priority: optional
+Section: fonts
+Installed-Size: 2898
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: fonts-dejavu
+Version: 2.34-1ubuntu1
+Replaces: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Breaks: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Size: 1024460
+Description: Vera font family derivate with additional characters
+ DejaVu provides an expanded version of the Vera font family aiming for
+ quality and broader Unicode coverage while retaining the original Vera
+ style. DejaVu currently works towards conformance with the Multilingual
+ European Standards (MES-1 and MES-2) for Unicode coverage. The DejaVu
+ fonts provide serif, sans and monospaced variants.
+ .
+ This package only contains the sans, sans-bold, serif, serif-bold,
+ mono and mono-bold variants. For additional variants, see the
+ ttf-dejavu-extra package.
+ .
+ DejaVu fonts are intended for use on low-resolution devices (mainly
+ computer screens) but can be used in printing as well.
+Original-Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Homepage: http://dejavu-fonts.org/
 
 Package: rsync
 Priority: optional
@@ -4643,6 +5226,29 @@ Description: Point-to-Point Protocol (PPP) - daemon
  certain kinds of broadband connections.
 Original-Maintainer: Marco d'Itri <md@linux.it>
 
+Package: libjpeg-turbo8
+Priority: optional
+Section: libs
+Installed-Size: 331
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libjpeg-turbo
+Version: 1.3.0-0ubuntu2
+Replaces: libjpeg8 (<< 8c-2ubuntu5)
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Breaks: libjpeg8 (<< 8c-2ubuntu5)
+Size: 104020
+Description: IJG JPEG compliant runtime library.
+ Runtime library supporting the Independent JPEG Group's standard
+ for JPEG files.
+ .
+ This package contains the shared library which is a drop in
+ replacement for libjpeg8, which has better performance than
+ standard libjpeg by use of SIMD and other optimizations.
+Homepage: http://libjpeg-turbo.virtualgl.org/
+
 Package: libkeyutils1
 Priority: standard
 Section: libs
@@ -4725,6 +5331,35 @@ Description: Log rotation utility
 Homepage: https://fedorahosted.org/logrotate/
 Original-Maintainer: Paul Martin <pm@debian.org>
 
+Package: libltdl7
+Priority: optional
+Section: libs
+Installed-Size: 397
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libtool
+Version: 2.4.2-1.7ubuntu1
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Size: 35000
+Description: A system independent dlopen wrapper for GNU libtool
+ This package contains the run-time libltdl library.
+ .
+ A small library that aims at hiding the various difficulties of
+ dlopening libraries from programmers.  It is a system independent
+ dlopen wrapper for GNU libtool.
+ .
+ It supports the following dlopen interfaces:
+   * dlopen (Solaris, Linux and various BSD flavors)
+   * shl_load (HP-UX)
+   * LoadLibrary (Win16 and Win32)
+   * load_add_on (BeOS)
+   * GNU DLD (emulates dynamic linking for static libraries)
+   * libtool's dlpreopen
+Homepage: http://www.gnu.org/software/libtool/
+Original-Maintainer: Kurt Roeckx <kurt@roeckx.be>
+
 Package: libexpat1
 Priority: optional
 Section: libs
@@ -4765,6 +5400,25 @@ Description: Handles update-grub for ec2 instances
  /boot/grub/menu.lst up to date while not conflicting with grub-pc.
  This package provides that.
 
+Package: libterm-readkey-perl
+Priority: optional
+Section: perl
+Installed-Size: 117
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.31-1
+Depends: perl (>= 5.18.1-4), perlapi-5.18.1, libc6 (>= 2.15)
+Size: 27364
+Description: perl module for simple terminal control
+ Term::ReadKey is a compiled perl module dedicated to providing simple
+ control over terminal driver modes (cbreak, raw, cooked, etc.,) support for
+ non-blocking reads, if the architecture allows, and some generalized handy
+ functions for working with terminals. One of the main goals is to have the
+ functions as portable as possible, so you can just plug in "use
+ Term::ReadKey" on any architecture and have a good likelyhood of it working.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/TermReadKey/
+
 Package: openssh-sftp-server
 Priority: optional
 Section: net
@@ -4798,6 +5452,30 @@ Description: secure shell (SSH) sftp server module, for SFTP access from remote 
 Homepage: http://www.openssh.org/
 Original-Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
 
+Package: libdbd-mysql-perl
+Priority: optional
+Section: perl
+Installed-Size: 307
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 4.025-1
+Depends: perl (>= 5.18.1-4build1), perl-dbdabi-94, perlapi-5.18.1, libc6 (>= 2.4), libmysqlclient18 (>= 5.5.13-1), libdbi-perl
+Size: 99300
+Description: Perl5 database interface to the MySQL database
+ DBD::mysql is the Perl5 Database Interface driver for the MySQL
+ database. In other words: DBD::mysql is an interface between the Perl
+ programming language and the MySQL programming API that comes with the
+ MySQL relational database management system. Most functions provided by
+ this programming API are supported. Some rarely used functions are
+ missing, mainly because noone ever requested them. However supported
+ features include: compression of data between server and client; timeouts;
+ SSL; prepared statement support; server administration such as creating
+ and dropping databases and restarting the server; auto-reconnection;
+ utf8; bind type guessing; bind comment placeholders; automated insert ids;
+ transactions; multiple result sets and multithreading.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: https://metacpan.org/release/DBD-mysql
+
 Package: patch
 Priority: standard
 Section: vcs
@@ -4816,6 +5494,22 @@ Description: Apply a diff file to an original
  version.
 Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 
+Package: ajenti
+Priority: optional
+Section: admin
+Installed-Size: 5911
+Maintainer: Eugene Pankov <e@ajenti.org>
+Architecture: all
+Version: 1.2.23.8
+Depends: python (>= 2.6), python-support (>= 0.90.0), python-lxml (>= 2.2.4), python-gevent, openssl, python-gevent-socketio, python-psutil (>= 0.6.0), python-reconfigure (>= 0.1.46), python-daemon, python-passlib, python-requests (>= 0.12.0), python-dbus, python-imaging, apt-show-versions, python-catcher, python-exconsole (>= 0.1.5), python-ldap
+Size: 1722292
+Description: Server administration web interface
+ It provides rich functionality and support for lots of server software,
+ along with system configuration options.
+ Lots of additional plugins can be downloaded with plugin manager.
+Homepage: http://ajenti.org/
+Python-Version: 2.7
+
 Package: initramfs-tools-bin
 Priority: optional
 Section: utils
@@ -4832,6 +5526,27 @@ Description: binaries used by initramfs-tools
  This package contains binaries used inside the initramfs images generated
  by initramfs-tools.
 Original-Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+
+Package: libjbig0
+Priority: extra
+Section: libs
+Installed-Size: 93
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: jbigkit
+Version: 2.0-2ubuntu4.1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Size: 26140
+Description: JBIGkit libraries
+ JBIG-KIT provides a portable library of compression and decompression functions
+ with a documented interface that you can include very easily into your image or
+ document processing software.
+ .
+ This package contains the dynamically linked library.
+Homepage: http://www.cl.cam.ac.uk/~mgk25/jbigkit/
+Original-Maintainer: Michael van der Kolff <mvanderkolff@gmail.com>
 
 Package: usbutils
 Priority: optional
@@ -4931,6 +5646,29 @@ Description: Library for Crypto related tasks
  parsing.
 Original-Maintainer: Josselin Mouette <joss@debian.org>
 Homepage: https://wiki.gnome.org/GnomeKeyring
+
+Package: python-greenlet
+Priority: extra
+Section: python
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.4.2-1ubuntu0.1
+Depends: libc6 (>= 2.14), python (>= 2.7), python (<< 2.8)
+Suggests: python-greenlet-doc, python-greenlet-dev, python-greenlet-dbg
+Conflicts: python-codespeak-lib (<< 1.0)
+Size: 16772
+Description: Lightweight in-process concurrent programming
+ The greenlet package is a spin-off of Stackless, a version of CPython that
+ supports micro-threads called "tasklets". Tasklets run pseudo-concurrently
+ (typically in a single or a few OS-level threads) and are synchronized with
+ data exchanges on "channels".
+ .
+ greenlet is the standalone package derived from the py lib, and is used by
+ several non-blocking IO packages as a more flexible alternative to Python's
+ built in coroutines.
+Homepage: http://pypi.python.org/pypi/greenlet
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 
 Package: krb5-locales
 Priority: standard
@@ -5150,6 +5888,25 @@ Description: Linux kernel headers for version 3.13.0 on 64 bit x86 SMP
  .
  This is for sites that want the latest kernel headers.  Please read
  /usr/share/doc/linux-headers-3.13.0-92/debian.README.gz for details.
+
+Package: libtiff5
+Priority: optional
+Section: libs
+Installed-Size: 577
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: tiff
+Version: 4.0.3-7ubuntu0.4
+Depends: libc6 (>= 2.14), libjbig0 (>= 2.0), libjpeg8 (>= 8c), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Size: 142580
+Description: Tag Image File Format (TIFF) library
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
+Homepage: http://libtiff.maptools.org
+Original-Maintainer: Jay Berkenbilt <qjb@debian.org>
 
 Package: libtext-soundex-perl
 Priority: optional
@@ -5843,6 +6600,30 @@ Description: query and manipulate user account information - shared libraries
 Homepage: http://cgit.freedesktop.org/accountsservice/
 Original-Maintainer: Alessio Treglia <alessio@debian.org>
 
+Package: libtcl8.6
+Priority: optional
+Section: libs
+Installed-Size: 3699
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: tcl8.6
+Version: 8.6.1-4ubuntu1
+Replaces: tcl8.6 (<< 8.6.0-2), tcl8.6-lib (<< 8.6.0-2)
+Provides: libtcl
+Depends: tzdata, libc6 (>= 2.15), zlib1g (>= 1:1.2.2)
+Pre-Depends: multiarch-support
+Suggests: tcl8.6
+Conflicts: tcl74 (<= 7.4p3-2), tcl8.6 (<< 8.6.0-2), tcl8.6-lib (<< 8.6.0-2)
+Size: 840910
+Description: Tcl (the Tool Command Language) v8.6 - run-time library files
+ Tcl is a powerful, easy to use, embeddable, cross-platform interpreted
+ scripting language.  This package contains the Tcl library and auxiliary
+ code which allows one to run Tcl-enabled applications.  This version
+ includes thread support.
+Homepage: http://www.tcl.tk/
+Original-Maintainer: Debian Tcl/Tk Packagers <pkg-tcltk-devel@lists.alioth.debian.org>
+
 Package: debconf-i18n
 Priority: important
 Section: localization
@@ -6147,6 +6928,28 @@ Description: event-based init daemon
  shutdown and supervising them while the system is running.
 Homepage: http://upstart.ubuntu.com/
 Orig-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: libmysqlclient18
+Priority: optional
+Section: libs
+Installed-Size: 3413
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Depends: mysql-common (>= 5.5.50-0ubuntu0.14.04.1), libc6 (>= 2.17), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Size: 595406
+Description: MySQL database client library
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client library.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
 Package: mlocate
 Priority: standard
@@ -6548,6 +7351,20 @@ Description: IP lookup command line tools that use the GeoIP library (country da
 Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
 Homepage: http://www.maxmind.com/
 
+Package: libjpeg8
+Priority: optional
+Section: libs
+Installed-Size: 26
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libjpeg8-empty
+Version: 8c-2ubuntu8
+Depends: libjpeg-turbo8 (>= 1.1.90+svn722-1ubuntu6)
+Size: 2194
+Description: Independent JPEG Group's JPEG runtime library (dependency package)
+ libjpeg8 dependency package, depending on libjpeg-turbo8.
+
 Package: xauth
 Priority: optional
 Section: x11
@@ -6687,6 +7504,25 @@ Description: resolve JSON pointers - python 2.x
  This package provides the module for Python 2.x.
 Original-Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
 Homepage: https://github.com/stefankoegl/python-json-pointer
+
+Package: python-ldap
+Priority: optional
+Section: python
+Installed-Size: 312
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.4.10-1build1
+Replaces: python2.3-ldap (<< 2.2.0-1.1), python2.3-ldap-tls, python2.4-ldap (<< 2.2.0-1.1)
+Provides: python2.7-ldap
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), libc6 (>= 2.14), libldap-2.4-2 (>= 2.4.7)
+Suggests: python-ldap-doc, python-pyasn1
+Conflicts: python2.3-ldap (<< 2.2.0-1.1), python2.3-ldap-tls, python2.4-ldap (<< 2.2.0-1.1)
+Size: 63930
+Description: LDAP interface module for Python
+ This module provides a Python interface to the OpenLDAP client library
+ (LDAP is the Lightweight Directory Access Protocol).
+Original-Maintainer: Matej Vela <vela@debian.org>
+Homepage: http://www.python-ldap.org/
 
 Package: python3-minimal
 Priority: optional
@@ -7179,6 +8015,34 @@ Description: PolicyKit backend API
  This package contains a library for implementing authentication backends.
 Homepage: http://hal.freedesktop.org/docs/PolicyKit/
 Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: python-daemon
+Priority: optional
+Section: python
+Installed-Size: 113
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.5.5-1ubuntu1
+Depends: python-lockfile, python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-pkg-resources
+Size: 17544
+Description: library for making a Unix daemon process
+ ‘daemon’ is a library that assists a Python program to turn itself
+ into a well-behaved Unix daemon process, as specified in PEP 3143.
+ .
+ This library provides a ‘DaemonContext’ class that manages the
+ following important tasks for becoming a daemon process:
+ .
+  * Detach the process into its own process group.
+  * Set process environment appropriate for running inside a chroot.
+  * Renounce suid and sgid privileges.
+  * Close all open file descriptors.
+  * Change the working directory, uid, gid, and umask.
+  * Set appropriate signal handlers.
+  * Open new file descriptors for stdin, stdout, and stderr.
+  * Manage a specified PID lock file.
+  * Register cleanup functions for at-exit processing.
+Original-Maintainer: Ben Finney <ben+debian@benfinney.id.au>
+Homepage: http://pypi.python.org/pypi/python-daemon
 
 Package: linux-image-virtual
 Priority: optional
@@ -8399,6 +9263,65 @@ Description: Python interface to libapt-pkg (locales)
  This package contains locales.
 Original-Maintainer: APT Development Team <deity@lists.debian.org>
 
+Package: python-markupsafe
+Priority: optional
+Section: python
+Installed-Size: 79
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: markupsafe
+Version: 0.18-1build2
+Provides: python2.7-markupsafe
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), libc6 (>= 2.14)
+Size: 14308
+Description: HTML/XHTML/XML string library for Python
+ MarkupSafe is a Python library implementing a unicode subclass that is
+ aware of HTML escaping rules. It can be used to implement automatic
+ string escaping.
+Homepage: http://pypi.python.org/pypi/MarkupSafe
+Original-Maintainer: Piotr Ożarowski <piotr@debian.org>
+
+Package: python-lockfile
+Priority: optional
+Section: python
+Installed-Size: 57
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:0.8-2ubuntu2
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2)
+Size: 8090
+Description: file locking library for Python
+ The ‘lockfile’ module exports a ‘FileLock’ class which provides a
+ simple API for locking files.
+ .
+ The appropriate implementation for ‘FileLock’ is chosen automatically
+ based on the OS capabilities for an atomic filesystem operation.
+ These implementations are also available for explicit use as
+ ‘LinkFileLock’ and ‘MkdirFileLock’.
+ .
+ Other back ends are possible with the same semantics; an example
+ provided is ‘SQLiteFileLock’.
+ .
+ Unlike other Python locking libraries (the Windows ‘msvcrt.locking’
+ function, the Unix ‘fcntl.flock’, ‘fcntl.lockf’, and the deprecated
+ ‘posixfile’ module), the API is identical across both Unix (including
+ GNU/Linux and MacOS) and Windows platforms.
+Original-Maintainer: Ben Finney <ben+debian@benfinney.id.au>
+Homepage: http://pypi.python.org/pypi/lockfile
+
+Package: python-catcher
+Priority: optional
+Section: python
+Installed-Size: 59
+Maintainer: Eugeny Pankov <e@ajenti.org>
+Architecture: all
+Version: 0.1.7
+Depends: python (>= 2.6), python-support (>= 0.90.0), python-requests, python-mako
+Size: 5338
+Description: Beautiful stack traces for Python
+Homepage: http://github.com/Eugeny/catcher
+Python-Version: 2.7
+
 Package: cryptsetup
 Priority: optional
 Section: admin
@@ -8451,6 +9374,27 @@ Description: module for assigning a new name to referenced sub
  allow that, you need to do glob-assignment yourself.
 Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Homepage: http://search.cpan.org/dist/Sub-Name/
+
+Package: python-imaging
+Priority: optional
+Section: python
+Installed-Size: 49
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: pillow
+Version: 2.3.0-1ubuntu3
+Replaces: python-imaging-compat (<< 1.1.7+2.0.0-1.1)
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), python-pil
+Breaks: python-imaging-compat (<< 1.1.7+2.0.0-1.1)
+Conflicts: python-imaging-compat (<< 1.1.7+2.0.0-1.1)
+Size: 4348
+Description: Python Imaging Library compatibility layer
+ PIL used to provide a PIL.pth file which allowed you to `import Image` but
+ this is deprecated.  Use `from PIL import Image` now, or install this
+ compatibility package to temporarily get the old behavior back.
+ .
+ This compatibility package is built for Python 2 only.
+Original-Maintainer: Matthias Klose <doko@debian.org>
 
 Package: libpython3.4-stdlib
 Priority: optional
@@ -8676,6 +9620,28 @@ Description: Transitional package to ensure multiarch compatibility
  be removed once nothing on the system depends on it.
 Homepage: http://www.eglibc.org
 Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: fontconfig-config
+Priority: optional
+Section: fonts
+Installed-Size: 354
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: fontconfig
+Version: 2.11.0-0ubuntu4.2
+Replaces: fontconfig (<< 2.3.2-2)
+Depends: fonts-dejavu-core | ttf-bitstream-vera | fonts-freefont-ttf | gsfonts-x11, ucf (>= 0.29)
+Conflicts: fontconfig (<< 2.3.2-2)
+Size: 47424
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+Original-Maintainer: Keith Packard <keithp@debian.org>
 
 Package: python-oauth
 Priority: extra
@@ -9013,6 +9979,18 @@ Description: SELinux runtime shared libraries
  version supported by the kernel) when loading policy.
 Homepage: http://userspace.selinuxproject.org/
 Original-Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+
+Package: python-gevent-socketio
+Priority: optional
+Section: python
+Installed-Size: 132
+Maintainer: Alexandre Bourget <alex@bourget.cc>
+Architecture: all
+Source: gevent-socketio
+Version: 0.3.7.99-1
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), python-gevent, python-gevent-websocket, python-six
+Size: 24630
+Description: SocketIO server based on the Gevent pywsgi server, a Python
 
 Package: python3-software-properties
 Priority: optional
@@ -9480,6 +10458,25 @@ Description: administration tools for packet filtering and NAT
 Homepage: http://www.netfilter.org/
 Original-Maintainer: Laurence J. Lane <ljlane@debian.org>
 
+Package: python-psutil
+Priority: optional
+Section: python
+Installed-Size: 292
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.2.1-1ubuntu2
+Depends: libc6 (>= 2.13), python (<< 2.8), python (>= 2.7~), python:any (>= 2.7.5-5~)
+Size: 50246
+Description: module providing convenience functions for managing processes
+ psutil is a module providing an interface for retrieving information on
+ running processes and system utilization (CPU, memory) in a portable way
+ by using Python, implementing many functionalities offered by tools like
+ ps, top and Windows task manager.
+ .
+ It currently supports Linux, OS X, FreeBSD and Windows.
+Homepage: http://code.google.com/p/psutil/
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
 Package: libpod-latex-perl
 Priority: optional
 Section: perl
@@ -9625,6 +10622,30 @@ Description: Config File Handling Library used by BIND
  and clients to read and write ISC-style configuration files like named.conf
  and rndc.conf.
 Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: mysql-server-core-5.5
+Priority: optional
+Section: database
+Installed-Size: 19863
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Replaces: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.0, mysql-server-core-5.1
+Provides: mysql-server-core
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.17), libstdc++6 (>= 4.1.1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.2.0)
+Breaks: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.1
+Size: 3729724
+Description: MySQL database server binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the server binaries but doesn't contain all the
+ infrastructure needed to setup system databases.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
 Package: ubuntu-minimal
 Priority: optional
@@ -9988,6 +11009,26 @@ Description: Vi IMproved - enhanced vi editor - compact version
 Homepage: http://www.vim.org/
 Original-Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 
+Package: libwebp5
+Priority: extra
+Section: libs
+Installed-Size: 366
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwebp
+Version: 0.4.0-4
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Size: 145562
+Description: Lossy compression of digital photographic images.
+ Image Compression format, based on the VP8 codec.
+ WebP uses the modern VP8 compression format to deliver efficient
+ compression of images for the web. More than 30% extra gain over
+ optimized JPEG, for same quality, is not unusual.
+Original-Maintainer: Jeff Breidenbach <jab@debian.org>
+Homepage: http://webp.googlecode.com
+
 Package: python-debian
 Priority: optional
 Section: python
@@ -10090,6 +11131,30 @@ Description: changehat AppArmor library
  parsing routines.
 Homepage: http://apparmor.net/
 Original-Maintainer: Kees Cook <kees@debian.org>
+
+Package: mysql-client-5.5
+Priority: optional
+Section: database
+Installed-Size: 29673
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: mysql-5.5
+Version: 5.5.50-0ubuntu0.14.04.1
+Replaces: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Provides: mysql-client, virtual-mysql-client
+Depends: debianutils (>= 1.6), libdbd-mysql-perl (>= 1.2202), libdbi-perl, libterm-readkey-perl, mysql-client-core-5.5, mysql-common (>= 5.5.50-0ubuntu0.14.04.1), perl, libc6 (>= 2.17), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.50-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Size: 1593714
+Description: MySQL database client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client binaries and the additional tools
+ innotop and mysqlreport.
+Homepage: http://dev.mysql.com/
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
 Package: libglib2.0-0
 Priority: optional

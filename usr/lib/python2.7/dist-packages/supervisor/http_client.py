@@ -1,0 +1,1 @@
+../../../../share/pyshared/supervisor/http_client.py

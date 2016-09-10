@@ -18,3 +18,4 @@
 /etc/lsb-release plymouth-theme-ubuntu-text
 /usr/share/mime/packages shared-mime-info
 /etc/ufw/applications.d ufw
+/etc/php5/fpm/conf.d php5-fpm
