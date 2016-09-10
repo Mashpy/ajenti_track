@@ -19,7 +19,14 @@
                     "databases": []
                 }
             }, 
-            "domains": [], 
+            "domains": [
+                {
+                    "domain": "mashpy.me"
+                }, 
+                {
+                    "domain": "www.mashpy.me"
+                }
+            ], 
             "root": "/srv/new-website", 
             "ports": [
                 {
