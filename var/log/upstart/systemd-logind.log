@@ -7,3 +7,6 @@ Removed session 1.
 New session 2 of user ubuntu.
 Removed session 2.
 New session 4 of user ubuntu.
+Removed session 3.
+Removed session 4.
+/proc/self/fd/9: 4: ulimit: error setting limit (Invalid argument)

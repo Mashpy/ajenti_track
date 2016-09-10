@@ -11,9 +11,9 @@ lease {
   option broadcast-address 172.31.31.255;
   option host-name "ip-172-31-23-55";
   option domain-name "us-west-2.compute.internal";
-  renew 5 2016/09/09 17:38:51;
-  rebind 5 2016/09/09 18:05:51;
-  expire 5 2016/09/09 18:13:21;
+  renew 6 2016/09/10 07:40:46;
+  rebind 6 2016/09/10 07:40:46;
+  expire 6 2016/09/10 07:40:46;
 }
 lease {
   interface "eth0";
@@ -28,7 +28,7 @@ lease {
   option broadcast-address 172.31.31.255;
   option host-name "ip-172-31-23-55";
   option domain-name "us-west-2.compute.internal";
-  renew 5 2016/09/09 18:05:37;
-  rebind 5 2016/09/09 18:31:21;
-  expire 5 2016/09/09 18:38:51;
+  renew 6 2016/09/10 08:06:17;
+  rebind 6 2016/09/10 08:33:40;
+  expire 6 2016/09/10 08:41:10;
 }

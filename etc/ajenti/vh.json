@@ -12,9 +12,9 @@
                     "match": "regex", 
                     "backend": {
                         "params": {
-                            "pm": "dynamic", 
                             "php_admin_values": "open_basedir = none;", 
-                            "php_flags": ""
+                            "php_flags": "", 
+                            "pm": "dynamic"
                         }, 
                         "type": "php-fcgi"
                     }
@@ -80,11 +80,25 @@
                     "match": "regex", 
                     "backend": {
                         "params": {
+                            "pm": "dynamic", 
                             "php_admin_values": "open_basedir = none;", 
-                            "php_flags": "", 
-                            "pm": "dynamic"
+                            "php_flags": ""
                         }, 
                         "type": "php-fcgi"
+                    }
+                }, 
+                {
+                    "custom_conf_override": false, 
+                    "path_append_pattern": false, 
+                    "pattern": "/", 
+                    "custom_conf": "", 
+                    "path": "", 
+                    "match": "exact", 
+                    "backend": {
+                        "params": {
+                            "url": null
+                        }, 
+                        "type": "proxy"
                     }
                 }
             ], 

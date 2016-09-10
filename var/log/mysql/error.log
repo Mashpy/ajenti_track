@@ -104,3 +104,27 @@ ERROR: 1050  Table 'plugin' already exists
 160910  3:54:02 [Note] Event Scheduler: Loaded 0 events
 160910  3:54:02 [Note] /usr/sbin/mysqld: ready for connections.
 Version: '5.5.50-0ubuntu0.14.04.1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)
+160910  7:40:44 [Note] /usr/sbin/mysqld: Normal shutdown
+
+160910  7:40:44 [Note] Event Scheduler: Purging the queue. 0 events
+160910  7:40:44  InnoDB: Starting shutdown...
+160910  7:40:45  InnoDB: Shutdown completed; log sequence number 1595685
+160910  7:40:45 [Note] /usr/sbin/mysqld: Shutdown complete
+
+160910  7:41:13 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+160910  7:41:13 [Note] Plugin 'FEDERATED' is disabled.
+160910  7:41:13 InnoDB: The InnoDB memory heap is disabled
+160910  7:41:13 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+160910  7:41:13 InnoDB: Compressed tables use zlib 1.2.8
+160910  7:41:13 InnoDB: Using Linux native AIO
+160910  7:41:13 InnoDB: Initializing buffer pool, size = 128.0M
+160910  7:41:13 InnoDB: Completed initialization of buffer pool
+160910  7:41:13 InnoDB: highest supported file format is Barracuda.
+160910  7:41:13  InnoDB: Waiting for the background threads to start
+160910  7:41:14 InnoDB: 5.5.50 started; log sequence number 1595685
+160910  7:41:14 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+160910  7:41:14 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+160910  7:41:14 [Note] Server socket created on IP: '127.0.0.1'.
+160910  7:41:14 [Note] Event Scheduler: Loaded 0 events
+160910  7:41:14 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.5.50-0ubuntu0.14.04.1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)

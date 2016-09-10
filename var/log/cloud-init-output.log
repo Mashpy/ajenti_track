@@ -88,3 +88,22 @@ Generating locales...
 Generation complete.
 Cloud-init v. 0.7.5 running 'modules:final' at Fri, 09 Sep 2016 08:40:52 +0000. Up 22.71 seconds.
 Cloud-init v. 0.7.5 finished at Fri, 09 Sep 2016 08:40:52 +0000. Datasource DataSourceEc2.  Up 22.86 seconds
+Cloud-init v. 0.7.5 running 'init-local' at Sat, 10 Sep 2016 07:41:10 +0000. Up 3.58 seconds.
+Cloud-init v. 0.7.5 running 'init' at Sat, 10 Sep 2016 07:41:11 +0000. Up 5.51 seconds.
+ci-info: ++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++
+ci-info: +--------+------+--------------+---------------+-------------------+
+ci-info: | Device |  Up  |   Address    |      Mask     |     Hw-Address    |
+ci-info: +--------+------+--------------+---------------+-------------------+
+ci-info: |   lo   | True |  127.0.0.1   |   255.0.0.0   |         .         |
+ci-info: |  eth0  | True | 172.31.23.55 | 255.255.240.0 | 02:1b:85:f5:bf:95 |
+ci-info: +--------+------+--------------+---------------+-------------------+
+ci-info: +++++++++++++++++++++++++++++++Route info++++++++++++++++++++++++++++++++
+ci-info: +-------+-------------+-------------+---------------+-----------+-------+
+ci-info: | Route | Destination |   Gateway   |    Genmask    | Interface | Flags |
+ci-info: +-------+-------------+-------------+---------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 172.31.16.1 |    0.0.0.0    |    eth0   |   UG  |
+ci-info: |   1   | 172.31.16.0 |   0.0.0.0   | 255.255.240.0 |    eth0   |   U   |
+ci-info: +-------+-------------+-------------+---------------+-----------+-------+
+Cloud-init v. 0.7.5 running 'modules:config' at Sat, 10 Sep 2016 07:41:13 +0000. Up 6.96 seconds.
+Cloud-init v. 0.7.5 running 'modules:final' at Sat, 10 Sep 2016 07:41:15 +0000. Up 9.32 seconds.
+Cloud-init v. 0.7.5 finished at Sat, 10 Sep 2016 07:41:15 +0000. Datasource DataSourceEc2.  Up 9.39 seconds

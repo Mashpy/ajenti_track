@@ -1,29 +1,8 @@
-2016-09-10 07:36:52,813 INFO     registry.register_crypt_handler(): registered crypt handler 'sha512_crypt': <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
-2016-09-10 07:36:52,984 INFO     core.run(): Ajenti 1.2.23.8 running on platform: debian
-2016-09-10 07:36:53,760 INFO     core.run(): Starting server on (u'0.0.0.0', 8000)
-2016-09-10 07:36:53,768 INFO     core.run(): SSL enabled: /etc/ajenti/ajenti.pem
-2016-09-10 07:36:53,777 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
-2016-09-10 07:37:18,498 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.87
-Socket is dead
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
-    result = self._run(*self.args, **self.kwargs)
-  File "/usr/lib/python2.7/dist-packages/socketio/transports.py", line 251, in send_into_ws
-    websocket.send(message)
-  File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
-    raise WebSocketError(MSG_SOCKET_DEAD)
-WebSocketError: Socket is dead
-<Greenlet at 0x7f9b491b9190: send_into_ws> failed with WebSocketError
-
-Socket is dead
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
-    result = self._run(*self.args, **self.kwargs)
-  File "/usr/lib/python2.7/dist-packages/socketio/transports.py", line 251, in send_into_ws
-    websocket.send(message)
-  File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
-    raise WebSocketError(MSG_SOCKET_DEAD)
-WebSocketError: Socket is dead
-<Greenlet at 0x7f9b491b9d70: send_into_ws> failed with WebSocketError
-
-php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f9b43603f50> True
+2016-09-10 07:41:13,884 INFO     registry.register_crypt_handler(): registered crypt handler 'sha512_crypt': <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2016-09-10 07:41:14,156 INFO     core.run(): Ajenti 1.2.23.8 running on platform: debian
+2016-09-10 07:41:15,028 INFO     core.run(): Starting server on (u'0.0.0.0', 8000)
+2016-09-10 07:41:15,034 INFO     core.run(): SSL enabled: /etc/ajenti/ajenti.pem
+2016-09-10 07:41:15,043 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
+2016-09-10 07:54:11,967 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.87
+php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7fbe1adda610> True
+99.152.87

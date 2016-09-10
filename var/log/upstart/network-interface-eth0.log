@@ -11,3 +11,16 @@ DHCPREQUEST of 172.31.23.55 on eth0 to 255.255.255.255 port 67 (xid=0x55e79726)
 DHCPOFFER of 172.31.23.55 from 172.31.16.1
 DHCPACK of 172.31.23.55 from 172.31.16.1
 bound to 172.31.23.55 -- renewal in 1573 seconds.
+Internet Systems Consortium DHCP Client 4.2.4
+Copyright 2004-2012 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/eth0/02:1b:85:f5:bf:95
+Sending on   LPF/eth0/02:1b:85:f5:bf:95
+Sending on   Socket/fallback
+DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3 (xid=0x76c5ce58)
+DHCPREQUEST of 172.31.23.55 on eth0 to 255.255.255.255 port 67 (xid=0x58cec576)
+DHCPOFFER of 172.31.23.55 from 172.31.16.1
+DHCPACK of 172.31.23.55 from 172.31.16.1
+bound to 172.31.23.55 -- renewal in 1506 seconds.

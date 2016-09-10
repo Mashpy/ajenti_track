@@ -464,3 +464,470 @@ Sep  9 08:40:48 ip-172-31-23-55 kernel: [   18.704327] type=1400 audit(147341044
 Sep  9 08:40:48 ip-172-31-23-55 kernel: [   18.704504] type=1400 audit(1473410448.026:13): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=957 comm="apparmor_parser"
 Sep  9 08:40:48 ip-172-31-23-55 kernel: [   18.986047] type=1400 audit(1473410448.306:14): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=959 comm="apparmor_parser"
 Sep 10 03:54:03 ip-172-31-23-55 kernel: [69214.636645] type=1400 audit(1473479643.958:15): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=7006 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Initializing cgroup subsys cpuset
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Initializing cgroup subsys cpu
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Initializing cgroup subsys cpuacct
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Linux version 3.13.0-92-generic (buildd@lgw01-52) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016 (Ubuntu 3.13.0-92.139-generic 3.13.11-ckt39)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-3.13.0-92-generic root=UUID=87d0529b-216b-4930-9b54-45b0cdca9c06 ro console=tty1 console=ttyS0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] KERNEL supported cpus:
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   Intel GenuineIntel
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   AMD AuthenticAMD
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   Centaur CentaurHauls
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] e820: BIOS-provided physical RAM map:
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003fffffff] usable
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff] reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] NX (Execute Disable) protection: active
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] SMBIOS 2.4 present.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] DMI: Xen HVM domU, BIOS 4.2.amazon 05/12/2016
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Hypervisor detected: Xen HVM
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Xen version 4.2.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Xen Platform PCI: I/O protocol version 1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] You might have to change the root device
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] from /dev/hd[a-d] to /dev/xvd[a-d]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] in your root= kernel command line option
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] HVMOP_pagetable_dying not supported
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] No AGP bridge found
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] e820: last_pfn = 0x40000 max_arch_pfn = 0x400000000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] MTRR default type: write-back
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] MTRR fixed ranges enabled:
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   00000-9FFFF write-back
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   A0000-BFFFF write-combining
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   C0000-FFFFF write-back
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] MTRR variable ranges enabled:
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   0 base 0000F0000000 mask 3FFFF8000000 uncachable
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   1 base 0000F8000000 mask 3FFFFC000000 uncachable
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   2 disabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   3 disabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   4 disabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   5 disabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   6 disabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   7 disabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] found SMP MP-table at [mem 0x000fbe00-0x000fbe0f] mapped at [ffff8800000fbe00]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Scanning 1 areas for low memory corruption
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Base memory trampoline at [ffff880000098000] 98000 size 24576
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]  [mem 0x00000000-0x000fffff] page 4k
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BRK [0x01fe3000, 0x01fe3fff] PGTABLE
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BRK [0x01fe4000, 0x01fe4fff] PGTABLE
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] BRK [0x01fe5000, 0x01fe5fff] PGTABLE
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] init_memory_mapping: [mem 0x3fe00000-0x3fffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]  [mem 0x3fe00000-0x3fffffff] page 2M
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] init_memory_mapping: [mem 0x3c000000-0x3fdfffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]  [mem 0x3c000000-0x3fdfffff] page 2M
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] init_memory_mapping: [mem 0x00100000-0x3bffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]  [mem 0x00100000-0x001fffff] page 4k
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]  [mem 0x00200000-0x3bffffff] page 2M
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] RAMDISK: [mem 0x3720a000-0x378fcfff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: RSDP 00000000000ea020 000024 (v02    Xen)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: XSDT 00000000fc00f5a0 000054 (v01    Xen      HVM 00000000 HVML 00000000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: FACP 00000000fc00f260 0000F4 (v04    Xen      HVM 00000000 HVML 00000000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: DSDT 00000000fc0035e0 00BBF6 (v02    Xen      HVM 00000000 INTL 20090123)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: FACS 00000000fc0035a0 000040
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: APIC 00000000fc00f360 0000D8 (v02    Xen      HVM 00000000 HVML 00000000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: HPET 00000000fc00f4b0 000038 (v01    Xen      HVM 00000000 HVML 00000000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: WAET 00000000fc00f4f0 000028 (v01    Xen      HVM 00000000 HVML 00000000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: SSDT 00000000fc00f520 000031 (v02    Xen      HVM 00000000 INTL 20090123)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: SSDT 00000000fc00f560 000031 (v02    Xen      HVM 00000000 INTL 20090123)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: Local APIC address 0xfee00000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] No NUMA configuration found
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000003fffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Initmem setup node 0 [mem 0x00000000-0x3fffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   NODE_DATA [mem 0x3fffb000-0x3fffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]  [ffffea0000000000-ffffea0000ffffff] PMD -> [ffff88003e600000-ffff88003f5fffff] on node 0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Zone ranges:
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   DMA32    [mem 0x01000000-0xffffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   Normal   empty
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Movable zone start for each node
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Early memory node ranges
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   node   0: [mem 0x00001000-0x0009dfff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   node   0: [mem 0x00100000-0x3fffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] On node 0 totalpages: 262045
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   DMA zone: 64 pages used for memmap
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   DMA zone: 21 pages reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   DMA zone: 3997 pages, LIFO batch:0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   DMA32 zone: 4032 pages used for memmap
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000]   DMA32 zone: 258048 pages, LIFO batch:31
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: PM-Timer IO Port: 0xb008
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: Local APIC address 0xfee00000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x04] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x05] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x06] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x07] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x08] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x09] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x0a] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x0b] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x0c] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x0d] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x0e] lapic_id[0x00] disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: IOAPIC (id[0x01] address[0xfec00000] gsi_base[0])
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: IRQ0 used by override.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: IRQ2 used by override.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: IRQ5 used by override.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: IRQ9 used by override.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: IRQ10 used by override.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: IRQ11 used by override.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Using ACPI (MADT) for SMP configuration information
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] smpboot: Allowing 15 CPUs, 14 hotplug CPUs
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] nr_irqs_gsi: 64
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] e820: [mem 0x40000000-0xfbffffff] available for PCI devices
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Booting paravirtualized kernel on Xen HVM
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:15 nr_node_ids:1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] PERCPU: Embedded 27 pages/cpu @ffff88003fc00000 s81536 r8192 d20864 u131072
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] pcpu-alloc: s81536 r8192 d20864 u131072 alloc=1*2097152
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 -- 
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] xen: PV spinlocks enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 257928
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Policy zone: DMA32
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.13.0-92-generic root=UUID=87d0529b-216b-4930-9b54-45b0cdca9c06 ro console=tty1 console=ttyS0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] xsave: enabled xstate_bv 0x7, cntxt size 0x340
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Checking aperture...
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] No AGP bridge found
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Memory: 1006412K/1048180K available (7419K kernel code, 1146K rwdata, 3416K rodata, 1336K init, 1448K bss, 41768K reserved)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Hierarchical RCU implementation.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=15.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] 	Offload RCU callbacks from all CPUs
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] 	Offload RCU callbacks from CPUs: 0-14.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] NR_IRQS:16640 nr_irqs:1208 16
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] xen:events: Xen HVM callback vector for event delivery is enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Console: colour VGA+ 80x25
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] console [tty1] enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] console [ttyS0] enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] allocated 4194304 bytes of page_cgroup
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] hpet clockevent registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.000000] tsc: Detected 2494.090 MHz processor
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.008000] Calibrating delay loop (skipped), value calculated using timer frequency.. 4988.18 BogoMIPS (lpj=9976360)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.008005] pid_max: default: 32768 minimum: 301
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.012040] Security Framework initialized
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.014508] AppArmor: AppArmor initialized
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.016003] Yama: becoming mindful.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.020101] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.024221] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.028107] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.032006] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.036086] Initializing cgroup subsys memory
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.038974] Initializing cgroup subsys devices
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.040004] Initializing cgroup subsys freezer
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.044005] Initializing cgroup subsys blkio
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.046544] Initializing cgroup subsys perf_event
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.048005] Initializing cgroup subsys hugetlb
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.052058] CPU: Physical Processor ID: 0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.055345] mce: CPU supports 2 MCE banks
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.056025] Last level iTLB entries: 4KB 512, 2MB 0, 4MB 0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.056025] Last level dTLB entries: 4KB 512, 2MB 0, 4MB 0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.056025] tlb_flushall_shift: 6
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.083386] ACPI: Core revision 20131115
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.088862] ACPI: All ACPI Tables successfully acquired
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.092006] ftrace: allocating 28617 entries in 112 pages
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.125330] Switched APIC routing to physical flat.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.130289] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.174508] smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz (fam: 06, model: 3e, stepping: 04)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.180009] Xen: using vcpuop timer interface
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.180017] installing Xen timer for CPU 0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.182544] cpu 0 spinlock event irq 69
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.187693] Performance Events: unsupported p6 CPU model 62 no PMU driver, software events only.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.193590] x86: Booted up 1 node, 1 CPUs
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.196006] smpboot: Total of 1 processors activated (4988.18 BogoMIPS)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.199927] NMI watchdog: disabled (cpu0): hardware events not enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.200176] devtmpfs: initialized
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.204090] EVM: security.selinux
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.206181] EVM: security.SMACK64
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.208005] EVM: security.ima
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.210028] EVM: security.capability
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.212659] pinctrl core: initialized pinctrl subsystem
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.215721] regulator-dummy: no parameters
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.216040] RTC time:  7:41:06, date: 09/10/16
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.218723] NET: Registered protocol family 16
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.220136] cpuidle: using governor ladder
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.222551] cpuidle: using governor menu
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.224039] ACPI: bus type PCI registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.226494] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.228242] PCI: Using configuration type 1 for base access
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.231983] bio: create slab <bio-0> at 0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.232157] ACPI: Added _OSI(Module Device)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.234691] ACPI: Added _OSI(Processor Device)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.236007] ACPI: Added _OSI(3.0 _SCP Extensions)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.239571] ACPI: Added _OSI(Processor Aggregator Device)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.243116] ACPI: Interpreter enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.244007] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131115/hwxface-580)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.249624] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131115/hwxface-580)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.253829] ACPI: (supports S0 S3 S4 S5)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.256005] ACPI: Using IOAPIC for interrupt routing
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.258785] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.276628] ACPI: No dock devices found.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.312220] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.315902] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.316013] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.319729] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.320665] acpiphp: Slot [0] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.324078] acpiphp: Slot [3] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.326829] acpiphp: Slot [4] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.328266] acpiphp: Slot [5] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.330944] acpiphp: Slot [6] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.332245] acpiphp: Slot [7] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.335056] acpiphp: Slot [8] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.336296] acpiphp: Slot [9] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.338929] acpiphp: Slot [10] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.340312] acpiphp: Slot [11] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.343979] acpiphp: Slot [12] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.344416] acpiphp: Slot [13] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.348210] acpiphp: Slot [14] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.352015] acpiphp: Slot [15] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.355841] acpiphp: Slot [16] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.356347] acpiphp: Slot [17] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.360099] acpiphp: Slot [18] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.364244] acpiphp: Slot [19] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.368000] acpiphp: Slot [20] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.368312] acpiphp: Slot [21] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.372135] acpiphp: Slot [22] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.376000] acpiphp: Slot [23] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.376563] acpiphp: Slot [24] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.380324] acpiphp: Slot [25] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.384328] acpiphp: Slot [26] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.388166] acpiphp: Slot [27] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.392000] acpiphp: Slot [28] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.392330] acpiphp: Slot [29] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.396132] acpiphp: Slot [30] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.399979] acpiphp: Slot [31] registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.400298] PCI host bridge to bus 0000:00
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.403912] pci_bus 0000:00: root bus resource [bus 00-ff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.404008] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.408006] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.411468] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.412007] pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfbffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.415928] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.417160] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.419014] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.419931] pci 0000:00:01.1: reg 0x20: [io  0xc100-0xc10f]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.420773] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.420801] * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.420801] * this clock source is slow. Consider trying other clock sources
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.425019] pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.428716] pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.428947] pci 0000:00:02.0: reg 0x10: [mem 0xf0000000-0xf1ffffff pref]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.429122] pci 0000:00:02.0: reg 0x14: [mem 0xf3000000-0xf3000fff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.430544] pci 0000:00:03.0: [5853:0001] type 00 class 0xff8000
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.430794] pci 0000:00:03.0: reg 0x10: [io  0xc000-0xc0ff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.430969] pci 0000:00:03.0: reg 0x14: [mem 0xf2000000-0xf2ffffff pref]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.432997] ACPI: PCI Interrupt Link [LNKA] (IRQs *5 10 11)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.437632] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.442616] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.446527] ACPI: PCI Interrupt Link [LNKD] (IRQs *5 10 11)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.465205] ACPI: Enabled 2 GPEs in block 00 to 0F
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.468010] ACPI: \_SB_.PCI0: notify handler is installed
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.468070] Found 1 acpi root devices
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.468097] xen:balloon: Initialising balloon driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.472033] xen_balloon: Initialising balloon driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.476091] init_memory_mapping: [mem 0x40000000-0x47ffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.479380]  [mem 0x40000000-0x47ffffff] page 2M
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.480351] vgaarb: setting as boot device: PCI:0000:00:02.0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.483608] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.484005] vgaarb: loaded
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.486064] vgaarb: bridge control possible 0000:00:02.0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.488169] SCSI subsystem initialized
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.490527] libata version 3.00 loaded.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.490549] ACPI: bus type USB registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.492024] usbcore: registered new interface driver usbfs
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.495056] usbcore: registered new interface driver hub
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.496029] usbcore: registered new device driver usb
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.499043] PCI: Using ACPI for IRQ routing
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.500007] PCI: pci_cache_line_size set to 64 bytes
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.500311] e820: reserve RAM buffer [mem 0x0009e000-0x0009ffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.500392] NetLabel: Initializing
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.502565] NetLabel:  domain hash size = 128
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.504006] NetLabel:  protocols = UNLABELED CIPSOv4
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.506908] NetLabel:  unlabeled traffic allowed by default
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.508081] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.511982] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.513999] hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.519082] Switched to clocksource xen
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.521787] AppArmor: AppArmor Filesystem Enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.524608] pnp: PnP ACPI init
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.526630] ACPI: bus type PNP registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.529137] system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.532992] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.533048] pnp 00:01: Plug and Play ACPI device, IDs PNP0103 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.533084] system 00:02: [io  0x08a0-0x08a3] has been reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.536410] system 00:02: [io  0x0cc0-0x0ccf] has been reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.540267] system 00:02: [io  0x04d0-0x04d1] has been reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543702] system 00:02: Plug and Play ACPI device, IDs PNP0c02 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543719] pnp 00:03: [dma 4]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543734] pnp 00:03: Plug and Play ACPI device, IDs PNP0200 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543754] xen: --> pirq=16 -> irq=8 (gsi=8)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543768] pnp 00:04: Plug and Play ACPI device, IDs PNP0b00 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543783] pnp 00:05: Plug and Play ACPI device, IDs PNP0800 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543801] xen: --> pirq=17 -> irq=12 (gsi=12)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543811] pnp 00:06: Plug and Play ACPI device, IDs PNP0f13 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543827] xen: --> pirq=18 -> irq=1 (gsi=1)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543839] pnp 00:07: Plug and Play ACPI device, IDs PNP0303 PNP030b (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543854] xen: --> pirq=19 -> irq=6 (gsi=6)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543855] pnp 00:08: [dma 2]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543865] pnp 00:08: Plug and Play ACPI device, IDs PNP0700 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543885] xen: --> pirq=20 -> irq=4 (gsi=4)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543897] pnp 00:09: Plug and Play ACPI device, IDs PNP0501 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.543928] system 00:0a: [io  0x10c0-0x1141] has been reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.547234] system 00:0a: [io  0xb044-0xb047] has been reserved
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.550654] system 00:0a: Plug and Play ACPI device, IDs PNP0c02 (active)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.565451] pnp: PnP ACPI: found 11 devices
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.568072] ACPI: bus type PNP unregistered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.576168] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.576171] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.576172] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.576174] pci_bus 0000:00: resource 7 [mem 0xf0000000-0xfbffffff]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.576202] NET: Registered protocol family 2
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.578895] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.582979] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.586973] TCP: Hash tables configured (established 8192 bind 8192)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.590556] TCP: reno registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.592673] UDP hash table entries: 512 (order: 2, 16384 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.596036] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.599710] NET: Registered protocol family 1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.602470] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.605859] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.609225] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.612781] pci 0000:00:02.0: Video device with shadowed ROM
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.612834] PCI: CLS 0 bytes, default 64
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.612914] Trying to unpack rootfs image as initramfs...
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.716155] Freeing initrd memory: 7116K (ffff88003720a000 - ffff8800378fd000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.720659] microcode: CPU0 sig=0x306e4, pf=0x1, revision=0x415
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.724029] microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.729000] Scanning for low memory corruption every 60 seconds
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.732624] Initialise system trusted keyring
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.735262] audit: initializing netlink socket (disabled)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.738486] type=2000 audit(1473493267.108:1): initialized
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.764460] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.768715] zbud: loaded
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.770684] VFS: Disk quotas dquot_6.5.2
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.773200] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.777003] fuse init (API version 7.22)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.779333] msgmni has been set to 1979
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.781678] Key type big_key registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.784183] Key type asymmetric registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.786701] Asymmetric key parser 'x509' registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.789692] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.794088] io scheduler noop registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.796495] io scheduler deadline registered (default)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.799517] io scheduler cfq registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.802022] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.805259] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.808966] intel_idle: does not run on family 6 model 62
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.808971] ipmi message handler version 39.2
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.811688] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.816016] ACPI: Power Button [PWRF]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.818355] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.822746] ACPI: Sleep Button [SLPF]
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.825120] GHES: HEST is not enabled!
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.827751] xen: --> pirq=21 -> irq=28 (gsi=28)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.827817] xen:grant_table: Grant tables using version 1 layout
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.831626] Grant table initialized
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.833906] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.837193] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.868477] 00:09: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.873870] Linux agpgart interface v0.103
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.877148] brd: module loaded
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.879605] loop: module loaded
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.893484] ata_piix 0000:00:01.1: version 2.13
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.894411] scsi0 : ata_piix
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.896480] scsi1 : ata_piix
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.898438] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.902280] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.907438] libphy: Fixed MDIO Bus: probed
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.910142] tun: Universal TUN/TAP device driver, 1.6
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.913063] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.916610] PPP generic driver version 2.4.2
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.919340] xen_netfront: Initialising Xen virtual ethernet driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.927188] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.931087] ehci-pci: EHCI PCI platform driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.933882] ehci-platform: EHCI generic platform driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.936998] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.940630] ohci-pci: OHCI PCI platform driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.943358] ohci-platform: OHCI generic platform driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.946529] uhci_hcd: USB Universal Host Controller Interface driver
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.951083] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.958144] serio: i8042 KBD port at 0x60,0x64 irq 1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.961237] serio: i8042 AUX port at 0x60,0x64 irq 12
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.964855] mousedev: PS/2 mouse device common for all mice
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.969458] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.975253] rtc_cmos 00:04: rtc core: registered rtc_cmos as rtc0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.979640] rtc_cmos 00:04: alarms up to one day, 114 bytes nvram, hpet irqs
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.983902] device-mapper: uevent: version 1.0.3
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.987452] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.992986] ledtrig-cpu: registered to indicate activity on CPUs
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    0.996604] TCP: cubic registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.001609] NET: Registered protocol family 10
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.005838] blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled;
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.011697] NET: Registered protocol family 17
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.014363] Key type dns_resolver registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.017094] Loading compiled-in X.509 certificates
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.021304] Loaded X.509 cert 'Magrathea: Glacier signing key: 2a4800b94dc783d05326fae67b01b0beb73bb811'
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.027015] registered taskstats version 1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.029619]  xvda: xvda1
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.033217] Key type trusted registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.037898] Key type encrypted registered
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.040437] AppArmor: AppArmor sha1 policy hashing enabled
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.043500] IMA: No TPM chip found, activating TPM-bypass!
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.047121] xenbus_probe_frontend: Device with no driver: device/vfb/0
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.050865] regulator-dummy: disabling
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.053229]   Magic number: 0:642:672
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.055636] rtc_cmos 00:04: setting system clock to 2016-09-10 07:41:07 UTC (1473493267)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.061131] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.064508] EDD information not available.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.067037] PM: Hibernation image not present or could not be loaded.
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.068386] Freeing unused kernel memory: 1336K (ffffffff81d20000 - ffffffff81e6e000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.072884] Write protecting the kernel read-only data: 12288k
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.076372] Freeing unused kernel memory: 760K (ffff880001742000 - ffff880001800000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.081962] Freeing unused kernel memory: 680K (ffff880001b56000 - ffff880001c00000)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.137709] FDC 0 is a S82078B
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    1.720155] tsc: Refined TSC clocksource calibration: 2493.991 MHz
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    2.168855] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    2.681232] EXT4-fs (xvda1): mounted filesystem with ordered data mode. Opts: (null)
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    2.844565] random: init urandom read with 51 bits of entropy available
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    3.011020] EXT4-fs (xvda1): re-mounted. Opts: discard
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    3.864427] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    3.866438] IPv6: ADDRCONF(NETDEV_UP): lo: link is not ready
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    3.866441] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    4.149069] type=1400 audit(1473493270.589:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=485 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    4.149075] type=1400 audit(1473493270.589:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=485 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    4.149078] type=1400 audit(1473493270.589:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=485 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    4.149412] type=1400 audit(1473493270.589:5): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=485 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    4.149416] type=1400 audit(1473493270.589:6): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=485 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    4.149587] type=1400 audit(1473493270.589:7): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=485 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    4.758103] random: nonblocking pool is initialized
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.405235] type=1400 audit(1473493272.845:8): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/sbin/dhclient" pid=865 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.405242] type=1400 audit(1473493272.845:9): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=865 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.405246] type=1400 audit(1473493272.845:10): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=865 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.405580] type=1400 audit(1473493272.845:11): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=865 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.405583] type=1400 audit(1473493272.845:12): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=865 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.405756] type=1400 audit(1473493272.845:13): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=865 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.413125] type=1400 audit(1473493272.853:14): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=866 comm="apparmor_parser"
+Sep 10 07:41:12 ip-172-31-23-55 kernel: [    6.425718] type=1400 audit(1473493272.865:15): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=868 comm="apparmor_parser"
+Sep 10 07:41:13 ip-172-31-23-55 kernel: [    6.799945] type=1400 audit(1473493273.237:16): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/mysqld" pid=1010 comm="apparmor_parser"

@@ -110,3 +110,41 @@
 2016-09-10 07:39:17,183 INFO spawned: 'railsmashpyme-service' with pid 13889
 2016-09-10 07:39:17,188 INFO exited: railsmashpyme-service (exit status 0; not expected)
 2016-09-10 07:39:18,189 INFO gave up: railsmashpyme-service entered FATAL state, too many start retries too quickly
+2016-09-10 07:40:46,380 WARN received SIGTERM indicating exit request
+2016-09-10 07:41:14,235 CRIT Supervisor running as root (no user in config file)
+2016-09-10 07:41:14,289 INFO RPC interface 'supervisor' initialized
+2016-09-10 07:41:14,289 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2016-09-10 07:41:14,292 INFO daemonizing the supervisord process
+2016-09-10 07:41:14,293 INFO supervisord started with pid 1250
+2016-09-10 07:41:15,296 INFO spawnerr: can't find command 'node'
+2016-09-10 07:41:15,296 INFO spawned: 'railsmashpyme-service' with pid 1323
+2016-09-10 07:41:15,305 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:41:16,306 INFO spawnerr: can't find command 'node'
+2016-09-10 07:41:16,307 INFO spawned: 'railsmashpyme-service' with pid 1486
+2016-09-10 07:41:16,312 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:41:18,871 INFO spawnerr: can't find command 'node'
+2016-09-10 07:41:18,872 INFO spawned: 'railsmashpyme-service' with pid 1498
+2016-09-10 07:41:18,877 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:41:21,880 INFO spawnerr: can't find command 'node'
+2016-09-10 07:41:21,881 INFO gave up: railsmashpyme-nodejs-0 entered FATAL state, too many start retries too quickly
+2016-09-10 07:41:21,881 INFO spawned: 'railsmashpyme-service' with pid 1499
+2016-09-10 07:41:21,886 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:41:22,887 INFO gave up: railsmashpyme-service entered FATAL state, too many start retries too quickly
+2016-09-10 07:55:02,026 CRIT Supervisor running as root (no user in config file)
+2016-09-10 07:55:02,026 INFO RPC interface 'supervisor' initialized
+2016-09-10 07:55:02,026 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2016-09-10 07:55:02,027 INFO supervisord started with pid 1250
+2016-09-10 07:55:02,087 INFO spawnerr: can't find command 'node'
+2016-09-10 07:55:02,087 INFO spawned: 'railsmashpyme-service' with pid 1581
+2016-09-10 07:55:02,099 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:55:03,272 INFO spawnerr: can't find command 'node'
+2016-09-10 07:55:03,273 INFO spawned: 'railsmashpyme-service' with pid 1594
+2016-09-10 07:55:03,278 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:55:05,280 INFO spawnerr: can't find command 'node'
+2016-09-10 07:55:05,281 INFO spawned: 'railsmashpyme-service' with pid 1595
+2016-09-10 07:55:05,286 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:55:08,290 INFO spawnerr: can't find command 'node'
+2016-09-10 07:55:08,290 INFO gave up: railsmashpyme-nodejs-0 entered FATAL state, too many start retries too quickly
+2016-09-10 07:55:08,291 INFO spawned: 'railsmashpyme-service' with pid 1598
+2016-09-10 07:55:08,295 INFO exited: railsmashpyme-service (exit status 0; not expected)
+2016-09-10 07:55:09,296 INFO gave up: railsmashpyme-service entered FATAL state, too many start retries too quickly

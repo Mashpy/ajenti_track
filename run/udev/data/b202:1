@@ -1,7 +1,7 @@
 S:disk/by-label/cloudimg-rootfs
 S:disk/by-uuid/87d0529b-216b-4930-9b54-45b0cdca9c06
-W:42
-I:57778
+W:40
+I:11950
 E:ID_FS_LABEL=cloudimg-rootfs
 E:ID_FS_LABEL_ENC=cloudimg-rootfs
 E:ID_FS_TYPE=ext4

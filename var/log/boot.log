@@ -6,19 +6,18 @@ Begin: Running /scripts/local-bottom ... done.
 done.
 Begin: Running /scripts/init-bottom ... done.
  * Starting Mount filesystems on boot[74G[ OK ]
- * Starting Fix-up sensitive /proc filesystem entries[74G[ OK ]
  * Starting Populate /dev filesystem[74G[ OK ]
  * Starting Populate and link to /run filesystem[74G[ OK ]
- * Stopping Fix-up sensitive /proc filesystem entries[74G[ OK ]
  * Stopping Populate /dev filesystem[74G[ OK ]
  * Stopping Populate and link to /run filesystem[74G[ OK ]
+ * Starting Initialize or finalize resolvconf[74G[ OK ]
  * Stopping Track if upstart is running in a container[74G[ OK ]
  * Starting Signal sysvinit that the rootfs is mounted[74G[ OK ]
  * Starting Clean /tmp directory[74G[ OK ]
- * Starting Initialize or finalize resolvconf[74G[ OK ]
  * Stopping Clean /tmp directory[74G[ OK ]
-Cloud-init v. 0.7.5 running 'init-local' at Fri, 09 Sep 2016 08:40:39 +0000. Up 9.69 seconds.
-cloud-init-nonet[10.42]: waiting 10 seconds for network device
+Cloud-init v. 0.7.5 running 'init-local' at Sat, 10 Sep 2016 07:41:10 +0000. Up 3.58 seconds.
+cloud-init-nonet[3.84]: waiting 10 seconds for network device
+ * Starting set console keymap[74G[ OK ]
  * Starting Signal sysvinit that virtual filesystems are mounted[74G[ OK ]
  * Starting Signal sysvinit that virtual filesystems are mounted[74G[ OK ]
  * Starting Bridge udev events into upstart[74G[ OK ]
@@ -26,6 +25,7 @@ cloud-init-nonet[10.42]: waiting 10 seconds for network device
  * Starting device node and kernel event manager[74G[ OK ]
  * Starting cold plug devices[74G[ OK ]
  * Starting log initial device creation[74G[ OK ]
+ * Stopping set console keymap[74G[ OK ]
  * Starting Uncomplicated firewall[74G[ OK ]
  * Starting configure network device security[74G[ OK ]
  * Starting configure network device security[74G[ OK ]
@@ -34,10 +34,11 @@ cloud-init-nonet[10.42]: waiting 10 seconds for network device
  * Starting Bridge socket events into upstart[74G[ OK ]
  * Starting configure network device[74G[ OK ]
  * Starting Mount network filesystems[74G[ OK ]
- * Stopping Mount network filesystems[74G[ OK ]
-cloud-init-nonet[13.06]: static networking is now up
+ * Starting vsftpd daemon[74G[ OK ]
  * Starting configure network device[74G[ OK ]
-Cloud-init v. 0.7.5 running 'init' at Fri, 09 Sep 2016 08:40:42 +0000. Up 13.29 seconds.
+cloud-init-nonet[4.88]: static networking is now up
+ * Stopping Mount network filesystems[74G[ OK ]
+Cloud-init v. 0.7.5 running 'init' at Sat, 10 Sep 2016 07:41:11 +0000. Up 5.51 seconds.
 ci-info: ++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++
 ci-info: +--------+------+--------------+---------------+-------------------+
 ci-info: | Device |  Up  |   Address    |      Mask     |     Hw-Address    |
@@ -52,112 +53,48 @@ ci-info: +-------+-------------+-------------+---------------+-----------+------
 ci-info: |   0   |   0.0.0.0   | 172.31.16.1 |    0.0.0.0    |    eth0   |   UG  |
 ci-info: |   1   | 172.31.16.0 |   0.0.0.0   | 255.255.240.0 |    eth0   |   U   |
 ci-info: +-------+-------------+-------------+---------------+-----------+-------+
- * Stopping cold plug devices[74G[ OK ]
- * Stopping log initial device creation[74G[ OK ]
- * Starting enable remaining boot-time encrypted block devices[74G[ OK ]
-Generating public/private rsa key pair.
-Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
-Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
-The key fingerprint is:
-b7:a2:a8:ae:ef:84:a5:f9:86:59:7b:15:96:79:73:95 root@ip-172-31-23-55
-The key's randomart image is:
-+--[ RSA 2048]----+
-|             .   |
-|            E    |
-|       o   .     |
-|      = o .      |
-|  .  . oSo.      |
-| =.   .  . .     |
-|++.. .  . .      |
-|ooo .. . .       |
-|.**o. .          |
-+-----------------+
-Generating public/private dsa key pair.
-Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
-Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
-The key fingerprint is:
-04:ae:57:83:6e:00:6d:18:53:3b:24:bc:5f:fb:ca:44 root@ip-172-31-23-55
-The key's randomart image is:
-+--[ DSA 1024]----+
-| .==o .          |
-|  o=oo o         |
-|   o+ o +        |
-|  .  =.o .       |
-|   ...E.S        |
-|    .+.          |
-|      ..         |
-|     o  .        |
-|      o.         |
-+-----------------+
-Generating public/private ecdsa key pair.
-Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
-Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
-The key fingerprint is:
-d6:7f:cc:27:68:49:48:4f:b0:2f:2a:fe:86:ac:10:54 root@ip-172-31-23-55
-The key's randomart image is:
-+--[ECDSA  256]---+
-|    E     .      |
-|   .       o     |
-|  .       o .    |
-| .       o =     |
-|  .     S + +    |
-|   .   . . + =   |
-|  .  ....   = = .|
-|   . .o..  . . o |
-|    ...o.        |
-+-----------------+
-Generating public/private ed25519 key pair.
-Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
-Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
-The key fingerprint is:
-6d:c1:51:a9:b8:a0:02:5f:d2:29:1b:2f:35:7d:9a:d6 root@ip-172-31-23-55
-The key's randomart image is:
-+--[ED25519  256--+
-|          ....   |
-|         . ..    |
-|   . o   .o.     |
-|. + * o o...     |
-| o O o *S.o      |
-|  = o + E.       |
-|   o .           |
-|                 |
-|                 |
-+-----------------+
- * Starting Signal sysvinit that local filesystems are mounted[74G[ OK ]
- * Starting configure network device security[74G[ OK ]
  * Stopping Mount filesystems on boot[74G[ OK ]
- * Starting Flush boot log to disk[74G[ OK ]
+ * Starting Signal sysvinit that local filesystems are mounted[74G[ OK ]
  * Starting flush early job output to logs[74G[ OK ]
  * Stopping Failsafe Boot Delay[74G[ OK ]
  * Starting System V initialisation compatibility[74G[ OK ]
  * Stopping flush early job output to logs[74G[ OK ]
- * Starting configure virtual network devices[74G[ OK ]
- * Starting Seed the pseudo random number generator on first boot[74G[ OK ]
  * Starting D-Bus system message bus[74G[ OK ]
  * Starting SystemD login management service[74G[ OK ]
- * Stopping Seed the pseudo random number generator on first boot[74G[ OK ]
- * Starting Bridge file events into upstart[74G[ OK ]
  * Starting system logging daemon[74G[ OK ]
  * Starting Handle applying cloud-config[74G[ OK ]
- * Stopping Flush boot log to disk[74G[ OK ]
  * Starting early crypto disks...       [80G [74G[ OK ]
+ * Starting Bridge file events into upstart[74G[ OK ]
 Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
-Cloud-init v. 0.7.5 running 'modules:config' at Fri, 09 Sep 2016 08:40:48 +0000. Up 18.80 seconds.
  * Starting AppArmor profiles       [80G [74G[ OK ]
  * Stopping System V initialisation compatibility[74G[ OK ]
  * Starting System V runlevel compatibility[74G[ OK ]
- * Starting save kernel messages[74G[ OK ]
- * Starting ACPI daemon[74G[ OK ]
- * Starting regular background program processing daemon[74G[ OK ]
  * Starting deferred execution scheduler[74G[ OK ]
- * Stopping save kernel messages[74G[ OK ]
+ * Starting regular background program processing daemon[74G[ OK ]
+ * Starting The PHP FastCGI Process Manager[74G[ OK ]
+ * Starting ACPI daemon[74G[ OK ]
+ * Starting save kernel messages[74G[ OK ]
+ * Starting configure network device security[74G[ OK ]
  * Starting OpenSSH server[74G[ OK ]
- * Starting automatic crash report generation[74G[ OK ]
+ * Stopping save kernel messages[74G[ OK ]
  * Stopping CPU interrupts balancing daemon[74G[ OK ]
+ * Starting automatic crash report generation[74G[ OK ]
+ * Starting configure virtual network devices[74G[ OK ]
+Starting Ajenti:
+Cloud-init v. 0.7.5 running 'modules:config' at Sat, 10 Sep 2016 07:41:13 +0000. Up 6.96 seconds.
+ * Stopping Handle applying cloud-config[74G[ OK ]
+[37m10.09.2016 07:41 [0m[32mINFO[0m  Using config file /etc/ajenti/config.json
+ * started
+ * Stopping cold plug devices[74G[ OK ]
+ * Stopping log initial device creation[74G[ OK ]
+ * Starting Courier authentication services authdaemond       [80G [74G * Starting enable remaining boot-time encrypted block devices[74G[ OK ]
+[ OK ]
+ * Starting Courier IMAP server imapd       [80G [74G[ OK ]
+ * Starting Courier IMAP-SSL server imapd-ssl       [80G [74G[ OK ]
+ * Starting MTA       [80G [74G[ OK ]
+Starting supervisor: supervisord.
 open-vm-tools: not starting as this is not a VMware VM
 landscape-client is not configured, please run landscape-config.
  * Restoring resolver state...       [80G [74G[ OK ]
-Generating locales...
-  en_US.UTF-8... up-to-date
-Generation complete.
+ * Starting MySQL Server[74G[ OK ]
  * Stopping System V runlevel compatibility[74G[ OK ]

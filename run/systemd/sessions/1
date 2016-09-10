@@ -1,0 +1,15 @@
+# This is private data. Do not parse.
+UID=1000
+USER=ubuntu
+ACTIVE=1
+STATE=active
+REMOTE=1
+KILL_PROCESSES=0
+TYPE=tty
+CLASS=user
+CGROUP=/user/1000.user/1.session
+FIFO=/run/systemd/sessions/1.ref
+REMOTE_HOST=103.199.152.87
+SERVICE=sshd
+LEADER=1596
+AUDIT=1
