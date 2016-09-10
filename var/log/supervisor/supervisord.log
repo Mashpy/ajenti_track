@@ -47,3 +47,12 @@
 2016-09-10 05:08:01,166 INFO RPC interface 'supervisor' initialized
 2016-09-10 05:08:01,166 CRIT Server 'unix_http_server' running without any HTTP authentication checking
 2016-09-10 05:08:01,166 INFO supervisord started with pid 7133
+2016-09-10 05:09:38,456 CRIT Supervisor running as root (no user in config file)
+2016-09-10 05:09:38,458 INFO RPC interface 'supervisor' initialized
+2016-09-10 05:09:38,458 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2016-09-10 05:09:38,458 INFO supervisord started with pid 7133
+2016-09-10 05:09:38,518 INFO spawnerr: can't find command 'node'
+2016-09-10 05:09:39,523 INFO spawnerr: can't find command 'node'
+2016-09-10 05:09:41,602 INFO spawnerr: can't find command 'node'
+2016-09-10 05:09:44,606 INFO spawnerr: can't find command 'node'
+2016-09-10 05:09:44,606 INFO gave up: railsmashpyme-nodejs-0 entered FATAL state, too many start retries too quickly

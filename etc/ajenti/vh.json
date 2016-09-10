@@ -58,7 +58,20 @@
         }, 
         {
             "maintenance_mode": false, 
-            "locations": [], 
+            "locations": [
+                {
+                    "custom_conf_override": false, 
+                    "path_append_pattern": false, 
+                    "pattern": "/", 
+                    "custom_conf": "", 
+                    "path": "", 
+                    "match": "exact", 
+                    "backend": {
+                        "params": {}, 
+                        "type": "nodejs"
+                    }
+                }
+            ], 
             "custom_conf": "", 
             "ssl_key_path": "", 
             "owner": "root", 
