@@ -1,0 +1,4 @@
+
+local_root=/srv/new-website
+allow_writeable_chroot=YES
+write_enable=YES

@@ -1,36 +1,19 @@
-2016-09-10 06:29:33,146 INFO     registry.register_crypt_handler(): registered crypt handler 'sha512_crypt': <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
-2016-09-10 06:29:33,410 INFO     core.run(): Ajenti 1.2.23.8 running on platform: debian
-2016-09-10 06:29:34,224 INFO     core.run(): Starting server on (u'0.0.0.0', 8000)
-2016-09-10 06:29:34,231 INFO     core.run(): SSL enabled: /etc/ajenti/ajenti.pem
-2016-09-10 06:29:34,242 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
+2016-09-10 07:36:52,813 INFO     registry.register_crypt_handler(): registered crypt handler 'sha512_crypt': <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2016-09-10 07:36:52,984 INFO     core.run(): Ajenti 1.2.23.8 running on platform: debian
+2016-09-10 07:36:53,760 INFO     core.run(): Starting server on (u'0.0.0.0', 8000)
+2016-09-10 07:36:53,768 INFO     core.run(): SSL enabled: /etc/ajenti/ajenti.pem
+2016-09-10 07:36:53,777 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
+2016-09-10 07:37:18,498 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.87
+Socket is dead
 Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
     result = self._run(*self.args, **self.kwargs)
-  File "/usr/lib/python2.7/dist-packages/gevent/server.py", line 102, in wrap_socket_and_handle
-    ssl_socket = self.wrap_socket(client_socket, **self.ssl_args)
-  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 395, in wrap_socket
-    ciphers=ciphers)
-  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 106, in __init__
-    self.do_handshake()
-  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 317, in do_handshake
-    return self._sslobj.do_handshake()
-SSLError: [Errno 8] _ssl.c:510: EOF occurred in violation of protocol
-<Greenlet at 0x7f4e2f6decd0: <bound method SocketIOServer.wrap_socket_and_handle of <SocketIOServer at 0x7f4e2eaf7d10 fileno=8 address=0.0.0.0:8000>>(<socket at 0x7f4e2ebb1590 fileno=14 sock=172.31.23, ('103.199.152.87', 63403))> failed with SSLError
-
-2016-09-10 06:29:56,315 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.87
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
-    result = self._run(*self.args, **self.kwargs)
-  File "/usr/lib/python2.7/dist-packages/gevent/server.py", line 102, in wrap_socket_and_handle
-    ssl_socket = self.wrap_socket(client_socket, **self.ssl_args)
-  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 395, in wrap_socket
-    ciphers=ciphers)
-  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 106, in __init__
-    self.do_handshake()
-  File "/usr/lib/python2.7/dist-packages/gevent/ssl.py", line 317, in do_handshake
-    return self._sslobj.do_handshake()
-SSLError: [Errno 8] _ssl.c:510: EOF occurred in violation of protocol
-<Greenlet at 0x7f4e2eb25870: <bound method SocketIOServer.wrap_socket_and_handle of <SocketIOServer at 0x7f4e2eaf7d10 fileno=8 address=0.0.0.0:8000>>(<socket at 0x7f4e2c8f5850 fileno=13 sock=172.31.23, ('103.199.152.87', 63803))> failed with SSLError
+  File "/usr/lib/python2.7/dist-packages/socketio/transports.py", line 251, in send_into_ws
+    websocket.send(message)
+  File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
+    raise WebSocketError(MSG_SOCKET_DEAD)
+WebSocketError: Socket is dead
+<Greenlet at 0x7f9b491b9190: send_into_ws> failed with WebSocketError
 
 Socket is dead
 Traceback (most recent call last):
@@ -41,7 +24,6 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
     raise WebSocketError(MSG_SOCKET_DEAD)
 WebSocketError: Socket is dead
-<Greenlet at 0x7f4e2eb25d70: send_into_ws> failed with WebSocketError
+<Greenlet at 0x7f9b491b9d70: send_into_ws> failed with WebSocketError
 
-2016-09-10 07:28:56,741 INFO     terminal.__init__(): Terminal: ['sh', '-c', 'apt-get install ajenti-v-ruby-puma:all+ ']
-2016-09-10 07:28:56,741 INFO    : Terminal: ['sh', '-c', 'apt-get install ajenti-v-ruby-puma:all+ ']
+php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f9b43603f50> True

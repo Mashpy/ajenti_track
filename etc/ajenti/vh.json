@@ -12,9 +12,9 @@
                     "match": "regex", 
                     "backend": {
                         "params": {
+                            "pm": "dynamic", 
                             "php_admin_values": "open_basedir = none;", 
-                            "php_flags": "", 
-                            "pm": "dynamic"
+                            "php_flags": ""
                         }, 
                         "type": "php-fcgi"
                     }
@@ -70,6 +70,22 @@
                         "params": {}, 
                         "type": "nodejs"
                     }
+                }, 
+                {
+                    "custom_conf_override": false, 
+                    "path_append_pattern": false, 
+                    "pattern": "[^/]\\.php(/|$)", 
+                    "custom_conf": "", 
+                    "path": "", 
+                    "match": "regex", 
+                    "backend": {
+                        "params": {
+                            "php_admin_values": "open_basedir = none;", 
+                            "php_flags": "", 
+                            "pm": "dynamic"
+                        }, 
+                        "type": "php-fcgi"
+                    }
                 }
             ], 
             "custom_conf": "", 
@@ -90,6 +106,12 @@
                             "user": "ubuntu"
                         }
                     ]
+                }, 
+                "ajenti.plugins.vh-vsftpd.vsftpd.VSFTPDExtension": {
+                    "username": "railsmashpyme", 
+                    "password": "40a6db14-8072-447d-93bf-c566471e2a51", 
+                    "user": null, 
+                    "created": true
                 }, 
                 "ajenti.plugins.vh-mysql.mysql.MySQLExtension": {
                     "users": [
