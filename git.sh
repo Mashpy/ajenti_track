@@ -1,4 +1,4 @@
 commit_msg=$
 sudo git add --all
 sudo git commit -m $commit_msg
-sudo git push origin master
+echo "mashpy\nmashpy1234" | sudo git push origin master
