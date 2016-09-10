@@ -1,6 +1,13 @@
 {
     "custom_mta_config": "", 
-    "mailboxes": [], 
+    "mailboxes": [
+        {
+            "owner": "root", 
+            "domain": "mashpy.me", 
+            "password": "", 
+            "local": "contact"
+        }
+    ], 
     "custom_mta_routers": "", 
     "forwarding_mailboxes": [], 
     "custom_mta_local_router": "", 

@@ -14,3 +14,15 @@ Sep 10 06:13:48 ip-172-31-23-55 authdaemond: Installing libauthuserdb
 Sep 10 06:13:48 ip-172-31-23-55 authdaemond: Installation complete: authuserdb
 Sep 10 06:13:48 ip-172-31-23-55 authdaemond: Installing libauthpam
 Sep 10 06:13:48 ip-172-31-23-55 authdaemond: Installation complete: authpam
+Sep 10 06:14:55 ip-172-31-23-55 authdaemond: stopping authdaemond children
+Sep 10 06:14:55 ip-172-31-23-55 authdaemond: modules="authuserdb authpam", daemons=5
+Sep 10 06:14:55 ip-172-31-23-55 authdaemond: Installing libauthuserdb
+Sep 10 06:14:55 ip-172-31-23-55 authdaemond: Installation complete: authuserdb
+Sep 10 06:14:55 ip-172-31-23-55 authdaemond: Installing libauthpam
+Sep 10 06:14:55 ip-172-31-23-55 authdaemond: Installation complete: authpam
+Sep 10 06:15:04 ip-172-31-23-55 authdaemond: stopping authdaemond children
+Sep 10 06:15:04 ip-172-31-23-55 authdaemond: modules="authuserdb authpam", daemons=5
+Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installing libauthuserdb
+Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installation complete: authuserdb
+Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installing libauthpam
+Sep 10 06:15:04 ip-172-31-23-55 authdaemond: Installation complete: authpam
