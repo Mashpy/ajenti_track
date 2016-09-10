@@ -81,7 +81,15 @@
             "enabled": true, 
             "extensions": {
                 "ajenti.plugins.vh.processes.ProcessesExtension": {
-                    "processes": []
+                    "processes": [
+                        {
+                            "directory": "/home", 
+                            "environment": "", 
+                            "command": "ls -la", 
+                            "name": "service", 
+                            "user": "ubuntu"
+                        }
+                    ]
                 }, 
                 "ajenti.plugins.vh-mysql.mysql.MySQLExtension": {
                     "users": [], 
