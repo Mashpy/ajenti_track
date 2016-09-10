@@ -75,7 +75,11 @@
                     "databases": []
                 }
             }, 
-            "domains": [], 
+            "domains": [
+                {
+                    "domain": "rails.mashpy.me"
+                }
+            ], 
             "root": "/srv/new-website", 
             "ports": [
                 {
