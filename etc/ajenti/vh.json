@@ -55,6 +55,30 @@
                     "port": 80
                 }
             ]
+        }, 
+        {
+            "maintenance_mode": true, 
+            "locations": [], 
+            "custom_conf": "", 
+            "ssl_key_path": "", 
+            "owner": "root", 
+            "ssl_cert_path": "", 
+            "custom_conf_toplevel": "", 
+            "name": "rails.mashpy.me", 
+            "enabled": true, 
+            "extensions": {}, 
+            "domains": [], 
+            "root": "/srv/new-website", 
+            "ports": [
+                {
+                    "spdy": false, 
+                    "default": false, 
+                    "ssl": false, 
+                    "host": "*", 
+                    "http2": false, 
+                    "port": 80
+                }
+            ]
         }
     ]
 }
