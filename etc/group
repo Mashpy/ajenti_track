@@ -50,3 +50,4 @@ admin:x:110:
 ubuntu:x:1000:
 mysql:x:111:
 Debian-exim:x:112:
+mashpy:x:1001:
