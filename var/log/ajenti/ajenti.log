@@ -21,4 +21,28 @@ php5-fpm <ajenti.plugins.services.sm_upstart.UpstartService object at 0x7f43e252
 2016-09-10 06:17:43,454 INFO     main.create_task(): [cron] created a CrontabNormalTaskData
 2016-09-10 06:17:47,152 INFO     main.on_save(): [cron] edited tasks
 2016-09-10 06:17:55,189 INFO     main.on_save(): [cron] edited tasks
-2016-09-10 06:17:55,189 INFO    : [cron] edited tasks
+2016-09-10 06:19:13,471 INFO     main.create_task(): [cron] created a CrontabNormalTaskData
+2016-09-10 06:19:20,811 INFO     main.remove_task(): [cron] removed false
+Socket is dead
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
+    result = self._run(*self.args, **self.kwargs)
+  File "/usr/lib/python2.7/dist-packages/socketio/transports.py", line 251, in send_into_ws
+    websocket.send(message)
+  File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
+    raise WebSocketError(MSG_SOCKET_DEAD)
+WebSocketError: Socket is dead
+<Greenlet at 0x7f43e49ffcd0: send_into_ws> failed with WebSocketError
+
+2016-09-10 06:22:27,905 INFO     users.check_password(): user root logged in through AjentiSyncProvider from 103.199.152.87
+Socket is dead
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gevent/greenlet.py", line 327, in run
+    result = self._run(*self.args, **self.kwargs)
+  File "/usr/lib/python2.7/dist-packages/socketio/transports.py", line 251, in send_into_ws
+    websocket.send(message)
+  File "/usr/lib/python2.7/dist-packages/geventwebsocket/websocket.py", line 348, in send
+    raise WebSocketError(MSG_SOCKET_DEAD)
+WebSocketError: Socket is dead
+<Greenlet at 0x7f43e2137af0: send_into_ws> failed with WebSocketError
+
